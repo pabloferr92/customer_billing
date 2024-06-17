@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>86d897e783920210260cee30ceaad38c</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_products">
+    <x_562912_billing_products action="INSERT_OR_UPDATE">
+        <coluna_origem_cobranca_equipamentos/>
+        <coluna_origem_cobranca_volume display_value="MPS - VOLUME" element="mps_volume" name="x_562912_billing_monthly_production">99cfde1383160210260cee30ceaad36c</coluna_origem_cobranca_volume>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-27 13:35:08</sys_created_on>
+        <sys_id>86d897e783920210260cee30ceaad38c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-27 19:41:22</sys_updated_on>
+        <table_name>x_562912_billing_monthly_production</table_name>
+        <u_coluna_habilitar>360 TRACKING</u_coluna_habilitar>
+        <u_conditions table="x_562912_billing_monthly_production">u_360_tracking=Sim^EQ<item endquery="false" field="u_360_tracking" goto="false" newquery="false" operator="=" or="false" value="Sim"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </u_conditions>
+        <u_need_to_enable>true</u_need_to_enable>
+        <u_nome>360 TRACKING</u_nome>
+        <u_value_to_enable>Sim</u_value_to_enable>
+    </x_562912_billing_products>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-10 12:28:42</sys_created_on>
+        <sys_id>31ef8b4c83320210260cee30ceaad3b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>360 TRACKING</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_31ef8b4c83320210260cee30ceaad3b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-10 12:28:42</sys_updated_on>
+        <tablename>x_562912_billing_products</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="valor" label="Valor" language="en" table="x_562912_billing_product_in_the_contract">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>valor</element>
+            <help/>
+            <hint/>
+            <label>Valor</label>
+            <language>en</language>
+            <name>x_562912_billing_product_in_the_contract</name>
+            <plural>Valors</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-26 13:43:23</sys_created_on>
+            <sys_id>b5219a1f83920210260cee30ceaad38d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Valor</sys_name>
+            <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+            <sys_update_name>sys_documentation_x_562912_billing_product_in_the_contract_valor_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-26 13:43:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

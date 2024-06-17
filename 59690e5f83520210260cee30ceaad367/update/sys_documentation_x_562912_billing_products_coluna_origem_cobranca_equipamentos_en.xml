@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="coluna_origem_cobranca_equipamentos" label="Coluna Origem Cobrança Equipamentos" language="en" table="x_562912_billing_products">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>coluna_origem_cobranca_equipamentos</element>
+            <help/>
+            <hint/>
+            <label>Coluna Origem Cobrança Equipamentos</label>
+            <language>en</language>
+            <name>x_562912_billing_products</name>
+            <plural>Coluna Origem Cobrança Equipamentos</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-26 13:46:35</sys_created_on>
+            <sys_id>f4e1da5f83920210260cee30ceaad34a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Coluna Origem Cobrança Equipamentos</sys_name>
+            <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+            <sys_update_name>sys_documentation_x_562912_billing_products_coluna_origem_cobranca_equipamentos_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-26 13:46:35</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

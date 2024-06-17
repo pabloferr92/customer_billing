@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="franquia_volume" label="Franquia Volume" language="en" table="x_562912_billing_product_in_the_contract">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>franquia_volume</element>
+            <help/>
+            <hint/>
+            <label>Franquia Volume</label>
+            <language>en</language>
+            <name>x_562912_billing_product_in_the_contract</name>
+            <plural>Franquia Volumes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-26 13:33:53</sys_created_on>
+            <sys_id>a2fe0a1b83920210260cee30ceaad3b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Franquia Volume</sys_name>
+            <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+            <sys_update_name>sys_documentation_x_562912_billing_product_in_the_contract_franquia_volume_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-26 13:33:53</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

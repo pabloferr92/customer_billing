@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_360_accounting___equipamento" label="360 ACCOUNTING - EQUIPAMENTO" language="en" table="x_562912_billing_volume_mensal">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_360_accounting___equipamento</element>
+            <help/>
+            <hint/>
+            <label>360 ACCOUNTING - EQUIPAMENTO</label>
+            <language>en</language>
+            <name>x_562912_billing_volume_mensal</name>
+            <plural>360 ACCOUNTING - EQUIPAMENTOs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-26 13:51:40</sys_created_on>
+            <sys_id>0303d2df83920210260cee30ceaad3e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>360 ACCOUNTING - EQUIPAMENTO</sys_name>
+            <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+            <sys_update_name>sys_documentation_x_562912_billing_volume_mensal_u_360_accounting___equipamento_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-26 13:51:40</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

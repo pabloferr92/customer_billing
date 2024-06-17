@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>72191f9b831a0210260cee30ceaad3cc</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_products">
+    <x_562912_billing_products action="INSERT_OR_UPDATE">
+        <coluna_origem_cobranca_equipamentos display_value="360 RELEASER" element="u_360_releaser" name="x_562912_billing_monthly_production">ff99d7db831a0210260cee30ceaad3e6</coluna_origem_cobranca_equipamentos>
+        <coluna_origem_cobranca_volume/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 18:58:04</sys_created_on>
+        <sys_id>72191f9b831a0210260cee30ceaad3cc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-27 19:32:14</sys_updated_on>
+        <table_name>x_562912_billing_volume_mensal</table_name>
+        <u_coluna_habilitar/>
+        <u_conditions table="x_562912_billing_volume_mensal">u_360_releaser&gt;0^EQ<item endquery="false" field="u_360_releaser" goto="false" newquery="false" operator="&gt;" or="false" value="0"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </u_conditions>
+        <u_need_to_enable>false</u_need_to_enable>
+        <u_nome>RELEASER</u_nome>
+        <u_value_to_enable/>
+    </x_562912_billing_products>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-10 12:28:42</sys_created_on>
+        <sys_id>b9ef8b4c83320210260cee30ceaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RELEASER</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_b9ef8b4c83320210260cee30ceaad3ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-10 12:28:42</sys_updated_on>
+        <tablename>x_562912_billing_products</tablename>
+    </sys_metadata_link>
+</record_update>

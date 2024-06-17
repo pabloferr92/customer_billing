@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="valor_total" label="Valor Total" language="en" table="x_562912_billing_consolidated_billing">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>valor_total</element>
+            <help/>
+            <hint/>
+            <label>Valor Total</label>
+            <language>en</language>
+            <name>x_562912_billing_consolidated_billing</name>
+            <plural>Valor Totals</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-28 17:06:16</sys_created_on>
+            <sys_id>c5c2190c83e28210260cee30ceaad3e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Valor Total</sys_name>
+            <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+            <sys_update_name>sys_documentation_x_562912_billing_consolidated_billing_valor_total_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-28 17:06:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
