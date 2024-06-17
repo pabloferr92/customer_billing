@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>96e5305a83fac210260cee30ceaad396</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_contracts">
+    <x_562912_billing_contracts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>COPIMAQ DE CAMPINAS COMERCIO DE MAQUINAS LTDA</name>
+        <number>91155</number>
+        <parceiro display_value="COPIMAQ DE CAMPINAS COMERCIO DE MAQUINAS LTDA">ded5305a83fac210260cee30ceaad319</parceiro>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 01:02:21</sys_created_on>
+        <sys_id>96e5305a83fac210260cee30ceaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 01:02:21</sys_updated_on>
+    </x_562912_billing_contracts>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 03:04:38</sys_created_on>
+        <sys_id>6fe1915283bec210260cee30ceaad3c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>COPIMAQ DE CAMPINAS COMERCIO DE MAQUINAS LTDA</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_6fe1915283bec210260cee30ceaad3c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 03:04:38</sys_updated_on>
+        <tablename>x_562912_billing_contracts</tablename>
+    </sys_metadata_link>
+</record_update>

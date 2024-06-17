@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="data_sheet" label="Planilha de Dados" language="pb" table="x_562912_billing_load_data">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>data_sheet</element>
+            <help/>
+            <hint/>
+            <label>Planilha de Dados</label>
+            <language>pb</language>
+            <name>x_562912_billing_load_data</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-06-16 14:03:03</sys_created_on>
+            <sys_id>07fe9a4683fe8210260cee30ceaad3f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Planilha de Dados</sys_name>
+            <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+            <sys_update_name>sys_documentation_x_562912_billing_load_data_data_sheet_pb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-06-16 14:03:03</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

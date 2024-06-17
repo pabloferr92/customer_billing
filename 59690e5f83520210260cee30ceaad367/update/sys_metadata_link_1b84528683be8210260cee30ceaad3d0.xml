@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c0f1856183720210260cee30ceaad38b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_partners">
+    <x_562912_billing_partners action="INSERT_OR_UPDATE">
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-06-14 17:59:34</sys_created_on>
+        <sys_id>c0f1856183720210260cee30ceaad38b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-06-14 17:59:34</sys_updated_on>
+        <u_name>WORKPRINT</u_name>
+        <u_provedor_mps>WORKPRINT</u_provedor_mps>
+        <u_vendedor/>
+    </x_562912_billing_partners>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-16 13:17:14</sys_created_on>
+        <sys_id>1b84528683be8210260cee30ceaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WORKPRINT</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_1b84528683be8210260cee30ceaad3d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-16 13:17:14</sys_updated_on>
+        <tablename>x_562912_billing_partners</tablename>
+    </sys_metadata_link>
+</record_update>

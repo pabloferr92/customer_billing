@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_562912_billing.CustomerBillingAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CustomerBillingAjax</name>
+        <script><![CDATA[var CustomerBillingAjax = Class.create();
+CustomerBillingAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    CUSTOMERBILLINGUTILS: new CustomerBillingUtils(),
+
+
+    checkSheetFormat: function () {
+
+        var current_sys_id = this.getParameter("sysparm_current_sys_id");
+
+        var record = this._getCurrent(current_sys_id);
+
+        var response = this.CUSTOMERBILLINGUTILS.checkAttachmentAndSheetFormat(record);
+
+        return JSON.stringify(response);
+
+    },
+
+    checkForDuplicatedPeriod: function () {
+
+        var has_duplicated = false;
+        
+        var current_sys_id = this.getParameter("sysparm_current_sys_id");
+        var ano_competencia = this.getParameter("sysparm_ano_competencia");
+        var mes_competencia = this.getParameter("sysparm_mes_competencia");
+
+        var record = this._getCurrent(current_sys_id);
+
+        var data_loaded = new GlideRecord("x_562912_billing_load_data");
+        data_loaded.addQuery("ano_competencia", ano_competencia);
+        data_loaded.addQuery("mes_competencia", mes_competencia);
+        data_loaded.addQuery("sys_id", "!=", current_sys_id);
+        data_loaded.setLimit(1);
+        data_loaded.query();
+
+
+        has_duplicated = data_loaded.hasNext();
+
+
+        return has_duplicated;
+
+    },
+
+    _getCurrent: function (sysparm_current_sys_id) {
+        var record = new GlideRecord("x_562912_billing_load_data");
+        record.addQuery("sys_id", sysparm_current_sys_id);
+        record.setLimit(1);
+        record.query();
+
+        if (record.next()) {
+            return record;
+        }
+    },
+
+
+    type: 'CustomerBillingAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-16 14:28:41</sys_created_on>
+        <sys_id>2ac4ea8e83fe8210260cee30ceaad322</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>CustomerBillingAjax</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_script_include_2ac4ea8e83fe8210260cee30ceaad322</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-16 16:16:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3397b8da83fac210260cee30ceaad3dd</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_product_in_the_contract">
+    <x_562912_billing_product_in_the_contract action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <franquia_equipamentos/>
+        <franquia_volume>125000</franquia_volume>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 01:10:24</sys_created_on>
+        <sys_id>3397b8da83fac210260cee30ceaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 01:10:24</sys_updated_on>
+        <table_name>x_562912_billing_monthly_production</table_name>
+        <tipo_de_franquia>volume</tipo_de_franquia>
+        <u_conditions/>
+        <u_contrato display_value="BELLAPRINT SOLUÇÕES EM IBNFORMATICA LTDA">5b8778da83fac210260cee30ceaad390</u_contrato>
+        <u_description>HIGH PERFORMANCE COM ACCOUNTING</u_description>
+        <u_display_name>MPS HIGH PERFORMANCE COM ACCOUNTING</u_display_name>
+        <u_produto display_value="MPS">10b0dedb83920210260cee30ceaad36e</u_produto>
+        <valor>0.00462</valor>
+        <valor_franquia>577.67</valor_franquia>
+    </x_562912_billing_product_in_the_contract>
+    <fx_price action="delete_multiple" query="id=3397b8da83fac210260cee30ceaad3dd"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>577.67</amount>
+        <currency display_value="BRL">BRL</currency>
+        <field>valor_franquia</field>
+        <id>3397b8da83fac210260cee30ceaad3dd</id>
+        <parent/>
+        <reference_amount>107.6915</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 01:10:24</sys_created_on>
+        <sys_id>c6c73cda83fac210260cee30ceaad3fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 01:10:24</sys_updated_on>
+        <table>x_562912_billing_product_in_the_contract</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 03:03:53</sys_created_on>
+        <sys_id>a4c15d1283bec210260cee30ceaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MPS HIGH PERFORMANCE COM ACCOUNTING</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_a4c15d1283bec210260cee30ceaad385</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 03:03:53</sys_updated_on>
+        <tablename>x_562912_billing_product_in_the_contract</tablename>
+    </sys_metadata_link>
+</record_update>

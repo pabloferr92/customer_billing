@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>mes_competencia</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Check For Duplicateds Mes</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+
+    var current_sys_id = g_form.getUniqueValue();
+
+    var ano_competencia = g_form.getValue("ano_competencia");
+    var mes_competencia = g_form.getValue("mes_competencia");
+
+    g_form.clearMessages();
+
+    var ajax = new GlideAjax("CustomerBillingAjax");
+    ajax.addParam("sysparm_name", "checkForDuplicatedPeriod");
+    ajax.addParam("sysparm_current_sys_id", current_sys_id);
+    ajax.addParam("sysparm_ano_competencia", ano_competencia);
+    ajax.addParam("sysparm_mes_competencia", mes_competencia);
+
+    ajax.getXMLAnswer(function(response) {
+
+        if (response != undefined && response != "") {
+
+            console.log("Resposta ajax ano e mes " + response);
+
+            if (response == "true" || response == true) {
+                g_form.clearValue("ano_competencia");
+                g_form.clearValue("mes_competencia");
+                g_form.addErrorMessage("Já possui um registro para este período!");
+            }
+        }
+
+    });
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-16 16:13:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fdfcb2ce8372c210260cee30ceaad3ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check For Duplicateds Mes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_script_client_fdfcb2ce8372c210260cee30ceaad3ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-16 16:13:48</sys_updated_on>
+        <table>x_562912_billing_load_data</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

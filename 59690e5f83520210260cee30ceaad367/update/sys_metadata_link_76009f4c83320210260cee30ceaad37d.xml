@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>fd5e6840836e4210260cee30ceaad3c6</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_product_in_the_contract">
+    <x_562912_billing_product_in_the_contract action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <franquia_equipamentos/>
+        <franquia_volume>0</franquia_volume>
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-05-28 14:28:23</sys_created_on>
+        <sys_id>fd5e6840836e4210260cee30ceaad3c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-05-28 14:28:23</sys_updated_on>
+        <table_name>x_562912_billing_monthly_production</table_name>
+        <tipo_de_franquia>volume</tipo_de_franquia>
+        <u_conditions table="x_562912_billing_monthly_production">u_360_policy=Sim^EQ<item endquery="false" field="u_360_policy" goto="false" newquery="false" operator="=" or="false" value="Sim"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </u_conditions>
+        <u_contrato display_value="Inprint">cb9aa44c832e4210260cee30ceaad314</u_contrato>
+        <u_description>Pagina</u_description>
+        <u_display_name>360 POLICY Pagina</u_display_name>
+        <u_produto display_value="360 POLICY">aec897e783920210260cee30ceaad3a7</u_produto>
+        <valor>0.00201</valor>
+        <valor_franquia>0</valor_franquia>
+    </x_562912_billing_product_in_the_contract>
+    <fx_price action="delete_multiple" query="id=fd5e6840836e4210260cee30ceaad3c6"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>valor_franquia</field>
+        <id>fd5e6840836e4210260cee30ceaad3c6</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-05 22:40:33</sys_created_on>
+        <sys_id>fbfbefe683aa0210260cee30ceaad347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-05 22:40:33</sys_updated_on>
+        <table>x_562912_billing_product_in_the_contract</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-10 12:29:18</sys_created_on>
+        <sys_id>76009f4c83320210260cee30ceaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>360 POLICY Pagina</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_76009f4c83320210260cee30ceaad37d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-10 12:29:18</sys_updated_on>
+        <tablename>x_562912_billing_product_in_the_contract</tablename>
+    </sys_metadata_link>
+</record_update>

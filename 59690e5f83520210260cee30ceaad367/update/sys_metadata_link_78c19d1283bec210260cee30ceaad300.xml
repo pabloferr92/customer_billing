@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>cc1b7412833ec210260cee30ceaad344</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_product_in_the_contract">
+    <x_562912_billing_product_in_the_contract action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <franquia_equipamentos/>
+        <franquia_volume>0</franquia_volume>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 01:25:12</sys_created_on>
+        <sys_id>cc1b7412833ec210260cee30ceaad344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 01:25:12</sys_updated_on>
+        <table_name>x_562912_billing_monthly_production</table_name>
+        <tipo_de_franquia>volume</tipo_de_franquia>
+        <u_conditions table="x_562912_billing_monthly_production">u_360_releaser&gt;0^EQ<item endquery="false" field="u_360_releaser" goto="false" newquery="false" operator="&gt;" or="false" value="0"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </u_conditions>
+        <u_contrato display_value="INKAJET SOLUCOES EM IMPRESSAO">298a30de83fac210260cee30ceaad327</u_contrato>
+        <u_description>Por equipamento</u_description>
+        <u_display_name>RELEASER Por equipamento</u_display_name>
+        <u_produto display_value="RELEASER">72191f9b831a0210260cee30ceaad3cc</u_produto>
+        <valor>13.284144</valor>
+        <valor_franquia>0</valor_franquia>
+    </x_562912_billing_product_in_the_contract>
+    <fx_price action="delete_multiple" query="id=cc1b7412833ec210260cee30ceaad344"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>valor_franquia</field>
+        <id>cc1b7412833ec210260cee30ceaad344</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 01:25:12</sys_created_on>
+        <sys_id>f62bbcde83fac210260cee30ceaad3a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 01:25:12</sys_updated_on>
+        <table>x_562912_billing_product_in_the_contract</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 03:03:55</sys_created_on>
+        <sys_id>78c19d1283bec210260cee30ceaad300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RELEASER Por equipamento</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_78c19d1283bec210260cee30ceaad300</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 03:03:55</sys_updated_on>
+        <tablename>x_562912_billing_product_in_the_contract</tablename>
+    </sys_metadata_link>
+</record_update>

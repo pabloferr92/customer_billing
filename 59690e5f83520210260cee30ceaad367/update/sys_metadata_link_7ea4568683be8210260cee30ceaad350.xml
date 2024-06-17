@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2d224d2183720210260cee30ceaad3ec</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_product_in_the_contract">
+    <x_562912_billing_product_in_the_contract action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <franquia_equipamentos/>
+        <franquia_volume>150000</franquia_volume>
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-06-14 18:01:53</sys_created_on>
+        <sys_id>2d224d2183720210260cee30ceaad3ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-06-14 18:01:53</sys_updated_on>
+        <table_name>x_562912_billing_monthly_production</table_name>
+        <tipo_de_franquia>volume</tipo_de_franquia>
+        <u_conditions/>
+        <u_contrato display_value="WORKPRINT">f00201a183720210260cee30ceaad31b</u_contrato>
+        <u_description>POR VOLUME</u_description>
+        <u_display_name>MPS POR VOLUME</u_display_name>
+        <u_produto display_value="MPS">10b0dedb83920210260cee30ceaad36e</u_produto>
+        <valor>0.0025</valor>
+        <valor_franquia>500</valor_franquia>
+    </x_562912_billing_product_in_the_contract>
+    <fx_price action="delete_multiple" query="id=2d224d2183720210260cee30ceaad3ec"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>500</amount>
+        <currency display_value="BRL">BRL</currency>
+        <field>valor_franquia</field>
+        <id>2d224d2183720210260cee30ceaad3ec</id>
+        <parent/>
+        <reference_amount>93.2119</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-06-14 18:01:53</sys_created_on>
+        <sys_id>218281a183720210260cee30ceaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-06-14 18:01:53</sys_updated_on>
+        <table>x_562912_billing_product_in_the_contract</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-16 13:17:45</sys_created_on>
+        <sys_id>7ea4568683be8210260cee30ceaad350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MPS POR VOLUME</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_7ea4568683be8210260cee30ceaad350</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-16 13:17:45</sys_updated_on>
+        <tablename>x_562912_billing_product_in_the_contract</tablename>
+    </sys_metadata_link>
+</record_update>

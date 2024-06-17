@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_562912_billing.CustomerBillingUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CustomerBillingUtils</name>
+        <script><![CDATA[var CustomerBillingUtils = Class.create();
+CustomerBillingUtils.prototype = {
+
+    initialize: function () {
+
+        this.RESPONSE = {
+            status: "success",
+            message: ""
+        };
+
+        this.USED_COLUMNS = ["MPS - VOLUME", "360 CHARGEBACK", "360 POLICY",
+            "360 TRACKING", "360 ACCOUNTING - EQUIPAMENTO",
+            "MPS - EQUIPAMENTO", "NOME DO BANCO", "Razão Social",
+            "CNPJ", "N° CONTRATO", "Parceiro",
+            "360 ACCOUNTING - VOLUME", "360 RELEASER"
+        ];
+
+
+    },
+
+    _checkForAttachment: function (current) {
+
+        var attachment_gr = new GlideRecord("sys_attachment");
+
+        if (attachment_gr.get("table_sys_id", current.getUniqueValue())) {
+            return true;
+        }
+
+        return false;
+
+    },
+
+    _getAttachment: function (current) {
+
+        var attachment_gr = new GlideRecord("sys_attachment");
+
+        if (attachment_gr.get("table_sys_id", current.getUniqueValue())) {
+            return attachment_gr;
+        }
+
+        return false;
+
+    },
+
+    _getAttachmentInRecord: function (current) {
+
+        var attachment_id = current.getValue("data_sheet");
+
+        if (gs.nil(attachment_id) || attachment_id == "" || current.data_sheet.nil()) {
+
+            this.RESPONSE.status = "error";
+            this.RESPONSE.message = "Anexo não encontrado no registro de carramento de dados";
+            return false;
+        }
+
+
+        var attachment_gr = new GlideRecord("sys_attachment");
+
+        if (attachment_gr.get("sys_id", attachment_id)) {
+            return attachment_gr;
+        }
+
+        return false;
+
+
+    },
+
+    checkAttachmentAndSheetFormat(current) {
+
+        var attachment_record = this._getAttachmentInRecord(current);
+
+        if (!attachment_record) {
+            return this.RESPONSE;
+        }
+
+        var parser = new sn_impex.GlideExcelParser();
+
+        var attachment = new GlideSysAttachment();
+
+        var attachmentStream = attachment.getContentStream(attachment_record.getUniqueValue());
+
+        // Set the source to be parsed
+        parser.setSource(attachmentStream);
+
+        // Get the worksheet names to be parsed in the Excel document
+        var list_sheet_name = parser.getSheetNames();
+
+
+        if (list_sheet_name.length == 0) {
+            this.RESPONSE.status = "error";
+            this.RESPONSE.message = "Formato inválido!";
+            return this.RESPONSE;
+        }
+
+        // Iterate over each worksheet in the Excel workbook
+        for (var i = 0; i < list_sheet_name.length; i++) {
+
+            // Set the worksheet name to be parsed
+            parser.setSheetName(list_sheet_name[i]);
+
+            // Parse each worksheet set using setSheetName()
+            if (parser.parse()) {
+                var headers = parser.getColumnHeaders();
+
+                var valid_format = this.checkSheetFormat(headers);
+
+                if (!valid_format) {
+
+                    return this.RESPONSE;
+                }
+
+
+            } else {
+                this.RESPONSE.status = "error";
+                this.RESPONSE.message = "Formato inválido!";
+                return this.RESPONSE;
+            }
+        }
+
+        if (this.RESPONSE.status == "success") {
+            this._setAttachmentAsValidated(current, attachment_record.getUniqueValue());
+        }
+
+        return this.RESPONSE;
+
+    },
+
+    _setAttachmentAsValidated: function (current, attachment_id) {
+
+        current.setValue("attachmend_validated_id", attachment_id);
+        current.update();
+
+    },
+
+    processData: function (current) {
+
+      
+        var attachment_gr = this._getAttachmentInRecord(current);
+
+        if (gs.nil(attachment_gr) || attachment_gr == "" || !attachment_gr) {
+            return this.RESPONSE;
+        }
+
+        var parser = new sn_impex.GlideExcelParser();
+
+        var attachment = new GlideSysAttachment();
+
+        // Use the attachment sys_id of an Excel file
+        var attachmentStream = attachment.getContentStream(attachment_gr.getUniqueValue());
+
+        // Set the source to be parsed
+        parser.setSource(attachmentStream);
+
+        // Get the worksheet names to be parsed in the Excel document
+        var list_sheet_name = parser.getSheetNames();
+
+
+        //parser.setSheetName(list_sheet_name[i]);
+
+
+        // Iterate over each worksheet in the Excel workbook
+        for (var i = 0; i < list_sheet_name.length; i++) {
+
+            // Set the worksheet name to be parsed
+            parser.setSheetName(list_sheet_name[i]);
+
+            // Parse each worksheet set using setSheetName()
+            if (parser.parse()) {
+                //retrieve the column headers
+                var headers = parser.getColumnHeaders();
+
+                if (!this.checkSheetFormat(headers)) {
+                    return this.RESPONSE;
+                }
+
+
+                while (parser.next()) {
+                    var row = parser.getRow();
+                    var mes_competencia = current.getValue("mes_competencia");
+                    var ano_competencia = current.getValue("ano_competencia");
+
+                    var volume_mps = row["MPS - VOLUME"];
+                    var charge_back = row["360 CHARGEBACK"];
+                    var policy = row["360 POLICY"];
+                    var tracking = row["360 TRACKING"];
+
+                    var accounting_equipamento = row["360 ACCOUNTING - EQUIPAMENTO"];
+                    var mps_equipamento = row["MPS - EQUIPAMENTO"];
+                    var banco_text = row["NOME DO BANCO"];
+                    var razao_social = row["Razão Social"];
+                    var cnpj = row["CNPJ"];
+                    var contrato = row["N° CONTRATO"];
+                    var parceiro = row["Parceiro"]
+                    var accounting_volume = row["360 ACCOUNTING - VOLUME"];
+
+                    var releaser_devices = row["360 RELEASER"];
+
+                    var banco_id = this._getBankID(banco_text);
+
+                    if (!banco_id) {
+                        //bank_name, razao_social, cnpj, contrato, parceiro
+                        banco_id = this._createBank(banco_text, razao_social, cnpj, contrato, parceiro);
+                    }
+
+                    if (banco_id != "") {
+
+                        var monthly_production_gr = new GlideRecord("x_562912_billing_monthly_production");
+                        monthly_production_gr.initialize();
+
+                        monthly_production_gr.setValue("ano_competencia", ano_competencia);
+                        monthly_production_gr.setValue("mes_competencia", mes_competencia);
+                        monthly_production_gr.setValue("banco", banco_id);
+                        monthly_production_gr.setValue("mps_equipamento", mps_equipamento);
+                        monthly_production_gr.setValue("u_360_chargeback", charge_back);
+                        monthly_production_gr.setValue("u_360_policy", policy);
+                        monthly_production_gr.setValue("u_360_tracking", tracking);
+
+                        monthly_production_gr.setValue("u_360_accounting_equipamento", accounting_equipamento)
+                        monthly_production_gr.setValue("mps_volume", volume_mps);
+                        monthly_production_gr.setValue("u_360_accounting_volume", accounting_volume);
+                        monthly_production_gr.setValue("u_360_releaser", releaser_devices);
+
+                        var sys_id_new_record = monthly_production_gr.insert();
+
+                    }
+
+                }
+
+                this.RESPONSE.status = "success";
+                this.RESPONSE.message = "Processado com sucesso!";
+                return this.RESPONSE;
+
+            } else {
+                this.RESPONSE.status = "error";
+                this.RESPONSE.message = "Formato inválido";
+                return this.RESPONSE;
+            }
+
+
+        }
+
+        return this.RESPONSE;
+
+
+    },
+
+    checkSheetFormat(sheet_headers) {
+
+        var not_found_headers = [];
+
+        this.USED_COLUMNS.forEach(function (column) {
+
+            if (sheet_headers.indexOf(column) == -1) {
+                not_found_headers.push(header);
+            }
+
+        });
+
+        if (not_found_headers.length > 0) {
+            this.RESPONSE.status = "error";
+            this.RESPONSE.message = "Planilha em formato inválido, cabeçalhos não encontrados: " + not_found_headers.join(",");
+            return false;
+        }
+
+        return true;
+
+    },
+
+    _getBankID: function (bank_name) {
+
+        var id = "";
+        var bank_gr = new GlideRecord("x_562912_billing_databases");
+        bank_gr.addQuery("nome_do_banco", bank_name);
+        bank_gr.setLimit(1);
+        bank_gr.query();
+
+        if (bank_gr.next()) {
+            id = bank_gr.getUniqueValue();
+        }
+
+        return id;
+
+    },
+
+    _createBank: function (bank_name, razao_social, cnpj, contrato, parceiro) {
+
+        var bank_id = "";
+        var partner_id = this._getPartnerId(parceiro, contrato);
+        if (partner_id == "" || gs.nil(partner_id)) {
+            return "";
+        }
+
+        var bank_gr = new GlideRecord("x_562912_billing_databases");
+        bank_gr.initialize();
+
+        bank_gr.setValue("parceiro", partner_id);
+        bank_gr.setValue("nome_do_banco", bank_name);
+        bank_gr.setValue("u_razao_social", razao_social);
+        bank_gr.setValue("u_cnpj", cnpj);
+        bank_id = bank_gr.insert();
+
+        return bank_id;
+
+    },
+
+    _getPartnerId: function (name, contrato) {
+
+        var id = "";
+        var partner_gr = new GlideRecord("x_562912_billing_partners");
+        partner_gr.addQuery("u_provedor_mps", name);
+        partner_gr.setLimit(1);
+        partner_gr.query();
+
+        if (partner_gr.next()) {
+            id = partner_gr.getUniqueValue();
+            return id;
+        }
+
+        //id = this._createPartner(name, contrato);
+
+        return id;
+
+    },
+
+    _createPartner: function (name, contrato) {
+
+        var id = "";
+
+        var partner_gr = new GlideRecord("x_562912_billing_partners");
+        partner_gr.initialize();
+        partner_gr.setValue("u_name", name);
+        partner_gr.setValue("u_provedor_mps", name);
+        partner_gr.setValue("u_provedor_mps", name);
+
+        id = partner_gr.insert();
+
+        this._createContract(name, id, contrato);
+
+        return id;
+
+    },
+
+    _createContract: function (name, partner_id, contrato) {
+
+        var id = "";
+
+        var record_gr = new GlideRecord("x_562912_billing_contracts");
+        record_gr.initialize();
+        record_gr.setValue("name", name);
+        record_gr.setValue("parceiro", partner_id);
+        record_gr.setValue("number", contrato);
+        record_gr.setValue("active", true);
+
+        id = record_gr.insert();
+
+        return id;
+
+    },
+
+    processBilling: function (current) {
+
+        var partners_gr = new GlideRecord("x_562912_billing_partners");
+        //partners_gr.addQuery("sys_id", "75ab45f783da0210260cee30ceaad399");
+        //partners_gr.setLimit(1);
+        partners_gr.query();
+
+        var created_billings = [];
+
+        while (partners_gr.next()) {
+
+            gs.info("Parceiro validado " + partners_gr.getValue("u_name"));
+
+            var mes_competencia = current.getValue("mes_competencia");
+            var ano_competencia = current.getValue("ano_competencia");
+
+            var contracts = new GlideRecord("x_562912_billing_contracts");
+            contracts.addQuery("parceiro", partners_gr.getUniqueValue());
+            contracts.addQuery("active", true);
+            contracts.query();
+
+            var products_by_contract = [];
+
+
+            while (contracts.next()) {
+
+                var producs_contract_gr = new GlideRecord("x_562912_billing_product_in_the_contract");
+                producs_contract_gr.addQuery("u_contrato", contracts.getUniqueValue());
+                producs_contract_gr.addQuery("active", true);
+                producs_contract_gr.query();
+
+
+                while (producs_contract_gr.next()) {
+
+                    products_by_contract.push(producs_contract_gr.getUniqueValue());
+
+                    var agg_values_by_product = this._getAggregateOfProductByContract(producs_contract_gr, ano_competencia, mes_competencia);
+
+                    var billing_id = this._createBillingNew(producs_contract_gr, agg_values_by_product, ano_competencia, mes_competencia);
+
+                    created_billings.push(billing_id);
+
+                }
+
+
+                if (created_billings.length > 0) {
+                    //partner_id, ano_competencia, mes_competencia, contract
+                    this._createConsolidatedBillingNew(partners_gr.getUniqueValue(), ano_competencia, mes_competencia, contracts, created_billings);
+                }
+            }
+        }
+
+    },
+
+    _getAggregateOfProductByContract: function (products_by_contract, ano_competencia, mes_competencia) {
+
+        var response = {
+            volume: 0,
+            equipamentos: 0,
+            total_bancos: 0,
+        }
+
+
+        var column_volume = products_by_contract.u_produto.coluna_origem_cobranca_volume.element.toString();
+        var column_equipamentos = products_by_contract.u_produto.coluna_origem_cobranca_equipamentos.element.toString();
+
+        var conditions = products_by_contract.u_conditions.toString()
+
+        var agg = new GlideAggregate("x_562912_billing_monthly_production");
+        agg.addQuery("ano_competencia", ano_competencia);
+        agg.addQuery("mes_competencia", mes_competencia);
+        agg.addQuery("banco.parceiro", products_by_contract.u_contrato.parceiro.toString());
+        agg.addEncodedQuery(conditions);
+        agg.groupBy("banco.parceiro")
+        agg.addAggregate('COUNT', "sys_mod_count");
+        agg.addAggregate("SUM", column_volume);
+        agg.addAggregate("SUM", column_equipamentos);
+        agg.query();
+
+        if (agg.next()) {
+
+            response.volume = agg.getAggregate("SUM", column_volume);
+            response.equipamentos = agg.getAggregate("SUM", column_equipamentos);
+            response.total_bancos = agg.getAggregate("COUNT", "sys_mod_count")
+        }
+
+        return response;
+
+
+    },
+
+    // Método Será depreciado
+    _createConsolidatedBilling: function (partner_id, ano_competencia, mes_competencia, contract) {
+
+        var billings = new GlideAggregate("x_562912_billing_billing");
+        billings.addQuery("ano_competencia", ano_competencia);
+        billings.addQuery("mes_competencia", mes_competencia);
+        billings.addEncodedQuery("u_produto_no_contrato.u_contrato.parceiro.sys_id=" + partner_id);
+        billings.addAggregate('SUM', 'valor_total');
+        billings.groupBy('u_produto_no_contrato.u_contrato.parceiro');
+        billings.query();
+
+        if (billings.next()) {
+
+            var total = billings.getAggregate('SUM', 'valor_total');
+
+            var consolidated_gr = new GlideRecord("x_562912_billing_consolidated_billing");
+            consolidated_gr.initialize();
+
+            consolidated_gr.setValue("ano_competencia", ano_competencia);
+            consolidated_gr.setValue("mes_competencia", mes_competencia);
+            consolidated_gr.setValue("u_contract", contract);
+            consolidated_gr.valor_total.setValue("USD" + ";" + total);
+
+            var id = consolidated_gr.insert();
+
+        }
+
+
+    },
+
+    _createConsolidatedBillingNew: function (partner_id, ano_competencia, mes_competencia, contract, created_billings) {
+
+        var billings = new GlideAggregate("x_562912_billing_billing");
+        billings.addQuery("ano_competencia", ano_competencia);
+        billings.addQuery("mes_competencia", mes_competencia);
+        billings.addEncodedQuery("u_produto_no_contrato.u_contrato.parceiro.sys_id=" + partner_id);
+        billings.addAggregate('SUM', 'valor_total');
+        billings.groupBy('u_produto_no_contrato.u_contrato.parceiro');
+        billings.query();
+
+        if (billings.next()) {
+
+            var total = billings.getAggregate('SUM', 'valor_total');
+
+            var consolidated_gr = new GlideRecord("x_562912_billing_consolidated_billing");
+            consolidated_gr.initialize();
+
+            consolidated_gr.setValue("ano_competencia", ano_competencia);
+            consolidated_gr.setValue("mes_competencia", mes_competencia);
+            consolidated_gr.setValue("u_contract", contract.getUniqueValue());
+            consolidated_gr.valor_total.setValue("USD" + ";" + total);
+
+            var id = consolidated_gr.insert();
+
+            if (id) {
+                var billings_update = new GlideRecord("x_562912_billing_billing");
+                billings_update.addEncodedQuery("sys_idIN" + created_billings.join());
+                billings_update.addQuery("ano_competencia", ano_competencia);
+                billings_update.addQuery("mes_competencia", mes_competencia);
+                billings_update.addEncodedQuery("u_produto_no_contrato.u_contrato.parceiro.sys_id=" + partner_id);
+                billings_update.query();
+
+                if (billings_update.hasNext()) {
+                    billings_update.setValue("consolidated_billing", id);
+                    billings_update.updateMultiple();
+                }
+
+            }
+
+        }
+
+
+    },
+
+    // Método Será depreciado
+    _updateBillingDetailWithConsolidateGR: function (query, consolidated_id) {
+
+        var billings = new GlideRecord("x_562912_billing_billing");
+        billings.addEncodedQuery(query);
+        billings.query();
+
+        if (billing.hasNext()) {
+            //billings.updateMultiple();
+        }
+
+    },
+
+
+    // Método Será depreciado
+    _mountValuesByProductObj(contract_gr, products_by_contract, ano_competencia, mes_competencia) {
+
+        var columns_to_aggregate = [];
+
+        for (var i = 0; i < products_by_contract.length; i++) {
+
+            var products_by_contract_gr = new GlideRecord("x_562912_billing_product_in_the_contract");
+            products_by_contract_gr.get(products_by_contract[i])
+
+            columns_to_aggregate.push({
+                contract_product: products_by_contract_gr.getUniqueValue(),
+                product: products_by_contract_gr.u_produto.sys_id,
+                coluna_volume: products_by_contract_gr.u_produto.coluna_origem_cobranca_volume.getDisplayValue(),
+                coluna_equipamento: products_by_contract_gr.u_produto.coluna_origem_cobranca_equipamentos.getDisplayValue(),
+                conditions: products_by_contract_gr.u_conditions.toString(),
+            });
+
+
+        }
+
+        var monthly_production_gr = new GlideRecord("x_562912_billing_monthly_production");
+        monthly_production_gr.addQuery("mes_competencia", mes_competencia);
+        monthly_production_gr.addQuery("ano_competencia", ano_competencia);
+        monthly_production_gr.addEncodedQuery("banco.parceiro=" + contract_gr.parceiro);
+        monthly_production_gr.query();
+
+        var values_by_product = {
+            contrato: contract_gr.getDisplayValue(),
+            contrato_sys_id: contract_gr.getUniqueValue(),
+            ano_competencia: ano_competencia,
+            mes_competencia: mes_competencia,
+            produtos: {},
+
+        }
+
+
+        while (monthly_production_gr.next()) {
+
+
+            for (var i = 0; i < columns_to_aggregate.length; i++) {
+
+
+                var column_name_volume = this._getColumnName(monthly_production_gr.getTableName(), columns_to_aggregate[i]["coluna_volume"]);
+                var column_name_equipamentos = this._getColumnName(monthly_production_gr.getTableName(), columns_to_aggregate[i]["coluna_equipamento"]);
+
+                var conditions = columns_to_aggregate[i]["conditions"];
+
+                if (!this._checkConditions(monthly_production_gr.getUniqueValue(), conditions)) {
+                    continue;
+                }
+
+
+                if (values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]]) {
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].volume += parseInt(monthly_production_gr.getValue(column_name_volume));
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].equipamentos += parseInt(monthly_production_gr.getValue(column_name_equipamentos));
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].bancos_contabilizados += 1;
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]]["bancos_sys_ids"].push(monthly_production_gr.getValue("banco"));
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].bancos_sys_ids.push(monthly_production_gr.getUniqueValue());
+
+                } else {
+                    //values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]]["bancos_sys_ids"].push(monthly_production_gr.getValue("banco"));
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]] = {};
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].volume = parseInt(monthly_production_gr.getValue(column_name_volume));
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].equipamentos = parseInt(monthly_production_gr.getValue(column_name_equipamentos));
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].bancos_contabilizados = 1;
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].bancos_sys_ids = [];
+                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].bancos_sys_ids.push(monthly_production_gr.getUniqueValue());
+
+                }
+
+            }
+
+        }
+
+        return values_by_product;
+
+
+    },
+
+    _checkConditions(record_gr_sys_id, conditions) {
+
+        var faturamento_gr = new GlideRecord("x_562912_billing_monthly_production");
+        faturamento_gr.addQuery("sys_id", record_gr_sys_id);
+        faturamento_gr.addEncodedQuery(conditions);
+        faturamento_gr.setLimit(1);
+        faturamento_gr.query();
+
+        return faturamento_gr.hasNext();
+
+    },
+
+    _getColumnName: function (table, label) {
+
+        var table_gr = new GlideRecord("sys_dictionary");
+
+        table_gr.addEncodedQuery("name=" + table + "^column_label=" + label);
+
+        table_gr.query();
+
+        if (table_gr.next()) {
+            return table_gr.element.getDisplayValue();
+        }
+
+
+
+    },
+
+    _createBillingNew: function (producs_contract_gr, agg_values_by_product, ano_competencia, mes_competencia) {
+
+
+        var value = this._calculateProductValueNew(producs_contract_gr, agg_values_by_product);
+
+        gs.info("Criar Billing " + producs_contract_gr.u_produto.getDisplayValue() + " valor " + value);
+
+        var equipamentos = agg_values_by_product["equipamentos"];
+        var volume = agg_values_by_product["volume"];
+        var total_bancos = agg_values_by_product["total_bancos"];
+
+
+        var billing_gr = new GlideRecord("x_562912_billing_billing");
+        billing_gr.initialize();
+
+        billing_gr.setValue("ano_competencia", ano_competencia)
+        billing_gr.setValue("mes_competencia", mes_competencia)
+        billing_gr.setValue("u_produto_no_contrato", producs_contract_gr.getUniqueValue());
+        billing_gr.setValue("volume_aferido", volume);
+        billing_gr.setValue("equipamentos_contabilizados", equipamentos);
+        billing_gr.setValue("total_de_bancos_cobrados", total_bancos);
+        billing_gr.valor_total.setValue("BRL" + ";" + value);
+
+        var billing_id = billing_gr.insert();
+
+
+        if (billing_id) {
+            return billing_id;
+        }
+
+
+    },
+
+    _calculateProductValueNew: function (producs_contract_gr, agg_values_by_product) {
+
+        var value = 0; // Valor total da cobrança deste produto
+
+        var tipo_cobranca = producs_contract_gr.tipo_de_franquia.toString();
+
+        var valor_produto = parseFloat(producs_contract_gr.valor.toString());
+
+        var valor_franquia = parseFloat(producs_contract_gr.valor_franquia.toString());
+
+        if (tipo_cobranca == "volume") {
+
+            var volume = agg_values_by_product["volume"];
+
+            var franquia_volume = producs_contract_gr.franquia_volume.toString();
+
+
+            if (!gs.nil(franquia_volume) && franquia_volume > 0) {
+
+
+                if (volume > franquia_volume) {
+                    var total_excedente = volume - franquia_volume;
+                    var valor_excedente = total_excedente * valor_produto;
+                    value = valor_excedente + valor_franquia;
+
+                    gs.info("Produto no Contrato - cobrar franquia " + producs_contract_gr.u_produto.getDisplayValue() + " Franquia de volume " + franquia_volume + " volume " + volume + " valor do produto " + valor_produto);
+                } else {
+                    value = valor_franquia;
+                }
+
+                gs.info("Produto no Contrato - cobrar franquia " + producs_contract_gr.u_produto.getDisplayValue() + " valor total " + value);
+
+
+            } else {
+                value = agg_values_by_product["volume"] * valor_produto;
+
+            }
+
+
+        } else {
+
+            var equipamentos = agg_values_by_product["equipamentos"];
+
+            var franquia_equipamentos = producs_contract_gr.franquia_equipamentos.toString();
+
+            franquia_equipamentos = parseInt(franquia_equipamentos);
+
+            if (!gs.nil(franquia_equipamentos) && franquia_equipamentos > 0) {
+
+                if (equipamentos > franquia_equipamentos) {
+                    var total_excedente = equipamentos - franquia_equipamentos;
+                    var valor_excedente = total_excedente * valor_produto;
+                    value = valor_excedente + valor_franquia;
+                } else {
+                    value = valor_franquia;
+                }
+
+            } else {
+
+                value = equipamentos * valor_produto;
+
+            }
+
+        }
+
+        gs.info("Produto no Contrato " + producs_contract_gr.u_produto.getDisplayValue() + " valor " + value);
+
+        return value;
+
+    },
+
+    _createBilling: function (values,) {
+
+        var products_billing_created = [];
+
+        var mes_competencia = values["mes_competencia"];
+        var ano_competencia = values["ano_competencia"];
+
+        var produtos = values["produtos"];
+
+        //return;
+        for (var i in produtos) {
+            var value = this._calculateProductValue(i, produtos[i]);
+
+            var billing_gr = new GlideRecord("x_562912_billing_billing");
+            billing_gr.initialize();
+
+            var currencyCode = billing_gr.valor_total.getCurrencyCode();
+            billing_gr.setValue("ano_competencia", ano_competencia)
+            billing_gr.setValue("mes_competencia", mes_competencia)
+            billing_gr.setValue("u_produto_no_contrato", i);
+            billing_gr.setValue("volume_aferido", produtos[i]["volume"]);
+            billing_gr.setValue("equipamentos_contabilizados", produtos[i]["equipamentos"]);
+            billing_gr.setValue("total_de_bancos_cobrados", produtos[i]["bancos_contabilizados"]);
+            //billing_gr.setValue("valor_total", parseFloat(value));
+            billing_gr.setValue("valor_total_v2", parseFloat(value));
+            //valor_total_v2
+            billing_gr.valor_total.setValue("BRL" + ";" + value);
+
+            var billing_id = billing_gr.insert();
+
+            products_billing_created.push(billing_id);
+
+        }
+
+        return products_billing_created;
+
+    },
+
+    _getBillingProductInfo: function (product_contract_sys_id) {
+
+        var product_contract_gr = new GlideRecord("x_562912_billing_product_in_the_contract");
+
+        var response = {};
+
+        if (product_contract_gr.get(product_contract_sys_id)) {
+            response.tipo_de_franquia = product_contract_gr.tipo_de_franquia.getDisplayValue();
+            response.valor = product_contract_gr.valor.toString();
+            response.franquia_volume = product_contract_gr.franquia_volume.toString();
+            response.franquia_equipamentos = product_contract_gr.franquia_equipamentos.toString();
+            response.valor_franquia = product_contract_gr.valor_franquia.toString();
+        }
+
+        return response;
+
+    },
+
+    _calculateProductValue: function (product_contract, billing_info_values) {
+
+        //        gs.info("Contrato no Produto " + product_contract +  " valores " + JSON.stringify(billing_info_values)) ;
+
+        var billing_info = this._getBillingProductInfo(product_contract);
+
+        var value = 0;
+
+        var franquia_volume = billing_info["franquia_volume"];
+
+        franquia_volume = franquia_volume.replace(",", "");
+
+        franquia_volume = parseInt(franquia_volume);
+
+        var valor_franquia = billing_info["valor_franquia"];
+
+        valor_franquia = parseInt(valor_franquia.replace(",", "."));
+
+        var valor_cobrado = billing_info["valor"];
+
+
+        if (billing_info.tipo_de_franquia.toString().toLowerCase() == "volume") {
+
+            var volume = billing_info_values["volume"];
+
+
+
+            if (!gs.nil(franquia_volume) && franquia_volume > 0) {
+
+                if (volume > franquia_volume) {
+                    var total_excedente = volume - franquia_volume;
+                    var valor_excedente = total_excedente * valor_cobrado;
+                    value = valor_excedente + valor_franquia;
+
+                } else {
+                    value = valor_franquia;
+                }
+
+            } else {
+
+                value = billing_info_values["volume"] * valor_cobrado;
+
+            }
+
+
+        } else {
+
+            var equipamentos = billing_info_values["equipamentos"];
+
+            var franquia_equipamentos = billing_info["franquia_equipamentos"].toString().replace(",", "");
+
+            franquia_equipamentos = parseInt(franquia_equipamentos);
+
+            if (!gs.nil(franquia_equipamentos) && franquia_equipamentos > 0) {
+
+                if (equipamentos > franquia_equipamentos) {
+                    var total_excedente = billing_info_values["equipamentos"] - franquia_equipamentos;
+                    var valor_excedente = total_excedente * valor_cobrado;
+                    value = valor_excedente + valor_franquia;
+                } else {
+                    value = valor_franquia;
+                }
+
+            } else {
+                var valor_cobrado = billing_info["valor"];
+
+                valor_cobrado = valor_cobrado.replace(",", "");
+
+                value = equipamentos * valor_cobrado;
+
+            }
+
+        }
+
+        var number = Number(value.toString().replace(/[^0-9.-]+/g, ""));
+
+
+        return number;
+
+    },
+
+
+    type: 'CustomerBillingUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 14:29:35</sys_created_on>
+        <sys_id>e2ab1edb83d20210260cee30ceaad392</sys_id>
+        <sys_mod_count>390</sys_mod_count>
+        <sys_name>CustomerBillingUtils</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_script_include_e2ab1edb83d20210260cee30ceaad392</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 00:25:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

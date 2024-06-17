@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>7047b4da83fac210260cee30ceaad32d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_product_in_the_contract">
+    <x_562912_billing_product_in_the_contract action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <franquia_equipamentos/>
+        <franquia_volume>0</franquia_volume>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 01:08:07</sys_created_on>
+        <sys_id>7047b4da83fac210260cee30ceaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 01:08:07</sys_updated_on>
+        <table_name>x_562912_billing_monthly_production</table_name>
+        <tipo_de_franquia>volume</tipo_de_franquia>
+        <u_conditions table="x_562912_billing_monthly_production">u_360_tracking=Sim^EQ<item endquery="false" field="u_360_tracking" goto="false" newquery="false" operator="=" or="false" value="Sim"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </u_conditions>
+        <u_contrato display_value="COPIMAQ DE CAMPINAS COMERCIO DE MAQUINAS LTDA">96e5305a83fac210260cee30ceaad396</u_contrato>
+        <u_description>Padrão</u_description>
+        <u_display_name>360 TRACKING Padrão</u_display_name>
+        <u_produto display_value="360 TRACKING">86d897e783920210260cee30ceaad38c</u_produto>
+        <valor>0.001962</valor>
+        <valor_franquia>0</valor_franquia>
+    </x_562912_billing_product_in_the_contract>
+    <fx_price action="delete_multiple" query="id=7047b4da83fac210260cee30ceaad32d"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="BRL">BRL</currency>
+        <field>valor_franquia</field>
+        <id>7047b4da83fac210260cee30ceaad32d</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 01:08:07</sys_created_on>
+        <sys_id>3847b4da83fac210260cee30ceaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 01:08:07</sys_updated_on>
+        <table>x_562912_billing_product_in_the_contract</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 03:03:54</sys_created_on>
+        <sys_id>e8c15d1283bec210260cee30ceaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>360 TRACKING Padrão</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_e8c15d1283bec210260cee30ceaad3b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 03:03:54</sys_updated_on>
+        <tablename>x_562912_billing_product_in_the_contract</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1dad3092833ec210260cee30ceaad368</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_product_in_the_contract">
+    <x_562912_billing_product_in_the_contract action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <franquia_equipamentos>500</franquia_equipamentos>
+        <franquia_volume>0</franquia_volume>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 01:36:01</sys_created_on>
+        <sys_id>1dad3092833ec210260cee30ceaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 01:36:01</sys_updated_on>
+        <table_name>x_562912_billing_monthly_production</table_name>
+        <tipo_de_franquia>volume</tipo_de_franquia>
+        <u_conditions table="x_562912_billing_monthly_production">u_360_accounting_volumeISNOTEMPTY^ORu_360_accounting_equipamentoISNOTEMPTY^EQ<item endquery="false" field="u_360_accounting_volume" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="u_360_accounting_equipamento" goto="false" newquery="false" operator="ISNOTEMPTY" or="true" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </u_conditions>
+        <u_contrato display_value="DM SOLUTIONS LTDA">8e8cb852833ec210260cee30ceaad391</u_contrato>
+        <u_description>Por Página</u_description>
+        <u_display_name>360 Accounting Por Página</u_display_name>
+        <u_produto display_value="360 Accounting">cc975b1b831a0210260cee30ceaad34a</u_produto>
+        <valor>0.002235</valor>
+        <valor_franquia>0</valor_franquia>
+    </x_562912_billing_product_in_the_contract>
+    <fx_price action="delete_multiple" query="id=1dad3092833ec210260cee30ceaad368"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="BRL">BRL</currency>
+        <field>valor_franquia</field>
+        <id>1dad3092833ec210260cee30ceaad368</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 01:36:01</sys_created_on>
+        <sys_id>d1ad3092833ec210260cee30ceaad369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 01:36:01</sys_updated_on>
+        <table>x_562912_billing_product_in_the_contract</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 03:03:53</sys_created_on>
+        <sys_id>6cc15d1283bec210260cee30ceaad379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>360 Accounting Por Página</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_6cc15d1283bec210260cee30ceaad379</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 03:03:53</sys_updated_on>
+        <tablename>x_562912_billing_product_in_the_contract</tablename>
+    </sys_metadata_link>
+</record_update>
