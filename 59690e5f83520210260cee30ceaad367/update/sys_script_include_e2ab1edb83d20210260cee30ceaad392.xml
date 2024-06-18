@@ -51,11 +51,21 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getAttachmentInRecord: function (current) {
+    _getAttachmentInRecord: function (current, field_name) {
 
-        var attachment_id = current.getValue("data_sheet");
+        var attachment_field_name = "data_sheet";
 
-        if (gs.nil(attachment_id) || attachment_id == "" || current.data_sheet.nil()) {
+        if (!gs.nil(field_name) && field_name != "") {
+            attachment_field_name = field_name;
+        }
+
+        // gs.info("Field Name " + field_name + " attachment field  " + attachment_field_name );
+
+        var attachment_id = current.getValue(attachment_field_name);
+
+        //gs.info("Attachment ID " + current.getValue(attachment_field_name));
+
+        if (gs.nil(attachment_id) || attachment_id == "" || current[attachment_field_name].nil()) {
 
             this.RESPONSE.status = "error";
             this.RESPONSE.message = "Anexo não encontrado no registro de carramento de dados";
@@ -143,7 +153,7 @@ CustomerBillingUtils.prototype = {
 
     processData: function (current) {
 
-      
+
         var attachment_gr = this._getAttachmentInRecord(current);
 
         if (gs.nil(attachment_gr) || attachment_gr == "" || !attachment_gr) {
@@ -377,7 +387,7 @@ CustomerBillingUtils.prototype = {
 
         while (partners_gr.next()) {
 
-            gs.info("Parceiro validado " + partners_gr.getValue("u_name"));
+           // gs.info("Parceiro validado " + partners_gr.getValue("u_name"));
 
             var mes_competencia = current.getValue("mes_competencia");
             var ano_competencia = current.getValue("ano_competencia");
@@ -658,7 +668,6 @@ CustomerBillingUtils.prototype = {
 
         var value = this._calculateProductValueNew(producs_contract_gr, agg_values_by_product);
 
-        gs.info("Criar Billing " + producs_contract_gr.u_produto.getDisplayValue() + " valor " + value);
 
         var equipamentos = agg_values_by_product["equipamentos"];
         var volume = agg_values_by_product["volume"];
@@ -711,12 +720,10 @@ CustomerBillingUtils.prototype = {
                     var valor_excedente = total_excedente * valor_produto;
                     value = valor_excedente + valor_franquia;
 
-                    gs.info("Produto no Contrato - cobrar franquia " + producs_contract_gr.u_produto.getDisplayValue() + " Franquia de volume " + franquia_volume + " volume " + volume + " valor do produto " + valor_produto);
                 } else {
                     value = valor_franquia;
                 }
 
-                gs.info("Produto no Contrato - cobrar franquia " + producs_contract_gr.u_produto.getDisplayValue() + " valor total " + value);
 
 
             } else {
@@ -750,8 +757,6 @@ CustomerBillingUtils.prototype = {
             }
 
         }
-
-        gs.info("Produto no Contrato " + producs_contract_gr.u_produto.getDisplayValue() + " valor " + value);
 
         return value;
 
@@ -877,6 +882,7 @@ CustomerBillingUtils.prototype = {
                 }
 
             } else {
+
                 var valor_cobrado = billing_info["valor"];
 
                 valor_cobrado = valor_cobrado.replace(",", "");
@@ -894,6 +900,243 @@ CustomerBillingUtils.prototype = {
 
     },
 
+    validateBillingSpreadSheet: function (current /* GlideRecord Contrato */) {
+
+        var mes_competencia = current.getValue("mes_competencia");
+        var ano_competencia = current.getValue("ano_competencia");
+
+        var descritivo_obj = this._getDescritivoObj(current);
+
+        var validation_obj = {};
+
+        var validations_gr = new GlideRecord("x_562912_billing_database_registration_validation");
+        //validations_gr.setLimit(1);
+        validations_gr.addQuery("u_contract", current.getUniqueValue());
+        validations_gr.query();
+
+        while (validations_gr.next()) {
+            // gs.info("Display validation " + validations_gr.u_product_in_contract.u_produto.getDisplayValue() + "-" + validations_gr.u_product_in_contract.u_description.getDisplayValue());
+            var producs_contract_gr = validations_gr.u_product_in_contract.getRefRecord();
+            var product_billing_arr = this._getBanksOfValidation(producs_contract_gr, ano_competencia, mes_competencia);
+            validation_obj[validations_gr.u_product_in_contract.u_produto.getDisplayValue() + "-" + validations_gr.u_product_in_contract.u_description.getDisplayValue()] = {
+                u_product_name_on_billing: validations_gr.getValue("u_product_name_on_billing"),
+                banks_arr: product_billing_arr,
+            };
+        }
+
+        var response = this._compareObjectsOfBilling(descritivo_obj, validation_obj, ano_competencia, mes_competencia);
+
+        return response;
+
+
+
+    },
+
+    _compareObjectsOfBilling(descritivo_obj, validation_obj, ano_competencia, mes_competencia) {
+
+        // gs.info("Executando comparação " + JSON.stringify(validation_obj));
+
+        var now = new GlideDateTime();
+
+        var response = {
+            status: "success",
+            message: "",
+            csv_format: ""
+        }
+
+        var validation_log_creation =  "Validação do período " + mes_competencia + "/" + ano_competencia + " realizada em: " + now.getDisplayValue() + "\n\n";
+
+        response.message += validation_log_creation;
+
+        for (var i in validation_obj) {
+
+           
+            var banks_arr = validation_obj[i]["banks_arr"];
+
+            var descritivo_banks_arr = descritivo_obj[validation_obj[i]["u_product_name_on_billing"]];
+
+            var produto = validation_obj[i]["u_product_name_on_billing"];
+
+           // gs.info("Banks Arr " + JSON.stringify(banks_arr));
+
+           // gs.info("Descritivo Arr " + JSON.stringify(descritivo_banks_arr));
+
+
+            for (var j = 0; j < banks_arr.length; j++) {
+
+                var bank_to_check = banks_arr[j];                
+                
+                var descritivo_bank = descritivo_banks_arr.filter(function (element) {
+                    return bank_to_check["banco"] == element["banco"];
+                    });
+                    
+                    if (descritivo_bank.length == 0) {
+                        response.status = "error";
+                        response.message += "Banco: " + bank_to_check["banco"] + " não cobrado no produto: " + produto + " com volumetria de: " + bank_to_check["volumetria"] + "\n";
+                        response.csv_format += bank_to_check["banco"] + ";" + produto + "\n";
+                        continue;
+                        }
+                        
+                var bank_to_check_volumetria = parseInt(bank_to_check["volumetria"]) || 0;
+                var descritivo_bank_volumetria = parseInt(descritivo_bank[0]["volumetria"]) || 0;
+
+                //gs.info("Checando diferença " + bank_to_check["banco"] + "volumetria descritivo " + descritivo_bank_volumetria +  " voluetria " + bank_to_check_volumetria);
+
+
+                if (descritivo_bank_volumetria != bank_to_check_volumetria) {
+
+                    var diferenca = descritivo_bank_volumetria > bank_to_check_volumetria ?  "MAIOR" : "MENOR";
+
+                    var diferenca_toal = descritivo_bank_volumetria - bank_to_check_volumetria;
+
+                    //gs.info("Checando diferença " + bank_to_check["banco"] + "volumetria descritivo " + descritivo_bank_volumetria +  " volumetria " + bank_to_check_volumetria + " diferenca " + diferenca);
+
+                    response.status = "error";
+                    response.message += "Banco: " + bank_to_check["banco"] + " com volumetria " + diferenca + " no total de: " + diferenca_toal + " no produto: " + produto +"\n";
+                    response.csv_format += bank_to_check["banco"] + ";" + produto + "\n";
+
+                }
+
+            }
+
+
+        }
+
+        return response;
+
+    },
+
+    _getBanksOfValidation: function (producs_contract_gr, ano_competencia, mes_competencia) {
+
+        var product_billing_arr = [];
+
+        var conditions = producs_contract_gr.u_conditions.toString();
+
+        var column_volume = "";
+
+        var tipo_cobranca = producs_contract_gr.tipo_de_franquia.toString();
+
+        if (tipo_cobranca == "equipamentos") {
+            column_volume = producs_contract_gr.u_produto.coluna_origem_cobranca_equipamentos.element.toString();
+        } else {
+            column_volume = producs_contract_gr.u_produto.coluna_origem_cobranca_volume.element.toString();
+        }
+
+
+        var monthly_production_gr = new GlideRecord("x_562912_billing_monthly_production");
+        monthly_production_gr.addEncodedQuery(conditions);
+        monthly_production_gr.addQuery("ano_competencia", ano_competencia);
+        monthly_production_gr.addQuery("mes_competencia", mes_competencia);
+        monthly_production_gr.addQuery("banco.parceiro=" + producs_contract_gr.u_contrato.parceiro.toString());
+        monthly_production_gr.query();
+
+        while (monthly_production_gr.next()) {
+            product_billing_arr.push({
+                banco: monthly_production_gr.banco.getDisplayValue(),
+                volumetria: monthly_production_gr.getValue(column_volume),
+            });
+
+        }
+
+        return product_billing_arr;
+
+
+
+
+    },
+
+    _getDescritivoObj: function () {
+
+        var attachment_record = this._getAttachmentInRecord(current, "u_billing_spreadsheet");
+
+        if (!attachment_record) {
+            this.RESPONSE.status = "error";
+            this.RESPONSE, message = "Anexo não encontrado!";
+            return this.RESPONSE;
+        }
+
+        var parser = new sn_impex.GlideExcelParser();
+
+        var attachment = new GlideSysAttachment();
+
+        var attachmentStream = attachment.getContentStream(attachment_record.getUniqueValue());
+
+        // Set the source to be parsed
+        parser.setSource(attachmentStream);
+
+        // Get the worksheet names to be parsed in the Excel document
+        var list_sheet_name = parser.getSheetNames();
+
+
+        if (list_sheet_name.length == 0) {
+            this.RESPONSE.status = "error";
+            this.RESPONSE.message = "Formato inválido!";
+            return this.RESPONSE;
+        }
+
+        var descritivo_obj = {};
+
+        // Iterate over each worksheet in the Excel workbook
+        for (var i = 0; i < list_sheet_name.length; i++) {
+
+            // Set the worksheet name to be parsed
+            parser.setSheetName(list_sheet_name[i]);
+
+            parser.setHeaderRowNumber(2);
+
+            if (parser.parse()) {
+
+                var headers = parser.getColumnHeaders();
+
+                //gs.info("Headers encontrados " + headers.join());
+
+                //var valid_format = this.checkSheetFormat(headers); // implementar validação de formato para este
+
+                // if (!valid_format) {
+
+                //     return this.RESPONSE;
+                // }
+
+                while (parser.next()) {
+
+                    var row = parser.getRow();
+                    var mes_competencia = current.getValue("mes_competencia");
+                    var ano_competencia = current.getValue("ano_competencia");
+
+                    var banco = row["BANCO"];
+                    var descricao_produto = row["DESCRIÇÃO PRODUTO"];
+                    var volumetria = row["VOLUMETRIA"];
+
+                    if (banco == null || gs.nil(banco) || banco == "") {
+                        continue;
+                    }
+
+                    if (!descritivo_obj[descricao_produto]) {
+                        descritivo_obj[descricao_produto] = [];
+                        descritivo_obj[descricao_produto].push({
+                            banco: banco,
+                            volumetria: volumetria
+                        });
+                    } else {
+                        descritivo_obj[descricao_produto].push({
+                            banco: banco,
+                            volumetria: volumetria
+                        });
+                    }
+
+                }
+
+
+            } else {
+                this.RESPONSE.status = "error";
+                this.RESPONSE.message = "Formato inválido!";
+            }
+        }
+
+        return descritivo_obj;
+
+    },
+
 
     type: 'CustomerBillingUtils'
 };]]></script>
@@ -901,13 +1144,13 @@ CustomerBillingUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 14:29:35</sys_created_on>
         <sys_id>e2ab1edb83d20210260cee30ceaad392</sys_id>
-        <sys_mod_count>390</sys_mod_count>
+        <sys_mod_count>488</sys_mod_count>
         <sys_name>CustomerBillingUtils</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_script_include_e2ab1edb83d20210260cee30ceaad392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-17 00:25:29</sys_updated_on>
+        <sys_updated_on>2024-06-18 14:42:00</sys_updated_on>
     </sys_script_include>
 </record_update>

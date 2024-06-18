@@ -5,6 +5,8 @@
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_contracts">
     <x_562912_billing_contracts action="INSERT_OR_UPDATE">
         <active>true</active>
+        <ano_competencia/>
+        <mes_competencia/>
         <name>XEROGRAFIA</name>
         <number>03856</number>
         <parceiro display_value="XEROGRAFIA">756ff8ad83320210260cee30ceaad33a</parceiro>
@@ -14,6 +16,9 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mariana</sys_updated_by>
         <sys_updated_on>2024-06-14 17:49:17</sys_updated_on>
+        <u_billing_spreadsheet/>
+        <u_validate_registrations/>
+        <validation_log/>
     </x_562912_billing_contracts>
 </record_update>
 ]]></payload>
@@ -21,14 +26,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-16 13:17:32</sys_created_on>
         <sys_id>b794d28683be8210260cee30ceaad3f1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>XEROGRAFIA</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_metadata_link_b794d28683be8210260cee30ceaad3f1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-16 13:17:32</sys_updated_on>
+        <sys_updated_on>2024-06-18 14:41:17</sys_updated_on>
         <tablename>x_562912_billing_contracts</tablename>
     </sys_metadata_link>
 </record_update>

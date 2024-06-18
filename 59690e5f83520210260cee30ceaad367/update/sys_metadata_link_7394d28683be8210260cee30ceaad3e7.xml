@@ -5,6 +5,8 @@
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_contracts">
     <x_562912_billing_contracts action="INSERT_OR_UPDATE">
         <active>true</active>
+        <ano_competencia/>
+        <mes_competencia/>
         <name>PROGRESSO EQUIPAMENTOS</name>
         <number>94922</number>
         <parceiro display_value="PROGRESSO EQUIPAMENTOS">81c29da583b20210260cee30ceaad312</parceiro>
@@ -14,6 +16,9 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mariana</sys_updated_by>
         <sys_updated_on>2024-06-14 19:15:27</sys_updated_on>
+        <u_billing_spreadsheet/>
+        <u_validate_registrations/>
+        <validation_log/>
     </x_562912_billing_contracts>
 </record_update>
 ]]></payload>
@@ -21,14 +26,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-16 13:17:32</sys_created_on>
         <sys_id>7394d28683be8210260cee30ceaad3e7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>PROGRESSO EQUIPAMENTOS</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_metadata_link_7394d28683be8210260cee30ceaad3e7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-16 13:17:32</sys_updated_on>
+        <sys_updated_on>2024-06-18 14:41:17</sys_updated_on>
         <tablename>x_562912_billing_contracts</tablename>
     </sys_metadata_link>
 </record_update>

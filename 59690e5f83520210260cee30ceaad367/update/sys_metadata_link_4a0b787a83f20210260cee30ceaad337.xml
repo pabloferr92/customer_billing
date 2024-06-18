@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ba6a8ee683b64610260cee30ceaad31f</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_database_registration_validation">
+    <x_562912_billing_database_registration_validation action="INSERT_OR_UPDATE">
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-18 01:50:45</sys_created_on>
+        <sys_id>ba6a8ee683b64610260cee30ceaad31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-18 01:50:45</sys_updated_on>
+        <u_contract display_value="SINALL">50b3c9e183720210260cee30ceaad3ff</u_contract>
+        <u_product_in_contract display_value="360 Accounting - 360 ACCOUNTING - VOLUME POR EQUIPAMENTO">86c349e183720210260cee30ceaad3ed</u_product_in_contract>
+        <u_product_name_on_billing>Licença de Uso NddPrint 360 - Accounting equipamento</u_product_name_on_billing>
+    </x_562912_billing_database_registration_validation>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-18 14:41:33</sys_created_on>
+        <sys_id>4a0b787a83f20210260cee30ceaad337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2024-06-17 22:50:45</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_4a0b787a83f20210260cee30ceaad337</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-18 14:41:33</sys_updated_on>
+        <tablename>x_562912_billing_database_registration_validation</tablename>
+    </sys_metadata_link>
+</record_update>

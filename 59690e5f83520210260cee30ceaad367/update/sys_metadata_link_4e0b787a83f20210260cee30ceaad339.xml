@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>bfcfd1e283f24610260cee30ceaad321</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_database_registration_validation">
+    <x_562912_billing_database_registration_validation action="INSERT_OR_UPDATE">
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 22:44:06</sys_created_on>
+        <sys_id>bfcfd1e283f24610260cee30ceaad321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-17 22:44:06</sys_updated_on>
+        <u_contract display_value="FMSDI">746e80b6836e0210260cee30ceaad3f9</u_contract>
+        <u_product_in_contract display_value="MPS Por Volume">edbfccf6836e0210260cee30ceaad3d3</u_product_in_contract>
+        <u_product_name_on_billing>Licença de Uso MPS  Professional COM accounting</u_product_name_on_billing>
+    </x_562912_billing_database_registration_validation>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-18 14:41:33</sys_created_on>
+        <sys_id>4e0b787a83f20210260cee30ceaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2024-06-17 19:44:06</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_4e0b787a83f20210260cee30ceaad339</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-18 14:41:33</sys_updated_on>
+        <tablename>x_562912_billing_database_registration_validation</tablename>
+    </sys_metadata_link>
+</record_update>

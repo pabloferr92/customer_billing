@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
     <sys_report_users_groups action="INSERT_OR_UPDATE">
         <group_id display_value="Validação Descritivos - Adminitradores" name="Validação Descritivos - Adminitradores">92fc455a837ec210260cee30ceaad352</group_id>
-        <report_id display_value="Faturamento Por Provedor">9a4685de833ec210260cee30ceaad3f9</report_id>
+        <report_id display_value="Top 10 Faturamento Por Provedor">9a4685de833ec210260cee30ceaad3f9</report_id>
         <sys_class_name>sys_report_users_groups</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-17 02:44:36</sys_created_on>

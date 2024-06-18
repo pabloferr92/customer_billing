@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
     <pa_tabs action="INSERT_OR_UPDATE">
         <canvas_page display_value="New Tab 2">0df94916837ec210260cee30ceaad328</canvas_page>
-        <name>85f94916837ec210260cee30ceaad32bAnálise Maiores Produções</name>
-        <page display_value="Análise Maiores Produções">c9f94916837ec210260cee30ceaad327</page>
+        <name>85f94916837ec210260cee30ceaad32bProdução Mensal / Provedor</name>
+        <page display_value="Produção Mensal / Provedor">c9f94916837ec210260cee30ceaad327</page>
         <sys_class_name>pa_tabs</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-17 02:29:48</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>85f94916837ec210260cee30ceaad32b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>85f94916837ec210260cee30ceaad32bAnálise Maiores Produções</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>85f94916837ec210260cee30ceaad32bProdução Mensal / Provedor</sys_name>
         <sys_overrides/>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>pa_tabs_85f94916837ec210260cee30ceaad32b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-17 02:30:13</sys_updated_on>
+        <sys_updated_on>2024-06-17 11:27:07</sys_updated_on>
     </pa_tabs>
 </record_update>

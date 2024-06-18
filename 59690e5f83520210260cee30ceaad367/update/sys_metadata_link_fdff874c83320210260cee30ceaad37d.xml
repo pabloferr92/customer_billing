@@ -5,6 +5,8 @@
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_contracts">
     <x_562912_billing_contracts action="INSERT_OR_UPDATE">
         <active>true</active>
+        <ano_competencia/>
+        <mes_competencia/>
         <name>ARKLOK - EQUIPAMENTOS DE INFORMATICA LTDA</name>
         <number>88561</number>
         <parceiro display_value="ARKLOK - EQUIPAMENTOS DE INFORMATICA LTDA">d62092db83920210260cee30ceaad338</parceiro>
@@ -14,6 +16,9 @@
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-26 15:20:18</sys_updated_on>
+        <u_billing_spreadsheet/>
+        <u_validate_registrations/>
+        <validation_log/>
     </x_562912_billing_contracts>
 </record_update>
 ]]></payload>
@@ -21,14 +26,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-10 12:28:58</sys_created_on>
         <sys_id>fdff874c83320210260cee30ceaad37d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>ARKLOK - EQUIPAMENTOS DE INFORMATICA LTDA</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_metadata_link_fdff874c83320210260cee30ceaad37d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-10 12:28:58</sys_updated_on>
+        <sys_updated_on>2024-06-18 14:41:17</sys_updated_on>
         <tablename>x_562912_billing_contracts</tablename>
     </sys_metadata_link>
 </record_update>

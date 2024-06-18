@@ -26,8 +26,6 @@
         return;
     }
 
-	console.log("Attachment value onLoad " + attachment_value)
-
     var current_sys_id = g_form.getUniqueValue();
 
     g_form.clearMessages();
@@ -38,8 +36,6 @@
     ajax.getXMLAnswer(function(response) {
 
         if (response != undefined && response != "") {
-
-            console.log("Resposta ajax " + response);
 
             var response_obj = JSON.parse(response);
 
@@ -62,7 +58,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>10e626428332c210260cee30ceaad3ef</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Check Sheet Format</sys_name>
         <sys_overrides/>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
@@ -70,7 +66,7 @@
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_script_client_10e626428332c210260cee30ceaad3ef</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-16 16:13:16</sys_updated_on>
+        <sys_updated_on>2024-06-18 14:43:21</sys_updated_on>
         <table>x_562912_billing_load_data</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

@@ -10,17 +10,17 @@
         <sys_created_by>mariana</sys_created_by>
         <sys_created_on>2024-06-14 18:04:57</sys_created_on>
         <sys_id>b3f289a183720210260cee30ceaad391</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>mariana</sys_updated_by>
-        <sys_updated_on>2024-06-14 18:04:57</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-18 13:46:43</sys_updated_on>
         <table_name>x_562912_billing_monthly_production</table_name>
         <tipo_de_franquia>volume</tipo_de_franquia>
         <u_conditions table="x_562912_billing_monthly_production">u_360_policy=Sim^EQ<item endquery="false" field="u_360_policy" goto="false" newquery="false" operator="=" or="false" value="Sim"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </u_conditions>
         <u_contrato display_value="WORKPRINT">f00201a183720210260cee30ceaad31b</u_contrato>
-        <u_description>POR VOLUME </u_description>
-        <u_display_name>360 POLICY POR VOLUME </u_display_name>
+        <u_description>POR VOLUME</u_description>
+        <u_display_name>360 POLICY POR VOLUME</u_display_name>
         <u_produto display_value="360 POLICY">aec897e783920210260cee30ceaad3a7</u_produto>
         <valor>0.0016</valor>
         <valor_franquia>0</valor_franquia>
@@ -49,14 +49,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-16 13:17:45</sys_created_on>
         <sys_id>8ba4568683be8210260cee30ceaad37f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>360 POLICY POR VOLUME </sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>360 POLICY POR VOLUME</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_metadata_link_8ba4568683be8210260cee30ceaad37f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-16 13:17:45</sys_updated_on>
+        <sys_updated_on>2024-06-18 13:52:54</sys_updated_on>
         <tablename>x_562912_billing_product_in_the_contract</tablename>
     </sys_metadata_link>
 </record_update>
