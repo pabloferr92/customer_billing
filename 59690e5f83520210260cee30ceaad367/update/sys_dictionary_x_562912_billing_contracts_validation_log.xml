@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-18 01:24:43</sys_created_on>
-        <sys_id>6b8402ee83764610260cee30ceaad338</sys_id>
         <sys_name>Validation Log</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_product_name_on_billing" label="Nome do produto no Descritivo" language="pb" table="x_562912_billing_database_registration_validation">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_product_name_on_billing</element>
+            <help/>
+            <hint>Insira o nome do produto da planilha de faturamento.</hint>
+            <label>Nome do produto no Descritivo</label>
+            <language>pb</language>
+            <name>x_562912_billing_database_registration_validation</name>
+            <plural>Nome do produto no Descritivos</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-06-24 02:27:36</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Nome do produto no Descritivo</sys_name>
+            <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+            <sys_update_name>sys_documentation_x_562912_billing_database_registration_validation_u_product_name_on_billing_pb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-06-24 02:27:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

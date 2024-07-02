@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6f6ed2df83d20210260cee30ceaad371" label="Produção Mensal" max_length="40" name="x_562912_billing_monthly_production" type="collection">
+        <element label="360 ACCOUNTING - VOLUME" max_length="40" name="u_360_accounting_volume" type="integer"/>
+        <element choice="3" choice_field="mes_competencia" choice_table="x_562912_billing_billing" label="Mês Competência" max_length="40" name="mes_competencia" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" choice_field="ano_competencia" choice_table="x_562912_billing_billing" label="Ano Competência" max_length="4" name="ano_competencia" type="choice">
+            <choice/>
+        </element>
+        <element label="MPS - VOLUME" max_length="40" name="mps_volume" type="integer"/>
+        <element label="360 CHARGEBACK" max_length="40" name="u_360_chargeback" type="string"/>
+        <element label="MPS - EQUIPAMENTO" max_length="40" name="mps_equipamento" type="integer"/>
+        <element label="360 TRACKING" max_length="40" name="u_360_tracking" type="string"/>
+        <element label="360 ACCOUNTING - EQUIPAMENTO" max_length="40" name="u_360_accounting_equipamento" type="integer"/>
+        <element label="360 POLICY" max_length="40" name="u_360_policy" type="string"/>
+        <element label="Banco" max_length="32" name="banco" reference="x_562912_billing_databases" type="reference"/>
+        <element label="360 RELEASER" max_length="40" name="u_360_releaser" type="integer"/>
+        <index name="index">
+            <element name="banco"/>
+        </index>
+    </element>
+</database>

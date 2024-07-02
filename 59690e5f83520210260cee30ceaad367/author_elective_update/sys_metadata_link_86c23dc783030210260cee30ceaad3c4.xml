@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>51599d2483830210260cee30ceaad3ba</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_database_registration_validation">
+    <x_562912_billing_database_registration_validation action="INSERT_OR_UPDATE">
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-06-24 03:23:42</sys_created_on>
+        <sys_id>51599d2483830210260cee30ceaad3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-06-24 03:23:42</sys_updated_on>
+        <u_contract display_value="COPIMAQ DE CAMPINAS COMERCIO DE MAQUINAS LTDA">96e5305a83fac210260cee30ceaad396</u_contract>
+        <u_product_in_contract display_value="360 Accounting - MPS Volume POR VOLUME">f8f5b45a83fac210260cee30ceaad395</u_product_in_contract>
+        <u_product_name_on_billing>Licença de Uso NddPrint 360  - Accounting</u_product_name_on_billing>
+    </x_562912_billing_database_registration_validation>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:39:19</sys_created_on>
+        <sys_id>86c23dc783030210260cee30ceaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2024-06-24 00:23:42</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_86c23dc783030210260cee30ceaad3c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:39:19</sys_updated_on>
+        <tablename>x_562912_billing_database_registration_validation</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Customer Billing">59690e5f83520210260cee30ceaad367</application>
+        <file_path/>
+        <instance_id>bb574c6e1b19c2d077c7cb7b234bcbd0</instance_id>
+        <instance_name>dev254096</instance_name>
+        <name>sys_metadata_link_86c23dc783030210260cee30ceaad3c4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;51599d2483830210260cee30ceaad3ba&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_562912_billing_database_registration_validation"&gt;
+    &lt;x_562912_billing_database_registration_validation action="INSERT_OR_UPDATE"&gt;
+        &lt;sys_created_by&gt;mariana&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-06-24 03:23:42&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;51599d2483830210260cee30ceaad3ba&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;mariana&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-06-24 03:23:42&lt;/sys_updated_on&gt;
+        &lt;u_contract display_value="COPIMAQ DE CAMPINAS COMERCIO DE MAQUINAS LTDA"&gt;96e5305a83fac210260cee30ceaad396&lt;/u_contract&gt;
+        &lt;u_product_in_contract display_value="360 Accounting - MPS Volume POR VOLUME"&gt;f8f5b45a83fac210260cee30ceaad395&lt;/u_product_in_contract&gt;
+        &lt;u_product_name_on_billing&gt;Licença de Uso NddPrint 360  - Accounting&lt;/u_product_name_on_billing&gt;
+    &lt;/x_562912_billing_database_registration_validation&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-01 23:39:19&lt;/sys_created_on&gt;&lt;sys_id&gt;86c23dc783030210260cee30ceaad3c4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Created 2024-06-24 00:23:42&lt;/sys_name&gt;&lt;sys_package display_value="Customer Billing" source="x_562912_billing"&gt;59690e5f83520210260cee30ceaad367&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Customer Billing"&gt;59690e5f83520210260cee30ceaad367&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_86c23dc783030210260cee30ceaad3c4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-01 23:39:19&lt;/sys_updated_on&gt;&lt;tablename&gt;x_562912_billing_database_registration_validation&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-647297807</payload_hash>
+        <record_name>Created 2024-06-24 00:23:42</record_name>
+        <reverted_from/>
+        <source>dd690e5f83520210260cee30ceaad369</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:39:19</sys_created_on>
+        <sys_id>cec23dc783030210260cee30ceaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19070aacb1d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:39:19</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>c2c23dc75503021011c3fd1200d024c5</update_guid>
+        <update_guid_history>c2c23dc75503021011c3fd1200d024c5:-647297807</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:54:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>10c983aeff964b598151e7fefcc92421</sys_id>
+        <sys_metadata>86c23dc783030210260cee30ceaad3c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2024-06-24 00:23:42</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_scope_delete display_value="">0343deef2aa0436380248fb9f4714329</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_86c23dc783030210260cee30ceaad3c4</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_86c23dc783030210260cee30ceaad3c4">cec23dc783030210260cee30ceaad3c5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:54:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

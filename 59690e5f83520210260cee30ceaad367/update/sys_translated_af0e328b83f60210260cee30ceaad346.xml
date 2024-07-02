@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <id/>
+        <label>Processar Prévia</label>
+        <language>pb</language>
+        <name>sys_ui_action</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-19 18:52:29</sys_created_on>
+        <sys_id>af0e328b83f60210260cee30ceaad346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Processar Prévia</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_translated_af0e328b83f60210260cee30ceaad346</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-19 18:52:29</sys_updated_on>
+        <value>Processar Prévia.</value>
+    </sys_translated>
+</record_update>

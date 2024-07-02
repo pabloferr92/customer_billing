@@ -6,13 +6,13 @@
     <x_562912_billing_product_in_the_contract action="INSERT_OR_UPDATE">
         <active>true</active>
         <franquia_equipamentos/>
-        <franquia_volume>150000</franquia_volume>
+        <franquia_volume>250000</franquia_volume>
         <sys_created_by>mariana</sys_created_by>
         <sys_created_on>2024-06-14 18:01:53</sys_created_on>
         <sys_id>2d224d2183720210260cee30ceaad3ec</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>mariana</sys_updated_by>
-        <sys_updated_on>2024-06-14 18:01:53</sys_updated_on>
+        <sys_updated_on>2024-06-24 02:08:27</sys_updated_on>
         <table_name>x_562912_billing_monthly_production</table_name>
         <tipo_de_franquia>volume</tipo_de_franquia>
         <u_conditions/>
@@ -47,14 +47,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-16 13:17:45</sys_created_on>
         <sys_id>7ea4568683be8210260cee30ceaad350</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>MPS POR VOLUME</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_metadata_link_7ea4568683be8210260cee30ceaad350</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-16 13:17:45</sys_updated_on>
+        <sys_updated_on>2024-07-01 23:38:04</sys_updated_on>
         <tablename>x_562912_billing_product_in_the_contract</tablename>
     </sys_metadata_link>
 </record_update>

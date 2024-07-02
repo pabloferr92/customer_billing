@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="548cc61783920210260cee30ceaad3f4" label="Products" max_length="40" name="x_562912_billing_products" type="collection">
+        <element display="true" label="Nome" max_length="80" name="u_nome" type="string"/>
+        <element label="Necessário Habilitar?" max_length="40" name="u_need_to_enable" type="boolean"/>
+        <element label="Coluna Origem Cobrança Equipamentos" max_length="40" name="coluna_origem_cobranca_equipamentos" reference="sys_dictionary" reference_qual="nameSTARTSWITHx_562912_billing_monthly_production^EQ" reference_qual_condition="nameSTARTSWITHx_562912_billing_monthly_production^EQ" type="reference"/>
+        <element label="Valor Habilitar" max_length="40" name="u_value_to_enable" type="string"/>
+        <element label="Coluna Origem Cobrança Volume" max_length="40" name="coluna_origem_cobranca_volume" reference="sys_dictionary" reference_qual="name=x_562912_billing_monthly_production^EQ" reference_qual_condition="name=x_562912_billing_monthly_production^EQ" type="reference"/>
+        <element label="Coluna Habilitar" max_length="40" name="u_coluna_habilitar" type="string"/>
+        <element dependent="table_name" dependent_on_field="table_name" label="Condições" max_length="4000" name="u_conditions" type="conditions" use_dependent_field="true"/>
+        <element label="Table Name" max_length="80" name="table_name" type="table_name"/>
+    </element>
+</database>

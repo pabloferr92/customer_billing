@@ -13,64 +13,132 @@
         <sys_created_by>mariana</sys_created_by>
         <sys_created_on>2024-06-06 01:11:24</sys_created_on>
         <sys_id>746e80b6836e0210260cee30ceaad3f9</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-18 01:37:16</sys_updated_on>
+        <sys_updated_on>2024-06-19 14:13:19</sys_updated_on>
         <u_billing_spreadsheet>df32eda683f24610260cee30ceaad309</u_billing_spreadsheet>
         <u_validate_registrations>yes</u_validate_registrations>
-        <validation_log>Banco: ADELCO não cobrado no produto Licença de Uso NddPrint 360 - Releaser
+        <validation_log>Validação do período junho/2024 realizada em: 2024-06-19 11:13:19
 
-Banco: ADELCO não cobrado no produto Licença de Uso NddPrint 360 - Releaser
-
-Banco: AZEVEDO_E_TRAVASSOS não cobrado no produto Licença de Uso NddPrint 360 - Releaser
-
-Banco: AZEVEDO_E_TRAVASSOS não cobrado no produto Licença de Uso NddPrint 360 - Releaser
-
-Banco: ARMAC não cobrado no produto Licença de Uso NddPrint 360 - Releaser
-
-Banco: ARMAC não cobrado no produto Licença de Uso NddPrint 360 - Releaser
-
-Banco: LUCIO_ENGENHARIA não cobrado no produto Licença de Uso NddPrint 360 - Releaser
-
-Banco: LUCIO_ENGENHARIA não cobrado no produto Licença de Uso NddPrint 360 - Releaser
-
-Banco: LEADER_UP não cobrado no produto Licença de Uso NddPrint 360 - Releaser
-
-Banco: LEADER_UP não cobrado no produto Licença de Uso NddPrint 360 - Releaser
-
-Banco: PLESTIN não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: PLESTIN não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: ATKA não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: ATKA não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: CONSORCIO_LINHA_DOIS não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: CONSORCIO_LINHA_DOIS não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: SCHOTT_BRASIL não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: SCHOTT_BRASIL não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: TO_THE_TOP não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: TO_THE_TOP não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: ODEBRECHT_OEG_MSO não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: ODEBRECHT_OEG_MSO não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: FM_TESTE não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: FM_TESTE não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: ODEBRECHT_OLEO_GAS_MSO não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
-Banco: ODEBRECHT_OLEO_GAS_MSO não cobrado no produto Licença de Uso MPS  Professional COM accounting
-
+Banco: GRUPOMM com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: SETECO com volumetria MENOR no total de: -2 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: FMSDI com volumetria MENOR no total de: -10 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: PIXEON com volumetria MENOR no total de: -2 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: PLESTIN com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: ADELCO não cobrado no produto: Licença de Uso NddPrint 360 - Releaser com volumetria de: 2
+Banco: CARIFLEX com volumetria MAIOR no total de: 15 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: CSC_OFFICE com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: DIAGONAL com volumetria MENOR no total de: -2 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: CAPRICORNIO com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: PANAMBY_EMPRENDIMENTOS com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: NSI_NEGOCIOS com volumetria MAIOR no total de: 3 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: SHT com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: ETAGE com volumetria MENOR no total de: -3 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: REAL_ARENAS com volumetria MENOR no total de: -2 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: MSA com volumetria MENOR no total de: -2 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: SCHOTT com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: UNIVERSAL_AUTOMOTIVE com volumetria MENOR no total de: -5 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: ZONA_OESTE_MAIS com volumetria MENOR no total de: -4 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: MEGAG com volumetria MENOR no total de: -8 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: IGUA com volumetria MENOR no total de: -5 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: SMP_AUTOMOTIVE com volumetria MENOR no total de: -3 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: ROTA_DO_OESTE com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: POLENGHI_INDUSTRIA com volumetria MENOR no total de: -6 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: ROTA_DAS_BANDEIRAS com volumetria MENOR no total de: -2 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: GERRESHEIMER com volumetria MENOR no total de: -14 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: RACIONAL com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: GS_INIMA com volumetria MENOR no total de: -6 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: R3TINCP com volumetria MENOR no total de: -8 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: FABULA_CONFECCOES com volumetria MENOR no total de: -9 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: DVS com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: TV_THATHI com volumetria MENOR no total de: -5 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: AZEVEDO_E_TRAVASSOS não cobrado no produto: Licença de Uso NddPrint 360 - Releaser com volumetria de: 7
+Banco: FORMITEX com volumetria MENOR no total de: -6 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: SPORT_CLUB_CORINTHIANS_PAULISTA com volumetria MENOR no total de: -9 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: ARMAC não cobrado no produto: Licença de Uso NddPrint 360 - Releaser com volumetria de: 8
+Banco: WARDROBE com volumetria MENOR no total de: -7 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: FORESEA com volumetria MENOR no total de: -3 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: IMCD_BRASIL com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: LUCIO_ENGENHARIA não cobrado no produto: Licença de Uso NddPrint 360 - Releaser com volumetria de: 2
+Banco: GRUPO_SBF com volumetria MENOR no total de: -14 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: INMETRICS_SA com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: LEADER_UP não cobrado no produto: Licença de Uso NddPrint 360 - Releaser com volumetria de: 6
+Banco: PARTAGE com volumetria MENOR no total de: -1 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: ODEBRECHT_AMBIENTAL_MAUA com volumetria MENOR no total de: -2 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: ODEBRECHT_OEG_GONPETRO com volumetria MENOR no total de: -9 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: BRK_AMBIENTAL com volumetria MENOR no total de: -80 no produto: Licença de Uso NddPrint 360 - Releaser
+Banco: PLESTIN não cobrado no produto: Licença de Uso MPS  Professional COM accounting com volumetria de: 13810
+Banco: ADELCO com volumetria MENOR no total de: -28271 no produto: Licença de Uso MPS  Professional COM accounting
+Banco: ATKA não cobrado no produto: Licença de Uso MPS  Professional COM accounting com volumetria de: 0
+Banco: CONSORCIO_LINHA_DOIS não cobrado no produto: Licença de Uso MPS  Professional COM accounting com volumetria de: 83868
+Banco: SCHOTT_BRASIL não cobrado no produto: Licença de Uso MPS  Professional COM accounting com volumetria de: 0
+Banco: TO_THE_TOP não cobrado no produto: Licença de Uso MPS  Professional COM accounting com volumetria de: 8979
+Banco: LUCIO_ENGENHARIA com volumetria MENOR no total de: -3321 no produto: Licença de Uso MPS  Professional COM accounting
+Banco: ODEBRECHT_OEG_MSO não cobrado no produto: Licença de Uso MPS  Professional COM accounting com volumetria de: 0
+Banco: ENGEMON com volumetria MENOR no total de: -4204 no produto: Licença de Uso MPS  Professional COM accounting
+Banco: FM_TESTE não cobrado no produto: Licença de Uso MPS  Professional COM accounting com volumetria de: 40336
+Banco: ODEBRECHT_OLEO_GAS_MSO não cobrado no produto: Licença de Uso MPS  Professional COM accounting com volumetria de: 0
 </validation_log>
+        <validation_log_csv>Banco;Erro Identificado;Diferença Identificada;Produto;Volumetria Identificada;Volumetria no Descritivo
+GRUPOMM;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;4;3
+SETECO;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;8;6
+FMSDI;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;10;0
+PIXEON;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;5;3
+PLESTIN;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;4;3
+ADELCO;Não Cadastrado;N/A;Licença de Uso NddPrint 360 - Releaser;2;0
+CARIFLEX;Diferença de Volume;MAIOR;Licença de Uso NddPrint 360 - Releaser;6;21
+CSC_OFFICE;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;2;1
+DIAGONAL;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;12;10
+CAPRICORNIO;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;27;26
+PANAMBY_EMPRENDIMENTOS;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;4;3
+NSI_NEGOCIOS;Diferença de Volume;MAIOR;Licença de Uso NddPrint 360 - Releaser;2;5
+SHT;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;9;8
+ETAGE;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;6;3
+REAL_ARENAS;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;3;1
+MSA;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;15;13
+SCHOTT;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;5;4
+UNIVERSAL_AUTOMOTIVE;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;14;9
+ZONA_OESTE_MAIS;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;20;16
+MEGAG;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;18;10
+IGUA;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;21;16
+SMP_AUTOMOTIVE;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;4;1
+ROTA_DO_OESTE;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;24;23
+POLENGHI_INDUSTRIA;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;64;58
+ROTA_DAS_BANDEIRAS;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;7;5
+GERRESHEIMER;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;45;31
+RACIONAL;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;21;20
+GS_INIMA;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;30;24
+R3TINCP;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;18;10
+FABULA_CONFECCOES;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;25;16
+DVS;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;5;4
+TV_THATHI;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;13;8
+AZEVEDO_E_TRAVASSOS;Não Cadastrado;N/A;Licença de Uso NddPrint 360 - Releaser;7;0
+FORMITEX;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;42;36
+SPORT_CLUB_CORINTHIANS_PAULISTA;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;53;44
+ARMAC;Não Cadastrado;N/A;Licença de Uso NddPrint 360 - Releaser;8;0
+WARDROBE;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;14;7
+FORESEA;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;15;12
+IMCD_BRASIL;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;11;10
+LUCIO_ENGENHARIA;Não Cadastrado;N/A;Licença de Uso NddPrint 360 - Releaser;2;0
+GRUPO_SBF;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;31;17
+INMETRICS_SA;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;3;2
+LEADER_UP;Não Cadastrado;N/A;Licença de Uso NddPrint 360 - Releaser;6;0
+PARTAGE;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;4;3
+ODEBRECHT_AMBIENTAL_MAUA;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;6;4
+ODEBRECHT_OEG_GONPETRO;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;26;17
+BRK_AMBIENTAL;Diferença de Volume;MENOR;Licença de Uso NddPrint 360 - Releaser;286;206
+PLESTIN;Não Cadastrado;N/A;Licença de Uso MPS  Professional COM accounting;13810;0
+ADELCO;Diferença de Volume;MENOR;Licença de Uso MPS  Professional COM accounting;30788;2517
+ATKA;Não Cadastrado;N/A;Licença de Uso MPS  Professional COM accounting;0;0
+CONSORCIO_LINHA_DOIS;Não Cadastrado;N/A;Licença de Uso MPS  Professional COM accounting;83868;0
+SCHOTT_BRASIL;Não Cadastrado;N/A;Licença de Uso MPS  Professional COM accounting;0;0
+TO_THE_TOP;Não Cadastrado;N/A;Licença de Uso MPS  Professional COM accounting;8979;0
+LUCIO_ENGENHARIA;Diferença de Volume;MENOR;Licença de Uso MPS  Professional COM accounting;3321;0
+ODEBRECHT_OEG_MSO;Não Cadastrado;N/A;Licença de Uso MPS  Professional COM accounting;0;0
+ENGEMON;Diferença de Volume;MENOR;Licença de Uso MPS  Professional COM accounting;4204;0
+FM_TESTE;Não Cadastrado;N/A;Licença de Uso MPS  Professional COM accounting;40336;0
+ODEBRECHT_OLEO_GAS_MSO;Não Cadastrado;N/A;Licença de Uso MPS  Professional COM accounting;0;0
+</validation_log_csv>
     </x_562912_billing_contracts>
     <sys_attachment action="INSERT_OR_UPDATE">
         <average_image_color/>
@@ -117,14 +185,14 @@ Banco: ODEBRECHT_OLEO_GAS_MSO não cobrado no produto Licença de Uso MPS  Profe
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-10 12:28:58</sys_created_on>
         <sys_id>3dff874c83320210260cee30ceaad37b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>FMSDI</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_metadata_link_3dff874c83320210260cee30ceaad37b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-18 14:41:17</sys_updated_on>
+        <sys_updated_on>2024-07-01 23:37:45</sys_updated_on>
         <tablename>x_562912_billing_contracts</tablename>
     </sys_metadata_link>
 </record_update>

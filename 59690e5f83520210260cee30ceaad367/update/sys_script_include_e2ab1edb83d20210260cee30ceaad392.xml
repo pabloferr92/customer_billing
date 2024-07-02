@@ -10,7 +10,7 @@
         <script><![CDATA[var CustomerBillingUtils = Class.create();
 CustomerBillingUtils.prototype = {
 
-    initialize: function () {
+    initialize: function() {
 
         this.RESPONSE = {
             status: "success",
@@ -27,7 +27,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _checkForAttachment: function (current) {
+    _checkForAttachment: function(current) {
 
         var attachment_gr = new GlideRecord("sys_attachment");
 
@@ -39,7 +39,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getAttachment: function (current) {
+    _getAttachment: function(current) {
 
         var attachment_gr = new GlideRecord("sys_attachment");
 
@@ -51,7 +51,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getAttachmentInRecord: function (current, field_name) {
+    _getAttachmentInRecord: function(current, field_name) {
 
         var attachment_field_name = "data_sheet";
 
@@ -144,14 +144,14 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _setAttachmentAsValidated: function (current, attachment_id) {
+    _setAttachmentAsValidated: function(current, attachment_id) {
 
         current.setValue("attachmend_validated_id", attachment_id);
         current.update();
 
     },
 
-    processData: function (current) {
+    processData: function(current) {
 
 
         var attachment_gr = this._getAttachmentInRecord(current);
@@ -267,7 +267,7 @@ CustomerBillingUtils.prototype = {
 
         var not_found_headers = [];
 
-        this.USED_COLUMNS.forEach(function (column) {
+        this.USED_COLUMNS.forEach(function(column) {
 
             if (sheet_headers.indexOf(column) == -1) {
                 not_found_headers.push(header);
@@ -285,7 +285,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getBankID: function (bank_name) {
+    _getBankID: function(bank_name) {
 
         var id = "";
         var bank_gr = new GlideRecord("x_562912_billing_databases");
@@ -301,7 +301,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _createBank: function (bank_name, razao_social, cnpj, contrato, parceiro) {
+    _createBank: function(bank_name, razao_social, cnpj, contrato, parceiro) {
 
         var bank_id = "";
         var partner_id = this._getPartnerId(parceiro, contrato);
@@ -322,7 +322,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getPartnerId: function (name, contrato) {
+    _getPartnerId: function(name, contrato) {
 
         var id = "";
         var partner_gr = new GlideRecord("x_562912_billing_partners");
@@ -341,7 +341,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _createPartner: function (name, contrato) {
+    _createPartner: function(name, contrato) {
 
         var id = "";
 
@@ -359,7 +359,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _createContract: function (name, partner_id, contrato) {
+    _createContract: function(name, partner_id, contrato) {
 
         var id = "";
 
@@ -376,11 +376,15 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    processBilling: function (current) {
+    processBilling: function(current, partner_sys_id) {
 
         var partners_gr = new GlideRecord("x_562912_billing_partners");
-        //partners_gr.addQuery("sys_id", "75ab45f783da0210260cee30ceaad399");
-        //partners_gr.setLimit(1);
+
+        if (!gs.nil(partner_sys_id)) {
+            partners_gr.addQuery("sys_id", partner_sys_id);
+            partners_gr.setLimit(1);
+        }
+
         partners_gr.query();
 
         var created_billings = [];
@@ -430,7 +434,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getAggregateOfProductByContract: function (products_by_contract, ano_competencia, mes_competencia) {
+    _getAggregateOfProductByContract: function(products_by_contract, ano_competencia, mes_competencia) {
 
         var response = {
             volume: 0,
@@ -468,7 +472,7 @@ CustomerBillingUtils.prototype = {
     },
 
     // Método Será depreciado
-    _createConsolidatedBilling: function (partner_id, ano_competencia, mes_competencia, contract) {
+    _createConsolidatedBilling: function(partner_id, ano_competencia, mes_competencia, contract) {
 
         var billings = new GlideAggregate("x_562912_billing_billing");
         billings.addQuery("ano_competencia", ano_competencia);
@@ -497,7 +501,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _createConsolidatedBillingNew: function (partner_id, ano_competencia, mes_competencia, contract, created_billings) {
+    _createConsolidatedBillingNew: function(partner_id, ano_competencia, mes_competencia, contract, created_billings) {
 
         var billings = new GlideAggregate("x_562912_billing_billing");
         billings.addQuery("ano_competencia", ano_competencia);
@@ -542,7 +546,7 @@ CustomerBillingUtils.prototype = {
     },
 
     // Método Será depreciado
-    _updateBillingDetailWithConsolidateGR: function (query, consolidated_id) {
+    _updateBillingDetailWithConsolidateGR: function(query, consolidated_id) {
 
         var billings = new GlideRecord("x_562912_billing_billing");
         billings.addEncodedQuery(query);
@@ -647,7 +651,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getColumnName: function (table, label) {
+    _getColumnName: function(table, label) {
 
         var table_gr = new GlideRecord("sys_dictionary");
 
@@ -663,7 +667,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _createBillingNew: function (producs_contract_gr, agg_values_by_product, ano_competencia, mes_competencia) {
+    _createBillingNew: function(producs_contract_gr, agg_values_by_product, ano_competencia, mes_competencia) {
 
 
         var value = this._calculateProductValueNew(producs_contract_gr, agg_values_by_product);
@@ -695,7 +699,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _calculateProductValueNew: function (producs_contract_gr, agg_values_by_product) {
+    _calculateProductValueNew: function(producs_contract_gr, agg_values_by_product) {
 
         var value = 0; // Valor total da cobrança deste produto
 
@@ -707,13 +711,15 @@ CustomerBillingUtils.prototype = {
 
         if (tipo_cobranca == "volume") {
 
-            var volume = agg_values_by_product["volume"];
+            var volume = parseInt(agg_values_by_product["volume"]);
+
+            //gs.info("Valor aferido " + volume + "  " + producs_contract_gr.getDisplayValue())
 
             var franquia_volume = producs_contract_gr.franquia_volume.toString();
 
+            //gs.info("Franquia de Volume " + franquia_volume + " volume " + volume + " teste " + (parseInt(volume) > franquia_volume));
 
             if (!gs.nil(franquia_volume) && franquia_volume > 0) {
-
 
                 if (volume > franquia_volume) {
                     var total_excedente = volume - franquia_volume;
@@ -727,6 +733,7 @@ CustomerBillingUtils.prototype = {
 
 
             } else {
+
                 value = agg_values_by_product["volume"] * valor_produto;
 
             }
@@ -734,7 +741,7 @@ CustomerBillingUtils.prototype = {
 
         } else {
 
-            var equipamentos = agg_values_by_product["equipamentos"];
+            var equipamentos = parseInt(agg_values_by_product["equipamentos"]);
 
             var franquia_equipamentos = producs_contract_gr.franquia_equipamentos.toString();
 
@@ -758,11 +765,13 @@ CustomerBillingUtils.prototype = {
 
         }
 
+        //gs.info("Valor final " + value)
+
         return value;
 
     },
 
-    _createBilling: function (values,) {
+    _createBilling: function(values, ) {
 
         var products_billing_created = [];
 
@@ -800,7 +809,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getBillingProductInfo: function (product_contract_sys_id) {
+    _getBillingProductInfo: function(product_contract_sys_id) {
 
         var product_contract_gr = new GlideRecord("x_562912_billing_product_in_the_contract");
 
@@ -818,7 +827,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _calculateProductValue: function (product_contract, billing_info_values) {
+    _calculateProductValue: function(product_contract, billing_info_values) {
 
         //        gs.info("Contrato no Produto " + product_contract +  " valores " + JSON.stringify(billing_info_values)) ;
 
@@ -900,7 +909,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    validateBillingSpreadSheet: function (current /* GlideRecord Contrato */) {
+    validateBillingSpreadSheet: function(current /* GlideRecord Contrato */ ) {
 
         var mes_competencia = current.getValue("mes_competencia");
         var ano_competencia = current.getValue("ano_competencia");
@@ -944,56 +953,63 @@ CustomerBillingUtils.prototype = {
             csv_format: ""
         }
 
-        var validation_log_creation =  "Validação do período " + mes_competencia + "/" + ano_competencia + " realizada em: " + now.getDisplayValue() + "\n\n";
+        var validation_log_creation = "Validação do período " + mes_competencia + "/" + ano_competencia + " realizada em: " + now.getDisplayValue() + "\n\n";
+
+        response.csv_format += "Banco;Erro Identificado;Diferença Identificada;Produto;Volumetria Identificada;Volumetria no Descritivo\n";
+
 
         response.message += validation_log_creation;
 
         for (var i in validation_obj) {
 
-           
+
             var banks_arr = validation_obj[i]["banks_arr"];
 
             var descritivo_banks_arr = descritivo_obj[validation_obj[i]["u_product_name_on_billing"]];
 
             var produto = validation_obj[i]["u_product_name_on_billing"];
 
-           // gs.info("Banks Arr " + JSON.stringify(banks_arr));
+            // gs.info("Banks Arr " + JSON.stringify(banks_arr));
 
-           // gs.info("Descritivo Arr " + JSON.stringify(descritivo_banks_arr));
+            // gs.info("Descritivo Arr " + JSON.stringify(descritivo_banks_arr));
 
 
             for (var j = 0; j < banks_arr.length; j++) {
 
-                var bank_to_check = banks_arr[j];                
-                
-                var descritivo_bank = descritivo_banks_arr.filter(function (element) {
+                var bank_to_check = banks_arr[j];
+
+                var descritivo_bank = descritivo_banks_arr.filter(function(element) {
                     return bank_to_check["banco"] == element["banco"];
-                    });
-                    
-                    if (descritivo_bank.length == 0) {
-                        response.status = "error";
-                        response.message += "Banco: " + bank_to_check["banco"] + " não cobrado no produto: " + produto + " com volumetria de: " + bank_to_check["volumetria"] + "\n";
-                        response.csv_format += bank_to_check["banco"] + ";" + produto + "\n";
-                        continue;
-                        }
-                        
+                });
+
                 var bank_to_check_volumetria = parseInt(bank_to_check["volumetria"]) || 0;
+
+                if (descritivo_bank.length == 0) {
+                    response.status = "error";
+                    response.message += "Banco: " + bank_to_check["banco"] + " não cobrado no produto: " + produto + " com volumetria de: " + bank_to_check["volumetria"] + "\n";
+                    //response.csv_format += "Banco;Erro Identificado;Diferença Identificada;Produto;Volumetria Identificada;Volumetria no Descritivo\n";
+                    response.csv_format += bank_to_check["banco"] + ";Não Cadastrado;N/A;" + produto + ";" + bank_to_check_volumetria + ";0" + "\n";
+                    continue;
+                }
+
                 var descritivo_bank_volumetria = parseInt(descritivo_bank[0]["volumetria"]) || 0;
 
-                //gs.info("Checando diferença " + bank_to_check["banco"] + "volumetria descritivo " + descritivo_bank_volumetria +  " voluetria " + bank_to_check_volumetria);
+                gs.info("Checando diferença " + bank_to_check["banco"] + "volumetria descritivo " + descritivo_bank_volumetria + " voluetria " + bank_to_check_volumetria);
 
 
                 if (descritivo_bank_volumetria != bank_to_check_volumetria) {
 
-                    var diferenca = descritivo_bank_volumetria > bank_to_check_volumetria ?  "MAIOR" : "MENOR";
+                    var diferenca = descritivo_bank_volumetria > bank_to_check_volumetria ? "MAIOR" : "MENOR";
 
                     var diferenca_toal = descritivo_bank_volumetria - bank_to_check_volumetria;
 
                     //gs.info("Checando diferença " + bank_to_check["banco"] + "volumetria descritivo " + descritivo_bank_volumetria +  " volumetria " + bank_to_check_volumetria + " diferenca " + diferenca);
 
                     response.status = "error";
-                    response.message += "Banco: " + bank_to_check["banco"] + " com volumetria " + diferenca + " no total de: " + diferenca_toal + " no produto: " + produto +"\n";
-                    response.csv_format += bank_to_check["banco"] + ";" + produto + "\n";
+                    response.message += "Banco: " + bank_to_check["banco"] + " com volumetria " + diferenca + " no total de: " + diferenca_toal + " no produto: " + produto + "\n";
+                    //response.csv_format += "Banco;Erro Identificado;Diferença Identificada;Produto;Volumetria Identificada;Volumetria no Descritivo\n";
+
+                    response.csv_format += bank_to_check["banco"] + ";" + "Diferença de Volume" + ";" + diferenca + ";" + produto + ";" + bank_to_check_volumetria + ";" + descritivo_bank_volumetria + "\n";
 
                 }
 
@@ -1006,7 +1022,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getBanksOfValidation: function (producs_contract_gr, ano_competencia, mes_competencia) {
+    _getBanksOfValidation: function(producs_contract_gr, ano_competencia, mes_competencia) {
 
         var product_billing_arr = [];
 
@@ -1045,7 +1061,9 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getDescritivoObj: function () {
+    _getDescritivoObj: function() {
+
+        //gs.info("Executando busca do descritivo ");
 
         var attachment_record = this._getAttachmentInRecord(current, "u_billing_spreadsheet");
 
@@ -1105,9 +1123,19 @@ CustomerBillingUtils.prototype = {
 
                     var banco = row["BANCO"];
                     var descricao_produto = row["DESCRIÇÃO PRODUTO"];
+                    gs.info("volumetria " + row["VOLUMETRIA"]);
                     var volumetria = row["VOLUMETRIA"];
 
-                    if (banco == null || gs.nil(banco) || banco == "") {
+                    if (!gs.nil(volumetria) && volumetria != null && volumetria != "") {
+                        volumetria = volumetria.replace(/[.,]/g, '');
+                    }
+
+                    //gs.info("volumetria original " + row["VOLUMETRIA"]);
+                    //gs.info("volumetria convertida " + volumetria);
+
+
+
+                    if (banco == null || gs.nil(banco) || banco == "" || volumetria == null || gs.nil(volumetria) || volumetria == "") {
                         continue;
                     }
 
@@ -1127,12 +1155,14 @@ CustomerBillingUtils.prototype = {
                 }
 
 
+
             } else {
                 this.RESPONSE.status = "error";
                 this.RESPONSE.message = "Formato inválido!";
             }
         }
 
+        gs.info("Descritivo Obj " + JSON.stringify(descritivo_obj));
         return descritivo_obj;
 
     },
@@ -1144,13 +1174,13 @@ CustomerBillingUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 14:29:35</sys_created_on>
         <sys_id>e2ab1edb83d20210260cee30ceaad392</sys_id>
-        <sys_mod_count>488</sys_mod_count>
+        <sys_mod_count>515</sys_mod_count>
         <sys_name>CustomerBillingUtils</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_script_include_e2ab1edb83d20210260cee30ceaad392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-18 14:42:00</sys_updated_on>
+        <sys_updated_on>2024-06-24 03:13:07</sys_updated_on>
     </sys_script_include>
 </record_update>

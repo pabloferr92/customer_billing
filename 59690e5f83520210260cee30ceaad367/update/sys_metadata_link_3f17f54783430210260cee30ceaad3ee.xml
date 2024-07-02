@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>bde9c68f83f20210260cee30ceaad39a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_product_in_the_contract">
+    <x_562912_billing_product_in_the_contract action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <franquia_equipamentos/>
+        <franquia_volume>0</franquia_volume>
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-06-19 15:06:38</sys_created_on>
+        <sys_id>bde9c68f83f20210260cee30ceaad39a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-06-19 15:07:04</sys_updated_on>
+        <table_name>x_562912_billing_monthly_production</table_name>
+        <tipo_de_franquia>volume</tipo_de_franquia>
+        <u_conditions table="x_562912_billing_monthly_production">u_360_accounting_volume&gt;0^EQ<item endquery="false" field="u_360_accounting_volume" goto="false" newquery="false" operator="&gt;" or="false" value="0"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </u_conditions>
+        <u_contrato display_value="MOVA COMERCIO E SERVICOS DE INFORMATICA LTDA ME">ad5742cb83f20210260cee30ceaad376</u_contrato>
+        <u_description>COM ACCOUNTING POR VOLUME </u_description>
+        <u_display_name>MPS COM ACCOUNTING POR VOLUME </u_display_name>
+        <u_produto display_value="MPS">10b0dedb83920210260cee30ceaad36e</u_produto>
+        <valor>0.00297</valor>
+        <valor_franquia>0</valor_franquia>
+    </x_562912_billing_product_in_the_contract>
+    <fx_price action="delete_multiple" query="id=bde9c68f83f20210260cee30ceaad39a"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="BRL">BRL</currency>
+        <field>valor_franquia</field>
+        <id>bde9c68f83f20210260cee30ceaad39a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-06-19 15:06:38</sys_created_on>
+        <sys_id>4b5a82cb83f20210260cee30ceaad3f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-06-19 15:06:38</sys_updated_on>
+        <table>x_562912_billing_product_in_the_contract</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:58:16</sys_created_on>
+        <sys_id>3f17f54783430210260cee30ceaad3ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MPS COM ACCOUNTING POR VOLUME </sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_3f17f54783430210260cee30ceaad3ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:58:16</sys_updated_on>
+        <tablename>x_562912_billing_product_in_the_contract</tablename>
+    </sys_metadata_link>
+</record_update>

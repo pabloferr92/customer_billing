@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>92718ac383f20210260cee30ceaad322</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_databases">
+    <x_562912_billing_databases action="INSERT_OR_UPDATE">
+        <nome_do_banco>ANDERSONODILONFERREIRA</nome_do_banco>
+        <parceiro display_value="MR COPIADORAS ">31f443be837e0210260cee30ceaad36b</parceiro>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-19 14:27:48</sys_created_on>
+        <sys_id>92718ac383f20210260cee30ceaad322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-19 14:27:48</sys_updated_on>
+        <u_cnpj>12695371000114</u_cnpj>
+        <u_razao_social>ANDERSON ODILON FERREIRA</u_razao_social>
+    </x_562912_billing_databases>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:42:19</sys_created_on>
+        <sys_id>0a73398b83030210260cee30ceaad30e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ANDERSONODILONFERREIRA</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_0a73398b83030210260cee30ceaad30e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:42:19</sys_updated_on>
+        <tablename>x_562912_billing_databases</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Customer Billing">59690e5f83520210260cee30ceaad367</application>
+        <file_path/>
+        <instance_id>bb574c6e1b19c2d077c7cb7b234bcbd0</instance_id>
+        <instance_name>dev254096</instance_name>
+        <name>sys_metadata_link_0a73398b83030210260cee30ceaad30e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;92718ac383f20210260cee30ceaad322&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_562912_billing_databases"&gt;
+    &lt;x_562912_billing_databases action="INSERT_OR_UPDATE"&gt;
+        &lt;nome_do_banco&gt;ANDERSONODILONFERREIRA&lt;/nome_do_banco&gt;
+        &lt;parceiro display_value="MR COPIADORAS "&gt;31f443be837e0210260cee30ceaad36b&lt;/parceiro&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-06-19 14:27:48&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;92718ac383f20210260cee30ceaad322&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-06-19 14:27:48&lt;/sys_updated_on&gt;
+        &lt;u_cnpj&gt;12695371000114&lt;/u_cnpj&gt;
+        &lt;u_razao_social&gt;ANDERSON ODILON FERREIRA&lt;/u_razao_social&gt;
+    &lt;/x_562912_billing_databases&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-01 23:42:19&lt;/sys_created_on&gt;&lt;sys_id&gt;0a73398b83030210260cee30ceaad30e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ANDERSONODILONFERREIRA&lt;/sys_name&gt;&lt;sys_package display_value="Customer Billing" source="x_562912_billing"&gt;59690e5f83520210260cee30ceaad367&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Customer Billing"&gt;59690e5f83520210260cee30ceaad367&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_0a73398b83030210260cee30ceaad30e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-01 23:42:19&lt;/sys_updated_on&gt;&lt;tablename&gt;x_562912_billing_databases&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-132163639</payload_hash>
+        <record_name>ANDERSONODILONFERREIRA</record_name>
+        <reverted_from/>
+        <source>dd690e5f83520210260cee30ceaad369</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:42:20</sys_created_on>
+        <sys_id>4273398b83030210260cee30ceaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19070ad8b990000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:42:20</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>4673398be903021016e5bb5f1bad540f</update_guid>
+        <update_guid_history>4673398be903021016e5bb5f1bad540f:-132163639</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:53:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>825c24068cd54fbd8ac0c0f3a0105fa9</sys_id>
+        <sys_metadata>0a73398b83030210260cee30ceaad30e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ANDERSONODILONFERREIRA</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_scope_delete display_value="">0343deef2aa0436380248fb9f4714329</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_0a73398b83030210260cee30ceaad30e</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_0a73398b83030210260cee30ceaad30e">4273398b83030210260cee30ceaad310</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:53:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

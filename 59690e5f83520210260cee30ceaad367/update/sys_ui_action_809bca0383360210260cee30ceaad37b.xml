@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>billing_reprocess_data</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>!current.isNewRecord() &amp;&amp; current.processed_data;</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Reprocessar Prévia</name>
+        <onclick>reprocessBilling()</onclick>
+        <order>100</order>
+        <script><![CDATA[// Client-side onclick function
+function reprocessBilling() {
+
+    confirm("Deseja reprocessar a prévia?");
+
+    // Call the UI action and skip the 'onclick' function
+    gsftSubmit(null, g_form.getFormElement(), 'billing_reprocess_data'); //MUST call the 'Action name' set in this UI Action
+}
+
+// Code that runs without 'onclick'
+// Ensure call to server-side function with no browser errors
+if (typeof window == 'undefined')
+    serverFunction();
+
+// Server-side function
+function serverFunction() {
+
+    var ano_competencia = current.getValue("ano_competencia");
+    var mes_competencia = current.getValue("mes_competencia");
+
+    var gr_fat = new GlideRecord("x_562912_billing_billing");
+    gr_fat.addQuery("ano_competencia", ano_competencia);
+    gr_fat.addQuery("mes_competencia", mes_competencia);
+    gr_fat.query();
+
+    if (gr_fat.next()) {
+        gr_fat.deleteMultiple();
+    }
+
+    var consolidate_gr = new GlideRecord("x_562912_billing_consolidated_billing");
+    consolidate_gr.addQuery("ano_competencia", ano_competencia);
+    consolidate_gr.addQuery("mes_competencia", mes_competencia);
+    consolidate_gr.query();
+
+    if (consolidate_gr.next()) {
+        consolidate_gr.deleteMultiple();
+    }
+
+    //current.setValue("data_loaded", false);
+    current.setValue("processed_data", false);
+    //current.update();
+
+    gs.addInfoMessage("Dados de Prévia Excluídos!");
+
+    var utils = new CustomerBillingUtils();
+
+    utils.processBilling(current);
+
+    current.setValue("processed_data", true);
+
+    current.update();
+
+    action.setRedirectURL(current);
+
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-19 15:11:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>809bca0383360210260cee30ceaad37b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Reprocessar Prévia</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_ui_action_809bca0383360210260cee30ceaad37b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-24 02:16:42</sys_updated_on>
+        <table>x_562912_billing_load_data</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

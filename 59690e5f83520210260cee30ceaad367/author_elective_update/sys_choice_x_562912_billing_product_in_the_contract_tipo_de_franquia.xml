@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="tipo_de_franquia" table="x_562912_billing_product_in_the_contract" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>tipo_de_franquia</element>
+            <name>x_562912_billing_product_in_the_contract</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-26 13:35:11</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>tipo_de_franquia</sys_name>
+            <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+            <sys_update_name>sys_choice_x_562912_billing_product_in_the_contract_tipo_de_franquia</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-26 13:35:11</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tipo_de_franquia</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Equipamentos</label>
+            <language>en</language>
+            <name>x_562912_billing_product_in_the_contract</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-26 13:35:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-26 13:35:21</sys_updated_on>
+            <value>equipamentos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tipo_de_franquia</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Equipamentos</label>
+            <language>pb</language>
+            <name>x_562912_billing_product_in_the_contract</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-26 13:35:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-26 13:35:34</sys_updated_on>
+            <value>equipamentos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tipo_de_franquia</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Volume</label>
+            <language>en</language>
+            <name>x_562912_billing_product_in_the_contract</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-26 13:35:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-26 13:35:11</sys_updated_on>
+            <value>volume</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tipo_de_franquia</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Volume</label>
+            <language>pb</language>
+            <name>x_562912_billing_product_in_the_contract</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-26 13:35:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-26 13:35:43</sys_updated_on>
+            <value>volume</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

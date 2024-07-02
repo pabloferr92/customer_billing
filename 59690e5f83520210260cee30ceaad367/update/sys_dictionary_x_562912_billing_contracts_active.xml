@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 15:19:36</sys_created_on>
-        <sys_id>4427ea9b83160210260cee30ceaad36d</sys_id>
         <sys_name>Active</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>

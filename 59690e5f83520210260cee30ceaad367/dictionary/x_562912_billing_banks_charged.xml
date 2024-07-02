@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="517fc65b83920210260cee30ceaad33b" label="Bancos Cobrados" max_length="40" name="x_562912_billing_banks_charged" type="collection">
+        <element label="Banco" max_length="32" name="u_banco" reference="x_562912_billing_databases" type="reference"/>
+        <element label="Produto No Contrato" max_length="32" name="produto_no_contrato" reference="x_562912_billing_product_in_the_contract" type="reference"/>
+        <element label="Faturamento" max_length="32" name="u_faturamento" reference="x_562912_billing_billing" type="reference"/>
+        <index name="index">
+            <element name="produto_no_contrato"/>
+        </index>
+        <index name="index2">
+            <element name="u_banco"/>
+        </index>
+        <index name="index3">
+            <element name="u_faturamento"/>
+        </index>
+    </element>
+</database>

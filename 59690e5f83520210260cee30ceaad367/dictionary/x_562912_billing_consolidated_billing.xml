@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="bf61910483a28210260cee30ceaad396" label="Faturamento Consolidado" max_length="40" name="x_562912_billing_consolidated_billing" type="collection">
+        <element choice="1" choice_field="ano_competencia" choice_table="x_562912_billing_billing" label="Ano Competencia" max_length="40" name="ano_competencia" type="choice">
+            <choice/>
+        </element>
+        <element active="false" choice="1" choice_field="ano_competencia" choice_table="x_562912_billing_billing" label="Ano Referencia" max_length="40" name="ano_referencia" type="choice">
+            <choice/>
+        </element>
+        <element display="true" label="Contract" max_length="32" name="u_contract" reference="x_562912_billing_contracts" type="reference"/>
+        <element label="Valor Total" max_length="20" name="valor_total" type="currency"/>
+        <element choice="1" choice_field="mes_competencia" choice_table="x_562912_billing_billing" label="Mes Competencia" max_length="40" name="mes_competencia" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="u_contract"/>
+        </index>
+    </element>
+</database>

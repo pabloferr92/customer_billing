@@ -47,7 +47,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 13:51:40</sys_created_on>
-        <sys_id>4b03d2df83920210260cee30ceaad3fd</sys_id>
         <sys_name>Fixo</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>

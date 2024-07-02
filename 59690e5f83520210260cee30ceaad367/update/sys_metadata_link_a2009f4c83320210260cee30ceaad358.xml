@@ -20,7 +20,10 @@
         </u_conditions>
         <u_contrato display_value="PRINTER ONE GESTAO DE DOCUMENTOS LTDA">986ce72383160210260cee30ceaad395</u_contrato>
         <u_description>Com Accounting</u_description>
-        <u_display_name>MPS Com Accounting</u_display_name>
+        <u_display_name>function getDisplayValue() {
+	[native code, arity=1]
+}
+ - Com Accounting</u_display_name>
         <u_produto display_value="MPS">10b0dedb83920210260cee30ceaad36e</u_produto>
         <valor>0.0035</valor>
         <valor_franquia>0</valor_franquia>
@@ -49,14 +52,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-10 12:29:18</sys_created_on>
         <sys_id>a2009f4c83320210260cee30ceaad358</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>MPS Com Accounting</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>function getDisplayValue() {
+	[native code, arity=1]
+}
+ - Com Accounting</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_metadata_link_a2009f4c83320210260cee30ceaad358</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-10 12:29:18</sys_updated_on>
+        <sys_updated_on>2024-07-01 23:38:27</sys_updated_on>
         <tablename>x_562912_billing_product_in_the_contract</tablename>
     </sys_metadata_link>
 </record_update>

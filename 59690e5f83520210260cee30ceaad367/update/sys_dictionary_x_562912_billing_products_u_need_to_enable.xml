@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-27 14:13:17</sys_created_on>
-        <sys_id>4771a7a383d20210260cee30ceaad30f</sys_id>
         <sys_name>Necessário Habilitar?</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>

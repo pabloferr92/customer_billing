@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>4b067bab833a4210260cee30ceaad3ca</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_product_in_the_contract">
+    <x_562912_billing_product_in_the_contract action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <franquia_equipamentos/>
+        <franquia_volume>0</franquia_volume>
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-06-21 12:48:01</sys_created_on>
+        <sys_id>4b067bab833a4210260cee30ceaad3ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-06-21 12:48:01</sys_updated_on>
+        <table_name>x_562912_billing_monthly_production</table_name>
+        <tipo_de_franquia>volume</tipo_de_franquia>
+        <u_conditions/>
+        <u_contrato display_value="H2L EQUIPAMENTOS E SISTEMAS LTDA">94f5b727833a4210260cee30ceaad35c</u_contrato>
+        <u_description>MPS POR VOLUME </u_description>
+        <u_display_name>MPS MPS POR VOLUME </u_display_name>
+        <u_produto display_value="MPS">10b0dedb83920210260cee30ceaad36e</u_produto>
+        <valor>0.0014</valor>
+        <valor_franquia>0</valor_franquia>
+    </x_562912_billing_product_in_the_contract>
+    <fx_price action="delete_multiple" query="id=4b067bab833a4210260cee30ceaad3ca"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="BRL">BRL</currency>
+        <field>valor_franquia</field>
+        <id>4b067bab833a4210260cee30ceaad3ca</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-06-21 12:48:01</sys_created_on>
+        <sys_id>0cdd7327837a4210260cee30ceaad3b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-06-21 12:48:01</sys_updated_on>
+        <table>x_562912_billing_product_in_the_contract</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:38:05</sys_created_on>
+        <sys_id>c48231c783030210260cee30ceaad3f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MPS MPS POR VOLUME </sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_c48231c783030210260cee30ceaad3f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:38:05</sys_updated_on>
+        <tablename>x_562912_billing_product_in_the_contract</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Customer Billing">59690e5f83520210260cee30ceaad367</application>
+        <file_path/>
+        <instance_id>bb574c6e1b19c2d077c7cb7b234bcbd0</instance_id>
+        <instance_name>dev254096</instance_name>
+        <name>sys_metadata_link_c48231c783030210260cee30ceaad3f0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;4b067bab833a4210260cee30ceaad3ca&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_562912_billing_product_in_the_contract"&gt;
+    &lt;x_562912_billing_product_in_the_contract action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;franquia_equipamentos/&gt;
+        &lt;franquia_volume&gt;0&lt;/franquia_volume&gt;
+        &lt;sys_created_by&gt;mariana&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-06-21 12:48:01&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;4b067bab833a4210260cee30ceaad3ca&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;mariana&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-06-21 12:48:01&lt;/sys_updated_on&gt;
+        &lt;table_name&gt;x_562912_billing_monthly_production&lt;/table_name&gt;
+        &lt;tipo_de_franquia&gt;volume&lt;/tipo_de_franquia&gt;
+        &lt;u_conditions/&gt;
+        &lt;u_contrato display_value="H2L EQUIPAMENTOS E SISTEMAS LTDA"&gt;94f5b727833a4210260cee30ceaad35c&lt;/u_contrato&gt;
+        &lt;u_description&gt;MPS POR VOLUME &lt;/u_description&gt;
+        &lt;u_display_name&gt;MPS MPS POR VOLUME &lt;/u_display_name&gt;
+        &lt;u_produto display_value="MPS"&gt;10b0dedb83920210260cee30ceaad36e&lt;/u_produto&gt;
+        &lt;valor&gt;0.0014&lt;/valor&gt;
+        &lt;valor_franquia&gt;0&lt;/valor_franquia&gt;
+    &lt;/x_562912_billing_product_in_the_contract&gt;
+    &lt;fx_price action="delete_multiple" query="id=4b067bab833a4210260cee30ceaad3ca"/&gt;
+    &lt;fx_price action="INSERT_OR_UPDATE"&gt;
+        &lt;amount&gt;0&lt;/amount&gt;
+        &lt;currency display_value="BRL"&gt;BRL&lt;/currency&gt;
+        &lt;field&gt;valor_franquia&lt;/field&gt;
+        &lt;id&gt;4b067bab833a4210260cee30ceaad3ca&lt;/id&gt;
+        &lt;parent/&gt;
+        &lt;reference_amount&gt;0&lt;/reference_amount&gt;
+        &lt;reference_currency display_value="USD"&gt;USD&lt;/reference_currency&gt;
+        &lt;sys_created_by&gt;mariana&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-06-21 12:48:01&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0cdd7327837a4210260cee30ceaad3b6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;mariana&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-06-21 12:48:01&lt;/sys_updated_on&gt;
+        &lt;table&gt;x_562912_billing_product_in_the_contract&lt;/table&gt;
+        &lt;type&gt;calculated&lt;/type&gt;
+    &lt;/fx_price&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-01 23:38:05&lt;/sys_created_on&gt;&lt;sys_id&gt;c48231c783030210260cee30ceaad3f0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;MPS MPS POR VOLUME &lt;/sys_name&gt;&lt;sys_package display_value="Customer Billing" source="x_562912_billing"&gt;59690e5f83520210260cee30ceaad367&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Customer Billing"&gt;59690e5f83520210260cee30ceaad367&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_c48231c783030210260cee30ceaad3f0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-01 23:38:05&lt;/sys_updated_on&gt;&lt;tablename&gt;x_562912_billing_product_in_the_contract&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-198974055</payload_hash>
+        <record_name>MPS MPS POR VOLUME </record_name>
+        <reverted_from/>
+        <source>dd690e5f83520210260cee30ceaad369</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:38:05</sys_created_on>
+        <sys_id>008231c783030210260cee30ceaad3f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19070a9a8550000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:38:05</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>048231c72303021029c92fbd2712b0f1</update_guid>
+        <update_guid_history>048231c72303021029c92fbd2712b0f1:-198974055</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:55:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>1894100ea641436e90a01b48b78f4a84</sys_id>
+        <sys_metadata>c48231c783030210260cee30ceaad3f0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MPS MPS POR VOLUME </sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_scope_delete display_value="">0343deef2aa0436380248fb9f4714329</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_c48231c783030210260cee30ceaad3f0</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_c48231c783030210260cee30ceaad3f0">008231c783030210260cee30ceaad3f2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:55:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

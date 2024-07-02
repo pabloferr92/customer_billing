@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5fad5dee83b24610260cee30ceaad388" label="Database Registration Validation" max_length="40" name="x_562912_billing_database_registration_validation" type="collection">
+        <element label="Contract" max_length="32" name="u_contract" reference="x_562912_billing_contracts" type="reference"/>
+        <element label="Product Name on Billing" max_length="200" name="u_product_name_on_billing" type="string"/>
+        <element hint="Insira o produto cadastrado no ServiceNow." label="Product In Contract" max_length="32" name="u_product_in_contract" reference="x_562912_billing_product_in_the_contract" reference_qual="javascript: &quot;u_contrato=&quot; + current.u_contract; " type="reference" use_reference_qualifier="advanced"/>
+        <index name="index">
+            <element name="u_contract"/>
+        </index>
+        <index name="index2">
+            <element name="u_product_in_contract"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="valor_franquia" label="Valor da Franquia" language="pb" table="x_562912_billing_product_in_the_contract">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>valor_franquia</element>
+            <help/>
+            <hint>Quando franquia de volume preenchido, informar o valor da franquia.</hint>
+            <label>Valor da Franquia</label>
+            <language>pb</language>
+            <name>x_562912_billing_product_in_the_contract</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-06-24 02:40:10</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Valor da Franquia</sys_name>
+            <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+            <sys_update_name>sys_documentation_x_562912_billing_product_in_the_contract_valor_franquia_pb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-06-24 02:40:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

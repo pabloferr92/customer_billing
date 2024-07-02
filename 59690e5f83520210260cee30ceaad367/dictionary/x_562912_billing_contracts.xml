@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="944a025383920210260cee30ceaad34d" label="Contratos" max_length="40" name="x_562912_billing_contracts" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="80" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="number" type="string"/>
+        <element default="1" label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="3" hint="Selecione sim para realizar a validação da planilha de descritivo." label="Validate Registrations?" max_length="40" name="u_validate_registrations" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Sim" language="pb" value="yes"/>
+                <element inactive_on_update="false" label="Não" language="pb" value="no"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element label="Validation Log" max_length="4000" name="validation_log" read_only="true" type="string"/>
+        <element choice="1" choice_field="mes_competencia" choice_table="x_562912_billing_billing" label="Mês Competencia" max_length="40" name="mes_competencia" type="choice">
+            <choice/>
+        </element>
+        <element label="Validation Log CSV" max_length="4000" name="validation_log_csv" type="string"/>
+        <element choice="3" choice_field="ano_competencia" choice_table="x_562912_billing_billing" label="Ano Competência" max_length="40" name="ano_competencia" type="choice">
+            <choice/>
+        </element>
+        <element label="Parceiro" max_length="32" name="parceiro" reference="x_562912_billing_partners" type="reference"/>
+        <element label="Billing Spreadsheet" max_length="40" name="u_billing_spreadsheet" type="file_attachment"/>
+        <index name="index">
+            <element name="parceiro"/>
+        </index>
+    </element>
+</database>

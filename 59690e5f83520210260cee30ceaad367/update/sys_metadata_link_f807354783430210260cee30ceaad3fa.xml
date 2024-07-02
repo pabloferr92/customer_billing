@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e97c568783760210260cee30ceaad30f</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_contracts">
+    <x_562912_billing_contracts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ano_competencia/>
+        <mes_competencia/>
+        <name>MR COPIADORAS </name>
+        <number>88333</number>
+        <parceiro display_value="MR COPIADORAS ">31f443be837e0210260cee30ceaad36b</parceiro>
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-06-19 16:26:14</sys_created_on>
+        <sys_id>e97c568783760210260cee30ceaad30f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-06-19 16:26:14</sys_updated_on>
+        <u_billing_spreadsheet/>
+        <u_validate_registrations/>
+        <validation_log/>
+        <validation_log_csv/>
+    </x_562912_billing_contracts>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:57:47</sys_created_on>
+        <sys_id>f807354783430210260cee30ceaad3fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MR COPIADORAS </sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_f807354783430210260cee30ceaad3fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:57:47</sys_updated_on>
+        <tablename>x_562912_billing_contracts</tablename>
+    </sys_metadata_link>
+</record_update>

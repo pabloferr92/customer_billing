@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>9f215c7a836e0210260cee30ceaad38f</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_databases">
+    <x_562912_billing_databases action="INSERT_OR_UPDATE">
+        <nome_do_banco>TTB</nome_do_banco>
+        <parceiro display_value="FM ">223ecc76836e0210260cee30ceaad384</parceiro>
+        <sys_created_by>mariana</sys_created_by>
+        <sys_created_on>2024-06-06 01:22:59</sys_created_on>
+        <sys_id>9f215c7a836e0210260cee30ceaad38f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mariana</sys_updated_by>
+        <sys_updated_on>2024-06-06 01:22:59</sys_updated_on>
+        <u_cnpj>59108837000100</u_cnpj>
+        <u_razao_social>TTB</u_razao_social>
+    </x_562912_billing_databases>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:42:34</sys_created_on>
+        <sys_id>71833d8b83030210260cee30ceaad394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TTB</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_metadata_link_71833d8b83030210260cee30ceaad394</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:42:34</sys_updated_on>
+        <tablename>x_562912_billing_databases</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Customer Billing">59690e5f83520210260cee30ceaad367</application>
+        <file_path/>
+        <instance_id>bb574c6e1b19c2d077c7cb7b234bcbd0</instance_id>
+        <instance_name>dev254096</instance_name>
+        <name>sys_metadata_link_71833d8b83030210260cee30ceaad394</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;9f215c7a836e0210260cee30ceaad38f&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_562912_billing_databases"&gt;
+    &lt;x_562912_billing_databases action="INSERT_OR_UPDATE"&gt;
+        &lt;nome_do_banco&gt;TTB&lt;/nome_do_banco&gt;
+        &lt;parceiro display_value="FM "&gt;223ecc76836e0210260cee30ceaad384&lt;/parceiro&gt;
+        &lt;sys_created_by&gt;mariana&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-06-06 01:22:59&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;9f215c7a836e0210260cee30ceaad38f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;mariana&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-06-06 01:22:59&lt;/sys_updated_on&gt;
+        &lt;u_cnpj&gt;59108837000100&lt;/u_cnpj&gt;
+        &lt;u_razao_social&gt;TTB&lt;/u_razao_social&gt;
+    &lt;/x_562912_billing_databases&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-01 23:42:34&lt;/sys_created_on&gt;&lt;sys_id&gt;71833d8b83030210260cee30ceaad394&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;TTB&lt;/sys_name&gt;&lt;sys_package display_value="Customer Billing" source="x_562912_billing"&gt;59690e5f83520210260cee30ceaad367&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Customer Billing"&gt;59690e5f83520210260cee30ceaad367&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_71833d8b83030210260cee30ceaad394&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-01 23:42:34&lt;/sys_updated_on&gt;&lt;tablename&gt;x_562912_billing_databases&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1188711544</payload_hash>
+        <record_name>TTB</record_name>
+        <reverted_from/>
+        <source>dd690e5f83520210260cee30ceaad369</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:42:34</sys_created_on>
+        <sys_id>b9833d8b83030210260cee30ceaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19070adc5a20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:42:34</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>bd833d8b84030210f0de6c3a37cffc94</update_guid>
+        <update_guid_history>bd833d8b84030210f0de6c3a37cffc94:-1188711544</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 23:54:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>136239ffd57c41da8207ad8c70f08df1</sys_id>
+        <sys_metadata>71833d8b83030210260cee30ceaad394</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TTB</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_scope_delete display_value="">0343deef2aa0436380248fb9f4714329</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_71833d8b83030210260cee30ceaad394</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_71833d8b83030210260cee30ceaad394">b9833d8b83030210260cee30ceaad395</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 23:54:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
