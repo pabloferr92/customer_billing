@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_reference">
+    <sys_ui_hp_reference action="INSERT_OR_UPDATE">
+        <publisher_reference display_value="Parceiro">6ab7d6a183570210260cee30ceaad3a4</publisher_reference>
+        <reference_field>banco.parceiro</reference_field>
+        <reference_table>x_562912_billing_monthly_production</reference_table>
+        <sys_class_name>sys_ui_hp_reference</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-09 20:48:10</sys_created_on>
+        <sys_id>6a4892a183570210260cee30ceaad318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6ab7d6a183570210260cee30ceaad3a4</sys_name>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sys_ui_hp_reference_6a4892a183570210260cee30ceaad318</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-09 20:48:10</sys_updated_on>
+    </sys_ui_hp_reference>
+</record_update>

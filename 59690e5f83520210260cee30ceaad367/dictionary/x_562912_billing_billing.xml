@@ -9,18 +9,18 @@
         <element label="Equipamentos Contabilizados" max_length="40" name="equipamentos_contabilizados" type="integer"/>
         <element choice="3" label="Mês Competência" max_length="20" name="mes_competencia" type="string">
             <choice>
-                <element inactive_on_update="false" label="Julho" sequence="70" value="julho"/>
-                <element inactive_on_update="false" label="Junho" sequence="60" value="junho"/>
-                <element inactive_on_update="false" label="Fevereiro" sequence="20" value="fevereiro"/>
-                <element inactive_on_update="false" label="Abril" sequence="40" value="abril"/>
-                <element inactive_on_update="false" label="Março" sequence="30" value="marco"/>
-                <element inactive_on_update="false" label="Agosto" sequence="80" value="agosto"/>
-                <element inactive_on_update="false" label="Dezembro" sequence="120" value="dezembro"/>
-                <element inactive_on_update="false" label="Setembro" sequence="90" value="setembro"/>
-                <element inactive_on_update="false" label="Novembro" sequence="110" value="novembro"/>
-                <element inactive_on_update="false" label="Outubro" sequence="100" value="outubro"/>
-                <element inactive_on_update="false" label="Maio" sequence="50" value="maio"/>
-                <element inactive_on_update="false" label="Janeiro" sequence="10" value="janeiro"/>
+                <element inactive_on_update="false" label="Julho" sequence="70" value="7"/>
+                <element inactive_on_update="false" label="Junho" sequence="60" value="6"/>
+                <element inactive_on_update="false" label="Fevereiro" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Abril" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="Março" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="Agosto" sequence="80" value="8"/>
+                <element inactive_on_update="false" label="Dezembro" sequence="120" value="12"/>
+                <element inactive_on_update="false" label="Setembro" sequence="90" value="9"/>
+                <element inactive_on_update="false" label="Novembro" sequence="110" value="11"/>
+                <element inactive_on_update="false" label="Outubro" sequence="100" value="10"/>
+                <element inactive_on_update="false" label="Maio" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="Janeiro" sequence="10" value="1"/>
             </choice>
         </element>
         <element label="Valor Total" max_length="20" name="valor_total" type="currency"/>

@@ -223,6 +223,11 @@ CustomerBillingUtils.prototype = {
 
                     if (banco_id != "") {
 
+                        var date = new GlideDate();
+                        date.setMonthUTC(mes_competencia);
+                        date.setYearUTC(ano_competencia);
+                        date.setDayOfMonthUTC(1);
+
                         var monthly_production_gr = new GlideRecord("x_562912_billing_monthly_production");
                         monthly_production_gr.initialize();
 
@@ -238,6 +243,9 @@ CustomerBillingUtils.prototype = {
                         monthly_production_gr.setValue("mps_volume", volume_mps);
                         monthly_production_gr.setValue("u_360_accounting_volume", accounting_volume);
                         monthly_production_gr.setValue("u_360_releaser", releaser_devices);
+
+                        monthly_production_gr.setValue("u_reference_date", date.getDisplayValue());
+
 
                         var sys_id_new_record = monthly_production_gr.insert();
 
@@ -391,7 +399,7 @@ CustomerBillingUtils.prototype = {
 
         while (partners_gr.next()) {
 
-           // gs.info("Parceiro validado " + partners_gr.getValue("u_name"));
+            // gs.info("Parceiro validado " + partners_gr.getValue("u_name"));
 
             var mes_competencia = current.getValue("mes_competencia");
             var ano_competencia = current.getValue("ano_competencia");
@@ -492,7 +500,7 @@ CustomerBillingUtils.prototype = {
             consolidated_gr.setValue("ano_competencia", ano_competencia);
             consolidated_gr.setValue("mes_competencia", mes_competencia);
             consolidated_gr.setValue("u_contract", contract);
-            consolidated_gr.valor_total.setValue("USD" + ";" + total);
+            consolidated_gr.valor_total.setValue("BRL" + ";" + total);
 
             var id = consolidated_gr.insert();
 
@@ -513,6 +521,11 @@ CustomerBillingUtils.prototype = {
 
         if (billings.next()) {
 
+            var date = new GlideDate();
+            date.setMonthUTC(mes_competencia);
+            date.setYearUTC(ano_competencia);
+            date.setDayOfMonthUTC(1);
+
             var total = billings.getAggregate('SUM', 'valor_total');
 
             var consolidated_gr = new GlideRecord("x_562912_billing_consolidated_billing");
@@ -521,7 +534,9 @@ CustomerBillingUtils.prototype = {
             consolidated_gr.setValue("ano_competencia", ano_competencia);
             consolidated_gr.setValue("mes_competencia", mes_competencia);
             consolidated_gr.setValue("u_contract", contract.getUniqueValue());
-            consolidated_gr.valor_total.setValue("USD" + ";" + total);
+            consolidated_gr.valor_total.setValue("BRL" + ";" + total);
+			
+            consolidated_gr.setValue("u_reference_date", date.getDisplayValue());
 
             var id = consolidated_gr.insert();
 
@@ -1174,13 +1189,13 @@ CustomerBillingUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 14:29:35</sys_created_on>
         <sys_id>e2ab1edb83d20210260cee30ceaad392</sys_id>
-        <sys_mod_count>515</sys_mod_count>
+        <sys_mod_count>519</sys_mod_count>
         <sys_name>CustomerBillingUtils</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_script_include_e2ab1edb83d20210260cee30ceaad392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-24 03:13:07</sys_updated_on>
+        <sys_updated_on>2024-07-10 01:34:53</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -11,6 +11,7 @@
         <element choice="1" choice_field="mes_competencia" choice_table="x_562912_billing_billing" label="Mes Competencia" max_length="40" name="mes_competencia" type="choice">
             <choice/>
         </element>
+        <element label="Reference Date" max_length="40" name="u_reference_date" type="glide_date"/>
         <index name="index">
             <element name="u_contract"/>
         </index>

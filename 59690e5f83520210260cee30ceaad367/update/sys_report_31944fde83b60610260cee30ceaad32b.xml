@@ -48,7 +48,8 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>mes_competencia</field>
         <field_list>banco,banco.parceiro,ano_competencia,mes_competencia,mps_equipamento,mps_volume,u_360_accounting_equipamento,u_360_policy,u_360_accounting_volume,u_360_chargeback,u_360_releaser,u_360_tracking</field_list>
-        <filter/>
+        <filter table="x_562912_billing_monthly_production">^ORDERBYmes_competencia<item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="mes_competencia"/>
+        </filter>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -108,14 +109,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-17 11:25:36</sys_created_on>
         <sys_id>31944fde83b60610260cee30ceaad32b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Evolução Produção</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_report_31944fde83b60610260cee30ceaad32b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-17 11:25:48</sys_updated_on>
+        <sys_updated_on>2024-07-09 20:33:59</sys_updated_on>
         <table>x_562912_billing_monthly_production</table>
         <title>Evolução Produção</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

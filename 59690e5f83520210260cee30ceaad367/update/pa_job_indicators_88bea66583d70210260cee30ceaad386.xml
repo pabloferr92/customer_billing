@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_job_indicators">
+    <pa_job_indicators action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <collect>1</collect>
+        <collect_indicator>true</collect_indicator>
+        <display>[PA Customer Billing Production] Historic Data Collection - Evolução Mensal Faturamento</display>
+        <indicator display_value="Evolução Mensal Faturamento">0d6e666583d70210260cee30ceaad3ee</indicator>
+        <job display_value="[PA Customer Billing Production] Historic Data Collection">4fcc1ae983570210260cee30ceaad395</job>
+        <sys_class_name>pa_job_indicators</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-09 22:25:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>88bea66583d70210260cee30ceaad386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Evolução Mensal Faturamento.[PA Customer Billing Production] Historic Data Collection</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>pa_job_indicators_88bea66583d70210260cee30ceaad386</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-09 22:25:51</sys_updated_on>
+    </pa_job_indicators>
+</record_update>

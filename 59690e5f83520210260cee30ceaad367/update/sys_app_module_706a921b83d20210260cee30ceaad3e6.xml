@@ -5,7 +5,7 @@
         <assessment/>
         <device_type/>
         <filter/>
-        <hint/>
+        <hint>Utilize este módulo para importar os dados de produção mensal dos bancos.</hint>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
@@ -13,7 +13,7 @@
         <mobile_title>Carregar Dados</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_562912_billing_load_data</name>
-        <order>170</order>
+        <order>50</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>706a921b83d20210260cee30ceaad3e6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Carregar Dados</sys_name>
         <sys_overrides/>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_app_module_706a921b83d20210260cee30ceaad3e6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-28 13:38:10</sys_updated_on>
+        <sys_updated_on>2024-07-10 00:57:20</sys_updated_on>
         <timeline_page/>
         <title>Carregar Dados</title>
         <uncancelable>false</uncancelable>
