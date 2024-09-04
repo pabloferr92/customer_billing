@@ -28,7 +28,7 @@ Created on This year</description>
         <forecast_base_type>2</forecast_base_type>
         <forecast_lower_limit/>
         <forecast_method>1</forecast_method>
-        <forecast_periods>2</forecast_periods>
+        <forecast_periods>1</forecast_periods>
         <forecast_preselect_observations>false</forecast_preselect_observations>
         <forecast_robust_estimation>false</forecast_robust_estimation>
         <forecast_upper_limit/>
@@ -56,7 +56,7 @@ Created on This year</description>
         <roles/>
         <score_periods>-1</score_periods>
         <scores_format>kMGTPE</scores_format>
-        <scores_modified_at>2024-07-10 01:36:21</scores_modified_at>
+        <scores_modified_at>2024-09-04 04:00:05</scores_modified_at>
         <script/>
         <scripted>false</scripted>
         <show_delta>true</show_delta>
@@ -69,7 +69,7 @@ Created on This year</description>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0d6c1ea983570210260cee30ceaad328</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Evolução Produção Mensal</sys_name>
         <sys_overrides/>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
@@ -77,7 +77,7 @@ Created on This year</description>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>pa_indicators_0d6c1ea983570210260cee30ceaad328</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-10 01:49:52</sys_updated_on>
+        <sys_updated_on>2024-07-10 02:01:12</sys_updated_on>
         <type>1</type>
         <unit display_value="#">17b365e2d7320100ba986f14ce6103ad</unit>
         <users/>

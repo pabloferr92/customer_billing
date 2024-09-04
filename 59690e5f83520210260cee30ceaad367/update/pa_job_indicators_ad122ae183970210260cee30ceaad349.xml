@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_job_indicators">
     <pa_job_indicators action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <collect>1</collect>
         <collect_indicator>true</collect_indicator>
         <display>[PA Customer Billing Production] Historic Data Collection - Evolução Produção Mensal</display>
@@ -12,7 +12,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ad122ae183970210260cee30ceaad349</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Evolução Produção Mensal.[PA Customer Billing Production] Historic Data Collection</sys_name>
         <sys_overrides/>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
@@ -20,6 +20,6 @@
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>pa_job_indicators_ad122ae183970210260cee30ceaad349</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-10 01:50:19</sys_updated_on>
+        <sys_updated_on>2024-09-02 18:31:12</sys_updated_on>
     </pa_job_indicators>
 </record_update>

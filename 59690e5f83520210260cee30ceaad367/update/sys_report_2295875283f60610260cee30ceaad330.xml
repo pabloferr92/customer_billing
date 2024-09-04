@@ -48,7 +48,8 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>mes_competencia</field>
         <field_list>banco,banco.parceiro,ano_competencia,mes_competencia,mps_equipamento,mps_volume,u_360_accounting_equipamento,u_360_policy,u_360_accounting_volume,u_360_chargeback,u_360_releaser,u_360_tracking</field_list>
-        <filter table="x_562912_billing_monthly_production">^ORDERBYmes_competencia<item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="mes_competencia"/>
+        <filter table="x_562912_billing_monthly_production">banco.parceiro.active=true^ORDERBYmes_competencia<item endquery="false" field="banco.parceiro.active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="mes_competencia"/>
         </filter>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
@@ -109,14 +110,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-17 11:30:02</sys_created_on>
         <sys_id>2295875283f60610260cee30ceaad330</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Evolução Produção 360 Accounting</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_report_2295875283f60610260cee30ceaad330</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-09 20:37:24</sys_updated_on>
+        <sys_updated_on>2024-09-02 18:36:10</sys_updated_on>
         <table>x_562912_billing_monthly_production</table>
         <title>Evolução Produção 360 Accounting</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

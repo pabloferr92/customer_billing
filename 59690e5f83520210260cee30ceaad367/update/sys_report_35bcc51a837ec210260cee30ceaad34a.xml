@@ -27,7 +27,7 @@
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width>600</chart_width>
-        <color/>
+        <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
         <column/>
@@ -48,7 +48,8 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>banco.parceiro</field>
         <field_list>banco,banco.parceiro,ano_competencia,mes_competencia,mps_equipamento,mps_volume,u_360_accounting_equipamento,u_360_policy,u_360_accounting_volume,u_360_chargeback,u_360_releaser,u_360_tracking</field_list>
-        <filter table="x_562912_billing_monthly_production">u_360_policy=Sim<item endquery="false" field="u_360_policy" goto="false" newquery="false" operator="=" or="false" value="Sim"/>
+        <filter table="x_562912_billing_monthly_production">u_360_policy=Sim^banco.parceiro.active=true<item endquery="false" field="u_360_policy" goto="false" newquery="false" operator="=" or="false" value="Sim"/>
+            <item endquery="false" field="banco.parceiro.active" goto="false" newquery="false" operator="=" or="false" value="true"/>
         </filter>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
@@ -109,14 +110,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-17 02:41:52</sys_created_on>
         <sys_id>35bcc51a837ec210260cee30ceaad34a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>360 Policy - Por Provedor</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_report_35bcc51a837ec210260cee30ceaad34a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-17 02:54:19</sys_updated_on>
+        <sys_updated_on>2024-09-02 18:37:47</sys_updated_on>
         <table>x_562912_billing_monthly_production</table>
         <title>360 Policy - Por Provedor</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

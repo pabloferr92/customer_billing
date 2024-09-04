@@ -3,6 +3,7 @@
         <element label="Name" max_length="100" name="u_name" type="string"/>
         <element label="Provedor MPS" max_length="40" name="u_provedor_mps" type="string"/>
         <element label="Vendedor" max_length="32" name="u_vendedor" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
         <index name="index">
             <element name="u_vendedor"/>
         </index>

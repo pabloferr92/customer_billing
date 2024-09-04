@@ -96,7 +96,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c9bfeae583d70210260cee30ceaad373</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Evolução Mensal Faturamento</sys_name>
         <sys_overrides/>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
@@ -104,7 +104,7 @@
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>pa_widgets_c9bfeae583d70210260cee30ceaad373</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-10 01:37:02</sys_updated_on>
+        <sys_updated_on>2024-09-02 17:44:40</sys_updated_on>
         <tag/>
         <template>template1</template>
         <treemap_max_color display_value="Green">65b302aea9fe3dba00a530d65ecc2106</treemap_max_color>

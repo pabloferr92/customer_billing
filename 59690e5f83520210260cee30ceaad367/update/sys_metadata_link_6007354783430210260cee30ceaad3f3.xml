@@ -9,7 +9,7 @@
         <mes_competencia/>
         <name>H2L EQUIPAMENTOS E SISTEMAS LTDA</name>
         <number>88079</number>
-        <parceiro display_value="H2L EQUIPAMENTOS E SISTEMAS LTDA">b514f32b833a4210260cee30ceaad34d</parceiro>
+        <parceiro/>
         <sys_created_by>mariana</sys_created_by>
         <sys_created_on>2024-06-21 12:13:58</sys_created_on>
         <sys_id>94f5b727833a4210260cee30ceaad35c</sys_id>
@@ -27,14 +27,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-01 23:57:47</sys_created_on>
         <sys_id>6007354783430210260cee30ceaad3f3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>H2L EQUIPAMENTOS E SISTEMAS LTDA</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_metadata_link_6007354783430210260cee30ceaad3f3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-01 23:57:47</sys_updated_on>
+        <sys_updated_on>2024-07-29 13:34:21</sys_updated_on>
         <tablename>x_562912_billing_contracts</tablename>
     </sys_metadata_link>
 </record_update>

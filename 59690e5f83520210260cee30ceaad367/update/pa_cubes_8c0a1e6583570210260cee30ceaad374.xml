@@ -3,7 +3,8 @@
         <benchmarking>false</benchmarking>
         <calendar>standard</calendar>
         <calendar_freq/>
-        <conditions table="x_562912_billing_monthly_production">u_reference_dateONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()<item endquery="false" field="u_reference_date" goto="false" newquery="false" operator="ON" or="false" value="This month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()"/>
+        <conditions table="x_562912_billing_monthly_production">u_reference_dateONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()^banco.parceiro.active=true<item endquery="false" field="u_reference_date" goto="false" newquery="false" operator="ON" or="false" value="This month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()"/>
+            <item endquery="false" field="banco.parceiro.active" goto="false" newquery="false" operator="=" or="false" value="true"/>
         </conditions>
         <description/>
         <facts_table>x_562912_billing_monthly_production</facts_table>
@@ -22,7 +23,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8c0a1e6583570210260cee30ceaad374</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>BillingProduction.Monthly</sys_name>
         <sys_overrides/>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
@@ -30,7 +31,7 @@
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>pa_cubes_8c0a1e6583570210260cee30ceaad374</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-09 21:26:22</sys_updated_on>
+        <sys_updated_on>2024-09-02 18:39:34</sys_updated_on>
     </pa_cubes>
     <sys_translated_text action="delete_multiple" query="documentkey=8c0a1e6583570210260cee30ceaad374"/>
 </record_update>
