@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="addff747c3d8161086bedb0d05013182" label="Opportunities" max_length="40" name="x_562912_billing_opportunities" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="Complemento" max_length="111" name="complemento" type="string"/>
-        <element label="Valor Único" max_length="38" name="valor_unico" type="decimal"/>
-        <element attributes="edge_encryption_enabled=true" label="Ultimo Contato" max_length="40" name="ultimo_contato" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true" label="(Não Modificar) Soma de Verificação da Linha" max_length="190" name="nao_modificar_soma_de_verificacao_da_linha" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Nome do banco" max_length="48" name="nome_do_banco" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Data de Criação" max_length="40" name="data_de_criacao" type="glide_date_time"/>
+        <element display="true" label="ID da Oportunidade" max_length="40" name="id_da_oportunidade" type="integer"/>
+        <element label="Receita Estimada Contradada" max_length="38" name="receita_estimada_contradada" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Proprietário" max_length="40" name="proprietario" type="string"/>
+        <element label="Valor Único" max_length="38" name="valor_unico" type="decimal"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Probabilidade" max_length="40" name="probabilidade" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Editais - Ganho" value="Editais - Ganho"/>
-                <element inactive_on_update="false" label="Negociação Quente" value="Negociação Quente"/>
-                <element inactive_on_update="false" label="Piloto" value="Piloto"/>
-                <element inactive_on_update="false" label="Prospecção" value="Prospecção"/>
-                <element inactive_on_update="false" label="Negociação" value="Negociação"/>
                 <element inactive_on_update="false" label="Showroom" value="Showroom"/>
-                <element inactive_on_update="false" label="Termo" value="Termo"/>
                 <element inactive_on_update="false" label="Proposta" value="Proposta"/>
+                <element inactive_on_update="false" label="Negociação Quente" value="Negociação Quente"/>
+                <element inactive_on_update="false" label="Editais - Ganho" value="Editais - Ganho"/>
+                <element inactive_on_update="false" label="Prospecção" value="Prospecção"/>
+                <element inactive_on_update="false" label="Piloto" value="Piloto"/>
+                <element inactive_on_update="false" label="Negociação" value="Negociação"/>
                 <element inactive_on_update="false" label="Editais" value="Editais"/>
+                <element inactive_on_update="false" label="Termo" value="Termo"/>
             </choice>
         </element>
-        <element label="Probabilidade %" max_length="15" name="probabilidade_percent" type="decimal"/>
-        <element attributes="edge_encryption_enabled=true" label="Data Est. Fechamento" max_length="40" name="data_est_fechamento" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true" label="Data de Criação" max_length="40" name="data_de_criacao" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Tópico" max_length="40" name="topico" type="choice">
             <choice/>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="(Não Modificar) Oportunidade" max_length="40" name="nao_modificar_oportunidade" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="(Não Modificar) Data de Modificação" max_length="40" name="nao_modificar_data_de_modificacao" type="glide_date_time"/>
-        <element label="Receita Estimada Contradada" max_length="38" name="receita_estimada_contradada" type="decimal"/>
-        <element attributes="edge_encryption_enabled=true" label="Parceiro/Terceiro" max_length="82" name="parceiro_terceiro" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Data de Modificação" max_length="40" name="data_de_modificacao" type="glide_date_time"/>
-        <element attributes="edge_encryption_enabled=true" label="Previsão Ultimo Contato" max_length="40" name="previsao_ultimo_contato" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true" label="Proprietário" max_length="40" name="proprietario" type="string"/>
         <element label="Valor Mensal" max_length="38" name="valor_mensal" type="decimal"/>
-        <element attributes="edge_encryption_enabled=true" label="Prioridade" max_length="40" name="prioridade" type="string"/>
-        <element label="Receita Estimada" max_length="38" name="receita_estimada" type="decimal"/>
-        <element display="true" label="ID da Oportunidade" max_length="40" name="id_da_oportunidade" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Cliente Provável" max_length="106" name="cliente_provavel" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Parceiro/Terceiro" max_length="82" name="parceiro_terceiro" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Ultimo Contato" max_length="40" name="ultimo_contato" type="glide_date"/>
+        <element label="Probabilidade %" max_length="15" name="probabilidade_percent" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="(Não Modificar) Oportunidade" max_length="40" name="nao_modificar_oportunidade" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Data de Modificação" max_length="40" name="data_de_modificacao" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Prioridade" max_length="40" name="prioridade" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Complemento" max_length="111" name="complemento" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="(Não Modificar) Soma de Verificação da Linha" max_length="190" name="nao_modificar_soma_de_verificacao_da_linha" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Data Est. Fechamento" max_length="40" name="data_est_fechamento" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="(Não Modificar) Data de Modificação" max_length="40" name="nao_modificar_data_de_modificacao" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Previsão Ultimo Contato" max_length="40" name="previsao_ultimo_contato" type="glide_date"/>
+        <element label="Receita Estimada" max_length="38" name="receita_estimada" type="decimal"/>
     </element>
 </database>

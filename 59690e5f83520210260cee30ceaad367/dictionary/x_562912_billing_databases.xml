@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="52ea8e5383920210260cee30ceaad3a6" label="Bancos" max_length="40" name="x_562912_billing_databases" type="collection">
+    <element db_object_id="52ea8e5383920210260cee30ceaad3a6" label="Databases" max_length="40" name="x_562912_billing_databases" type="collection">
         <element label="CNPJ" max_length="20" name="u_cnpj" type="string"/>
+        <element label="Razão Social" max_length="100" name="u_razao_social" type="string"/>
         <element display="true" label="NOME DO BANCO" max_length="80" name="nome_do_banco" type="string"/>
         <element label="Parceiro" max_length="32" name="parceiro" reference="x_562912_billing_partners" type="reference"/>
-        <element label="Razão Social" max_length="100" name="u_razao_social" type="string"/>
         <index name="index">
             <element name="parceiro"/>
         </index>

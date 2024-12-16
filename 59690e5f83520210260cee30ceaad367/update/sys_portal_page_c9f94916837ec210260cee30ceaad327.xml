@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2024-07-10 01:57:28">
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2024-12-16 01:55:05">
     <sys_portal_page action="INSERT_OR_UPDATE">
         <layout/>
         <order/>
@@ -38,7 +38,7 @@
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>report_type</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:19</sys_created_on>
                         <sys_id>175c051a837ec210260cee30ceaad360</sys_id>
@@ -49,7 +49,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>can_subscribe</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:19</sys_created_on>
                         <sys_id>535c051a837ec210260cee30ceaad360</sys_id>
@@ -60,7 +60,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>sys_id</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:19</sys_created_on>
                         <sys_id>975c051a837ec210260cee30ceaad35f</sys_id>
@@ -71,7 +71,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>help_text_window</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:19</sys_created_on>
                         <sys_id>9f5c051a837ec210260cee30ceaad35f</sys_id>
@@ -82,7 +82,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:19</sys_created_on>
                         <sys_id>d75c051a837ec210260cee30ceaad360</sys_id>
@@ -93,7 +93,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:19</sys_created_on>
                         <sys_id>db5c051a837ec210260cee30ceaad35f</sys_id>
@@ -104,7 +104,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title_align</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:53</sys_created_on>
                         <sys_id>e37cc9d6837ec210260cee30ceaad3a3</sys_id>
@@ -115,7 +115,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>filter_indicator</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:53</sys_created_on>
                         <sys_id>e37cc9d6837ec210260cee30ceaad3a4</sys_id>
@@ -126,7 +126,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_border</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:53</sys_created_on>
                         <sys_id>e77cc9d6837ec210260cee30ceaad3a3</sys_id>
@@ -137,7 +137,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>real_time</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:53</sys_created_on>
                         <sys_id>e77cc9d6837ec210260cee30ceaad3a4</sys_id>
@@ -148,7 +148,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_title</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:53</sys_created_on>
                         <sys_id>eb7cc9d6837ec210260cee30ceaad3a2</sys_id>
@@ -159,7 +159,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>publisher_widget</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:53</sys_created_on>
                         <sys_id>eb7cc9d6837ec210260cee30ceaad3a3</sys_id>
@@ -170,7 +170,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_header</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:53</sys_created_on>
                         <sys_id>ef7cc9d6837ec210260cee30ceaad3a2</sys_id>
@@ -181,7 +181,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>subscriber_widget</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:19">175c051a837ec210260cee30ceaad35f</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:53</sys_created_on>
                         <sys_id>ef7cc9d6837ec210260cee30ceaad3a3</sys_id>
@@ -206,7 +206,7 @@
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:42:13</sys_created_on>
                         <sys_id>03cccd1a837ec210260cee30ceaad350</sys_id>
@@ -217,7 +217,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:42:13</sys_created_on>
                         <sys_id>07cccd1a837ec210260cee30ceaad34f</sys_id>
@@ -228,7 +228,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_header</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:50:43</sys_created_on>
                         <sys_id>23be059a837ec210260cee30ceaad35e</sys_id>
@@ -239,7 +239,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title_align</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:50:43</sys_created_on>
                         <sys_id>27be059a837ec210260cee30ceaad35e</sys_id>
@@ -250,7 +250,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_title</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:50:43</sys_created_on>
                         <sys_id>2bbe059a837ec210260cee30ceaad35d</sys_id>
@@ -261,7 +261,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_border</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:50:43</sys_created_on>
                         <sys_id>2bbe059a837ec210260cee30ceaad35e</sys_id>
@@ -272,7 +272,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>subscriber_widget</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:50:43</sys_created_on>
                         <sys_id>33be8dda837ec210260cee30ceaad3cd</sys_id>
@@ -283,7 +283,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>filter_indicator</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:50:43</sys_created_on>
                         <sys_id>37be8dda837ec210260cee30ceaad3cd</sys_id>
@@ -294,7 +294,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>real_time</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:50:44</sys_created_on>
                         <sys_id>3bbe8dda837ec210260cee30ceaad3cd</sys_id>
@@ -305,7 +305,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>publisher_widget</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:50:43</sys_created_on>
                         <sys_id>3fbe8dda837ec210260cee30ceaad3cc</sys_id>
@@ -316,7 +316,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>report_type</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:42:13</sys_created_on>
                         <sys_id>4fcccd1a837ec210260cee30ceaad34f</sys_id>
@@ -327,7 +327,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>can_subscribe</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:42:13</sys_created_on>
                         <sys_id>8bcccd1a837ec210260cee30ceaad34f</sys_id>
@@ -338,7 +338,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>help_text_window</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:42:13</sys_created_on>
                         <sys_id>c7cccd1a837ec210260cee30ceaad34f</sys_id>
@@ -349,7 +349,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>sys_id</name>
-                        <portal_section display_value="Created 2024-06-16 23:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:42:13">4fcccd1a837ec210260cee30ceaad34e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:42:13</sys_created_on>
                         <sys_id>cfcccd1a837ec210260cee30ceaad34e</sys_id>
@@ -374,7 +374,7 @@
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_border</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:38:14</sys_created_on>
                         <sys_id>20eb49d6837ec210260cee30ceaad3cd</sys_id>
@@ -385,7 +385,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>real_time</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:38:14</sys_created_on>
                         <sys_id>20eb49d6837ec210260cee30ceaad3ce</sys_id>
@@ -396,7 +396,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_title</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:38:14</sys_created_on>
                         <sys_id>24eb49d6837ec210260cee30ceaad3cc</sys_id>
@@ -407,7 +407,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>publisher_widget</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:38:14</sys_created_on>
                         <sys_id>24eb49d6837ec210260cee30ceaad3cd</sys_id>
@@ -418,7 +418,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:32:38</sys_created_on>
                         <sys_id>269a4d16837ec210260cee30ceaad3e9</sys_id>
@@ -429,7 +429,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_header</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:38:14</sys_created_on>
                         <sys_id>28eb49d6837ec210260cee30ceaad3cc</sys_id>
@@ -440,7 +440,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>subscriber_widget</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:38:14</sys_created_on>
                         <sys_id>28eb49d6837ec210260cee30ceaad3cd</sys_id>
@@ -451,7 +451,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:32:38</sys_created_on>
                         <sys_id>2a9a4d16837ec210260cee30ceaad3e8</sys_id>
@@ -462,7 +462,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title_align</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:38:14</sys_created_on>
                         <sys_id>2ceb49d6837ec210260cee30ceaad3cc</sys_id>
@@ -473,7 +473,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>filter_indicator</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:38:14</sys_created_on>
                         <sys_id>2ceb49d6837ec210260cee30ceaad3cd</sys_id>
@@ -484,7 +484,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>report_type</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:32:38</sys_created_on>
                         <sys_id>629a4d16837ec210260cee30ceaad3e9</sys_id>
@@ -495,7 +495,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>can_subscribe</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:32:38</sys_created_on>
                         <sys_id>ae9a4d16837ec210260cee30ceaad3e8</sys_id>
@@ -506,7 +506,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>sys_id</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:32:38</sys_created_on>
                         <sys_id>e29a4d16837ec210260cee30ceaad3e8</sys_id>
@@ -517,7 +517,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>help_text_window</name>
-                        <portal_section display_value="Created 2024-06-16 23:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:32:38">629a4d16837ec210260cee30ceaad3e8</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:32:38</sys_created_on>
                         <sys_id>ea9a4d16837ec210260cee30ceaad3e8</sys_id>
@@ -542,7 +542,7 @@
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>can_publish</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:42</sys_created_on>
                         <sys_id>34cb45d6837ec210260cee30ceaad3c0</sys_id>
@@ -553,7 +553,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:42</sys_created_on>
                         <sys_id>70cb45d6837ec210260cee30ceaad3c0</sys_id>
@@ -564,7 +564,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>type</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:42</sys_created_on>
                         <sys_id>74cb45d6837ec210260cee30ceaad3c1</sys_id>
@@ -575,7 +575,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:42</sys_created_on>
                         <sys_id>b8cb45d6837ec210260cee30ceaad3c0</sys_id>
@@ -586,7 +586,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>sys_id</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:42</sys_created_on>
                         <sys_id>f4cb45d6837ec210260cee30ceaad3bf</sys_id>
@@ -597,7 +597,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>publisher_widget</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:42">70cb45d6837ec210260cee30ceaad3bf</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:42</sys_created_on>
                         <sys_id>f4cb45d6837ec210260cee30ceaad3c0</sys_id>
@@ -622,7 +622,7 @@
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>sys_id</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:56</sys_created_on>
                         <sys_id>10db49d6837ec210260cee30ceaad39f</sys_id>
@@ -633,7 +633,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>can_publish</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:56</sys_created_on>
                         <sys_id>18db49d6837ec210260cee30ceaad39f</sys_id>
@@ -644,7 +644,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:56</sys_created_on>
                         <sys_id>54db49d6837ec210260cee30ceaad39f</sys_id>
@@ -655,7 +655,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:56</sys_created_on>
                         <sys_id>9cdb49d6837ec210260cee30ceaad39f</sys_id>
@@ -666,7 +666,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>type</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:56</sys_created_on>
                         <sys_id>d0db49d6837ec210260cee30ceaad3a0</sys_id>
@@ -677,7 +677,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>publisher_widget</name>
-                        <portal_section display_value="Created 2024-06-16 23:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:37:56">9cdb49d6837ec210260cee30ceaad39e</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:37:56</sys_created_on>
                         <sys_id>d8db49d6837ec210260cee30ceaad39f</sys_id>
@@ -702,7 +702,7 @@
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>sys_id</name>
-                        <portal_section display_value="Created 2024-07-09 17:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
+                        <portal_section display_value="Created 2024-07-09 13:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-07-09 20:50:31</sys_created_on>
                         <sys_id>27d89ee183570210260cee30ceaad306</sys_id>
@@ -713,7 +713,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>type</name>
-                        <portal_section display_value="Created 2024-07-09 17:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
+                        <portal_section display_value="Created 2024-07-09 13:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-07-09 20:50:31</sys_created_on>
                         <sys_id>2bd89ee183570210260cee30ceaad307</sys_id>
@@ -724,7 +724,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>can_publish</name>
-                        <portal_section display_value="Created 2024-07-09 17:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
+                        <portal_section display_value="Created 2024-07-09 13:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-07-09 20:50:31</sys_created_on>
                         <sys_id>2fd89ee183570210260cee30ceaad306</sys_id>
@@ -735,7 +735,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
-                        <portal_section display_value="Created 2024-07-09 17:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
+                        <portal_section display_value="Created 2024-07-09 13:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-07-09 20:50:31</sys_created_on>
                         <sys_id>6bd89ee183570210260cee30ceaad306</sys_id>
@@ -746,7 +746,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
-                        <portal_section display_value="Created 2024-07-09 17:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
+                        <portal_section display_value="Created 2024-07-09 13:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-07-09 20:50:31</sys_created_on>
                         <sys_id>a3d89ee183570210260cee30ceaad307</sys_id>
@@ -757,7 +757,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>publisher_widget</name>
-                        <portal_section display_value="Created 2024-07-09 17:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
+                        <portal_section display_value="Created 2024-07-09 13:50:31">a3d89ee183570210260cee30ceaad306</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-07-09 20:50:31</sys_created_on>
                         <sys_id>efd89ee183570210260cee30ceaad306</sys_id>
@@ -782,7 +782,7 @@
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>can_subscribe</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:31</sys_created_on>
                         <sys_id>026cc51a837ec210260cee30ceaad309</sys_id>
@@ -793,7 +793,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>sys_id</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:31</sys_created_on>
                         <sys_id>466cc51a837ec210260cee30ceaad308</sys_id>
@@ -804,7 +804,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>help_text_window</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:31</sys_created_on>
                         <sys_id>4e6cc51a837ec210260cee30ceaad308</sys_id>
@@ -815,7 +815,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_border</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:45</sys_created_on>
                         <sys_id>617c091a837ec210260cee30ceaad3a9</sys_id>
@@ -826,7 +826,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>real_time</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:45</sys_created_on>
                         <sys_id>617c091a837ec210260cee30ceaad3aa</sys_id>
@@ -837,7 +837,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_title</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:45</sys_created_on>
                         <sys_id>657c091a837ec210260cee30ceaad3a8</sys_id>
@@ -848,7 +848,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>publisher_widget</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:45</sys_created_on>
                         <sys_id>657c091a837ec210260cee30ceaad3a9</sys_id>
@@ -859,7 +859,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_header</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:45</sys_created_on>
                         <sys_id>697c091a837ec210260cee30ceaad3a8</sys_id>
@@ -870,7 +870,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>subscriber_widget</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:45</sys_created_on>
                         <sys_id>697c091a837ec210260cee30ceaad3a9</sys_id>
@@ -881,7 +881,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title_align</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:45</sys_created_on>
                         <sys_id>6d7c091a837ec210260cee30ceaad3a8</sys_id>
@@ -892,7 +892,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>filter_indicator</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:45</sys_created_on>
                         <sys_id>6d7c091a837ec210260cee30ceaad3a9</sys_id>
@@ -903,7 +903,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:31</sys_created_on>
                         <sys_id>866cc51a837ec210260cee30ceaad309</sys_id>
@@ -914,7 +914,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:31</sys_created_on>
                         <sys_id>8a6cc51a837ec210260cee30ceaad308</sys_id>
@@ -925,7 +925,7 @@
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>report_type</name>
-                        <portal_section display_value="Created 2024-06-16 23:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
+                        <portal_section display_value="Created 2024-06-16 19:40:31">c26cc51a837ec210260cee30ceaad308</portal_section>
                         <sys_created_by>admin</sys_created_by>
                         <sys_created_on>2024-06-17 02:40:31</sys_created_on>
                         <sys_id>c26cc51a837ec210260cee30ceaad309</sys_id>

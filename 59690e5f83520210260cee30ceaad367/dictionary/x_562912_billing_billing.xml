@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="fcc7129783d20210260cee30ceaad321" label="Faturamento" max_length="40" name="x_562912_billing_billing" type="collection">
-        <element label="Valor Total" max_length="40" name="valor_total_v2" type="float"/>
         <element label="Total de Bancos Cobrados" max_length="40" name="total_de_bancos_cobrados" type="integer"/>
+        <element label="Consolidated Billing" max_length="32" name="consolidated_billing" reference="x_562912_billing_consolidated_billing" reference_cascade_rule="cascade" type="reference"/>
+        <element choice="1" label="Ano Competencia" max_length="4" name="ano_competencia" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="2025" value="2025"/>
+                <element inactive_on_update="false" label="2024" value="2024"/>
+                <element inactive_on_update="false" label="2026" value="2026"/>
+            </choice>
+        </element>
         <element label="Bancos Contabilizados" max_length="40" name="bancos_contabilizados" type="integer"/>
-        <element label="Contrato" max_length="32" name="u_contrato" reference="x_562912_billing_contracts" type="reference"/>
-        <element label="Volume Aferido" max_length="40" name="volume_aferido" type="integer"/>
-        <element label="Consolidated Billing" max_length="32" name="consolidated_billing" reference="x_562912_billing_consolidated_billing" type="reference"/>
         <element label="Equipamentos Contabilizados" max_length="40" name="equipamentos_contabilizados" type="integer"/>
+        <element display="true" label="Produto no Contrato" max_length="32" name="u_produto_no_contrato" reference="x_562912_billing_product_in_the_contract" type="reference"/>
+        <element label="Valor Total" max_length="40" name="valor_total_v2" type="float"/>
+        <element label="Contrato" max_length="32" name="u_contrato" reference="x_562912_billing_contracts" type="reference"/>
         <element choice="3" label="Mês Competência" max_length="20" name="mes_competencia" type="string">
             <choice>
-                <element inactive_on_update="false" label="Julho" sequence="70" value="7"/>
                 <element inactive_on_update="false" label="Junho" sequence="60" value="6"/>
-                <element inactive_on_update="false" label="Fevereiro" sequence="20" value="2"/>
                 <element inactive_on_update="false" label="Abril" sequence="40" value="4"/>
-                <element inactive_on_update="false" label="Março" sequence="30" value="3"/>
-                <element inactive_on_update="false" label="Agosto" sequence="80" value="8"/>
                 <element inactive_on_update="false" label="Dezembro" sequence="120" value="12"/>
-                <element inactive_on_update="false" label="Setembro" sequence="90" value="9"/>
-                <element inactive_on_update="false" label="Novembro" sequence="110" value="11"/>
                 <element inactive_on_update="false" label="Outubro" sequence="100" value="10"/>
+                <element inactive_on_update="false" label="Agosto" sequence="80" value="8"/>
+                <element inactive_on_update="false" label="Fevereiro" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Setembro" sequence="90" value="9"/>
+                <element inactive_on_update="false" label="Julho" sequence="70" value="7"/>
                 <element inactive_on_update="false" label="Maio" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="Novembro" sequence="110" value="11"/>
+                <element inactive_on_update="false" label="Março" sequence="30" value="3"/>
                 <element inactive_on_update="false" label="Janeiro" sequence="10" value="1"/>
             </choice>
         </element>
         <element label="Valor Total" max_length="20" name="valor_total" type="currency"/>
-        <element choice="1" label="Ano Competencia" max_length="4" name="ano_competencia" type="integer">
-            <choice>
-                <element inactive_on_update="false" label="2024" value="2024"/>
-                <element inactive_on_update="false" label="2026" value="2026"/>
-                <element inactive_on_update="false" label="2025" value="2025"/>
-            </choice>
-        </element>
-        <element display="true" label="Produto no Contrato" max_length="32" name="u_produto_no_contrato" reference="x_562912_billing_product_in_the_contract" type="reference"/>
+        <element label="Volume Aferido" max_length="40" name="volume_aferido" type="integer"/>
         <index name="index">
             <element name="consolidated_billing"/>
         </index>

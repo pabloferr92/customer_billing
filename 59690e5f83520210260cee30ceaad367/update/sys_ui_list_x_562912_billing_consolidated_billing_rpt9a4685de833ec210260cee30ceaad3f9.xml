@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_contract</element>
-            <list_id display_value="x_562912_billing_consolidated_billing" element="NULL" name="x_562912_billing_consolidated_billing" parent="NULL" relationship="NULL" sys_domain="global" view="285cc39a83f60610260cee30ceaad3ef">605cc39a83f60610260cee30ceaad3f1</list_id>
+            <list_id display_value="x_562912_billing_consolidated_billing" element="NULL" name="x_562912_billing_consolidated_billing" parent="NULL" relationship="NULL" sys_domain="global" view="fc06f7e4c32292103a273eec05013160">605cc39a83f60610260cee30ceaad3f1</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_contract.parceiro</element>
-            <list_id display_value="x_562912_billing_consolidated_billing" element="NULL" name="x_562912_billing_consolidated_billing" parent="NULL" relationship="NULL" sys_domain="global" view="285cc39a83f60610260cee30ceaad3ef">605cc39a83f60610260cee30ceaad3f1</list_id>
+            <list_id display_value="x_562912_billing_consolidated_billing" element="NULL" name="x_562912_billing_consolidated_billing" parent="NULL" relationship="NULL" sys_domain="global" view="fc06f7e4c32292103a273eec05013160">605cc39a83f60610260cee30ceaad3f1</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -33,7 +33,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>ano_competencia</element>
-            <list_id display_value="x_562912_billing_consolidated_billing" element="NULL" name="x_562912_billing_consolidated_billing" parent="NULL" relationship="NULL" sys_domain="global" view="285cc39a83f60610260cee30ceaad3ef">605cc39a83f60610260cee30ceaad3f1</list_id>
+            <list_id display_value="x_562912_billing_consolidated_billing" element="NULL" name="x_562912_billing_consolidated_billing" parent="NULL" relationship="NULL" sys_domain="global" view="fc06f7e4c32292103a273eec05013160">605cc39a83f60610260cee30ceaad3f1</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -48,7 +48,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>mes_competencia</element>
-            <list_id display_value="x_562912_billing_consolidated_billing" element="NULL" name="x_562912_billing_consolidated_billing" parent="NULL" relationship="NULL" sys_domain="global" view="285cc39a83f60610260cee30ceaad3ef">605cc39a83f60610260cee30ceaad3f1</list_id>
+            <list_id display_value="x_562912_billing_consolidated_billing" element="NULL" name="x_562912_billing_consolidated_billing" parent="NULL" relationship="NULL" sys_domain="global" view="fc06f7e4c32292103a273eec05013160">605cc39a83f60610260cee30ceaad3f1</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -63,7 +63,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>valor_total</element>
-            <list_id display_value="x_562912_billing_consolidated_billing" element="NULL" name="x_562912_billing_consolidated_billing" parent="NULL" relationship="NULL" sys_domain="global" view="285cc39a83f60610260cee30ceaad3ef">605cc39a83f60610260cee30ceaad3f1</list_id>
+            <list_id display_value="x_562912_billing_consolidated_billing" element="NULL" name="x_562912_billing_consolidated_billing" parent="NULL" relationship="NULL" sys_domain="global" view="fc06f7e4c32292103a273eec05013160">605cc39a83f60610260cee30ceaad3f1</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -100,7 +100,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-06-17 11:59:23</sys_updated_on>
             <sys_user/>
-            <view display_value="Rpt9a4685de833ec210260cee30ceaad3f9" name="RPT9a4685de833ec210260cee30ceaad3f9">285cc39a83f60610260cee30ceaad3ef</view>
+            <view display_value="Rpt9a4685de833ec210260cee30ceaad3f9" name="RPT9a4685de833ec210260cee30ceaad3f9">fc06f7e4c32292103a273eec05013160</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

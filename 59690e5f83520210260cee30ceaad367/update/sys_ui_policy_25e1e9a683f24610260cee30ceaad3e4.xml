@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_562912_billing_contracts">u_validate_registrations=yes^EQ<item display_value="Yes" endquery="false" field="u_validate_registrations" goto="false" newquery="false" operator="=" or="false" value="yes"/>
+        <conditions table="x_562912_billing_contracts">u_validate_registrations=yes^EQ<item display_value="Sim" endquery="false" field="u_validate_registrations" goto="false" newquery="false" operator="=" or="false" value="yes"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>

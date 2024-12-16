@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="8b2a521b83d20210260cee30ceaad38d" label="Carregar Dados" max_length="40" name="x_562912_billing_load_data" type="collection">
-        <element choice="1" choice_field="ano_competencia" choice_table="x_562912_billing_billing" label="Ano Competência" max_length="40" name="ano_competencia" type="integer">
-            <choice/>
-        </element>
-        <element label="Data Loaded" max_length="40" name="data_loaded" read_only="true" type="boolean"/>
-        <element label="Data Sheet" max_length="40" name="data_sheet" type="file_attachment"/>
-        <element label="Attachmend Validated ID" max_length="32" name="attachmend_validated_id" read_only="true" type="string"/>
         <element label="Processed Data" max_length="40" name="processed_data" read_only="true" type="boolean"/>
+        <element label="Data Loaded" max_length="40" name="data_loaded" read_only="true" type="boolean"/>
         <element choice="3" choice_field="mes_competencia" choice_table="x_562912_billing_billing" label="Mês Competência" max_length="40" name="mes_competencia" type="string">
             <choice>
                 <element inactive_on_update="false" label="Maio" value="maio"/>
                 <element inactive_on_update="false" label="Janeiro" value="janeiro"/>
             </choice>
         </element>
+        <element label="Data Sheet" max_length="40" name="data_sheet" type="file_attachment"/>
+        <element choice="1" choice_field="ano_competencia" choice_table="x_562912_billing_billing" label="Ano Competência" max_length="40" name="ano_competencia" type="integer">
+            <choice/>
+        </element>
+        <element label="Attachmend Validated ID" max_length="32" name="attachmend_validated_id" read_only="true" type="string"/>
     </element>
 </database>

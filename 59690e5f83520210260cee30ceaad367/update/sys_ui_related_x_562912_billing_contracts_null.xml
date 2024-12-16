@@ -2,7 +2,7 @@
     <sys_ui_related sys_domain="global" table="x_562912_billing_contracts" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Contracts - Default view" name="x_562912_billing_contracts" related_list="NULL" sys_domain="global" view="Default view">c02f51a283f24610260cee30ceaad3c8</list_id>
+            <list_id display_value="Contratos - Default view" name="x_562912_billing_contracts" related_list="NULL" sys_domain="global" view="Default view">c02f51a283f24610260cee30ceaad3c8</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_562912_billing_product_in_the_contract.u_contrato</related_list>
@@ -16,7 +16,7 @@
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Contracts - Default view" name="x_562912_billing_contracts" related_list="NULL" sys_domain="global" view="Default view">c02f51a283f24610260cee30ceaad3c8</list_id>
+            <list_id display_value="Contratos - Default view" name="x_562912_billing_contracts" related_list="NULL" sys_domain="global" view="Default view">c02f51a283f24610260cee30ceaad3c8</list_id>
             <order_by/>
             <position>1</position>
             <related_list>x_562912_billing_database_registration_validation.u_contract</related_list>
@@ -29,7 +29,7 @@
             <sys_updated_on>2024-06-17 22:40:46</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>Contracts - Default view</calculated_name>
+            <calculated_name>Contratos - Default view</calculated_name>
             <filter/>
             <name>x_562912_billing_contracts</name>
             <order_by/>

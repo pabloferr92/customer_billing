@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="3d80c897c3d8161086bedb0d0501312f" extends="sys_import_set_row" label="Carregar Oportunidades CRM / Semanal" max_length="40" name="x_562912_billing_u_crm_opportunities" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Data de Criação" label="Data de Criação" max_length="40" name="u_data_de_criação" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Tópico*" label="Tópico*" max_length="40" name="u_tópico_" type="string"/>
         <element attributes="import_attribute_name=Valor Único" label="Valor Único" max_length="15" name="u_valor_único" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=(Não Modificar) Soma de Verificação da Linha" label="(Não Modificar) Soma de Verificação da Linha" max_length="40" name="u__não_modific_cação_da_linha" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Data Est. Fechamento" label="Data Est. Fechamento" max_length="40" name="u_data_est__fechamento" type="glide_date"/>
-        <element attributes="import_attribute_name=Valor Mensal" label="Valor Mensal" max_length="15" name="u_valor_mensal" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Prioridade" label="Prioridade" max_length="40" name="u_prioridade" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Probabilidade" label="Probabilidade" max_length="40" name="u_probabilidade" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Ultimo Contato" label="Ultimo Contato" max_length="40" name="u_ultimo_contato" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Parceiro/Terceiro" label="Parceiro/Terceiro" max_length="82" name="u_parceiro_terceiro" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Nome do banco" label="Nome do banco" max_length="48" name="u_nome_do_banco" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Previsão Ultimo Contato" label="Previsão Ultimo Contato" max_length="40" name="u_previsão_ultimo_contato" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cliente Provável" label="Cliente Provável" max_length="40" name="u_cliente_provável" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Proprietário" label="Proprietário" max_length="40" name="u_proprietário" type="string"/>
-        <element attributes="import_attribute_name=Probabilidade %" label="Probabilidade %" max_length="40" name="u_probabilidade__" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Complemento" label="Complemento" max_length="111" name="u_complemento" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=(Não Modificar) Oportunidade" label="(Não Modificar) Oportunidade" max_length="40" name="u__não_modificar__oportunidade" type="string"/>
+        <element attributes="import_attribute_name=Valor Mensal" label="Valor Mensal" max_length="15" name="u_valor_mensal" type="string"/>
         <element attributes="import_attribute_name=Receita Estimada Contradada" label="Receita Estimada Contradada" max_length="15" name="u_receita_estimada_contradada" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=(Não Modificar) Soma de Verificação da Linha" label="(Não Modificar) Soma de Verificação da Linha" max_length="40" name="u__não_modific_cação_da_linha" type="string"/>
+        <element attributes="import_attribute_name=Probabilidade %" label="Probabilidade %" max_length="40" name="u_probabilidade__" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Parceiro/Terceiro" label="Parceiro/Terceiro" max_length="82" name="u_parceiro_terceiro" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Probabilidade" label="Probabilidade" max_length="40" name="u_probabilidade" type="string"/>
+        <element attributes="import_attribute_name=ID da Oportunidade" label="ID da Oportunidade" max_length="40" name="u_id_da_oportunidade" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Data de Modificação" label="Data de Modificação" max_length="40" name="u_data_de_modificação" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cliente Provável" label="Cliente Provável" max_length="40" name="u_cliente_provável" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Previsão Ultimo Contato" label="Previsão Ultimo Contato" max_length="40" name="u_previsão_ultimo_contato" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Ultimo Contato" label="Ultimo Contato" max_length="40" name="u_ultimo_contato" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Prioridade" label="Prioridade" max_length="40" name="u_prioridade" type="string"/>
         <element attributes="import_attribute_name=Receita Estimada" label="Receita Estimada" max_length="15" name="u_receita_estimada" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=(Não Modificar) Data de Modificação" label="(Não Modificar) Data de Modificação" max_length="40" name="u__não_modific_de_modificação" type="glide_date_time"/>
-        <element attributes="import_attribute_name=ID da Oportunidade" label="ID da Oportunidade" max_length="40" name="u_id_da_oportunidade" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Data de Criação" label="Data de Criação" max_length="40" name="u_data_de_criação" type="glide_date_time"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=(Não Modificar) Oportunidade" label="(Não Modificar) Oportunidade" max_length="40" name="u__não_modificar__oportunidade" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Data de Modificação" label="Data de Modificação" max_length="40" name="u_data_de_modificação" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Data Est. Fechamento" label="Data Est. Fechamento" max_length="40" name="u_data_est__fechamento" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Complemento" label="Complemento" max_length="111" name="u_complemento" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Nome do banco" label="Nome do banco" max_length="48" name="u_nome_do_banco" type="string"/>
     </element>
 </database>

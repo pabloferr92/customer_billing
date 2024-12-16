@@ -5,12 +5,14 @@
         <api_name>x_562912_billing.CustomerBillingUtils</api_name>
         <caller_access/>
         <client_callable>false</client_callable>
-        <description/>
+        <description>_getBillingProductInfo</description>
+        <mobile_callable>false</mobile_callable>
         <name>CustomerBillingUtils</name>
+        <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[var CustomerBillingUtils = Class.create();
 CustomerBillingUtils.prototype = {
 
-    initialize: function() {
+    initialize: function () {
 
         this.RESPONSE = {
             status: "success",
@@ -27,7 +29,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _checkForAttachment: function(current) {
+    _checkForAttachment: function (current) {
 
         var attachment_gr = new GlideRecord("sys_attachment");
 
@@ -39,7 +41,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getAttachment: function(current) {
+    _getAttachment: function (current) {
 
         var attachment_gr = new GlideRecord("sys_attachment");
 
@@ -51,7 +53,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getAttachmentInRecord: function(current, field_name) {
+    _getAttachmentInRecord: function (current, field_name) {
 
         var attachment_field_name = "data_sheet";
 
@@ -59,19 +61,15 @@ CustomerBillingUtils.prototype = {
             attachment_field_name = field_name;
         }
 
-        // gs.info("Field Name " + field_name + " attachment field  " + attachment_field_name );
-
         var attachment_id = current.getValue(attachment_field_name);
-
-        //gs.info("Attachment ID " + current.getValue(attachment_field_name));
 
         if (gs.nil(attachment_id) || attachment_id == "" || current[attachment_field_name].nil()) {
 
             this.RESPONSE.status = "error";
             this.RESPONSE.message = "Anexo não encontrado no registro de carramento de dados";
             return false;
-        }
 
+        }
 
         var attachment_gr = new GlideRecord("sys_attachment");
 
@@ -80,7 +78,6 @@ CustomerBillingUtils.prototype = {
         }
 
         return false;
-
 
     },
 
@@ -103,7 +100,6 @@ CustomerBillingUtils.prototype = {
 
         // Get the worksheet names to be parsed in the Excel document
         var list_sheet_name = parser.getSheetNames();
-
 
         if (list_sheet_name.length == 0) {
             this.RESPONSE.status = "error";
@@ -128,31 +124,34 @@ CustomerBillingUtils.prototype = {
                     return this.RESPONSE;
                 }
 
-
             } else {
+
                 this.RESPONSE.status = "error";
                 this.RESPONSE.message = "Formato inválido!";
                 return this.RESPONSE;
+
             }
+
         }
 
         if (this.RESPONSE.status == "success") {
+
             this._setAttachmentAsValidated(current, attachment_record.getUniqueValue());
+
         }
 
         return this.RESPONSE;
 
     },
 
-    _setAttachmentAsValidated: function(current, attachment_id) {
+    _setAttachmentAsValidated: function (current, attachment_id) {
 
         current.setValue("attachmend_validated_id", attachment_id);
         current.update();
 
     },
 
-    processData: function(current) {
-
+    processData: function (current) {
 
         var attachment_gr = this._getAttachmentInRecord(current);
 
@@ -173,9 +172,7 @@ CustomerBillingUtils.prototype = {
         // Get the worksheet names to be parsed in the Excel document
         var list_sheet_name = parser.getSheetNames();
 
-
         //parser.setSheetName(list_sheet_name[i]);
-
 
         // Iterate over each worksheet in the Excel workbook
         for (var i = 0; i < list_sheet_name.length; i++) {
@@ -191,7 +188,6 @@ CustomerBillingUtils.prototype = {
                 if (!this.checkSheetFormat(headers)) {
                     return this.RESPONSE;
                 }
-
 
                 while (parser.next()) {
                     var row = parser.getRow();
@@ -209,7 +205,7 @@ CustomerBillingUtils.prototype = {
                     var razao_social = row["Razão Social"];
                     var cnpj = row["CNPJ"];
                     var contrato = row["N° CONTRATO"];
-                    var parceiro = row["Parceiro"]
+                    var parceiro = row["Parceiro"];
                     var accounting_volume = row["360 ACCOUNTING - VOLUME"];
 
                     var releaser_devices = row["360 RELEASER"];
@@ -239,13 +235,12 @@ CustomerBillingUtils.prototype = {
                         monthly_production_gr.setValue("u_360_policy", policy);
                         monthly_production_gr.setValue("u_360_tracking", tracking);
 
-                        monthly_production_gr.setValue("u_360_accounting_equipamento", accounting_equipamento)
+                        monthly_production_gr.setValue("u_360_accounting_equipamento", accounting_equipamento);
                         monthly_production_gr.setValue("mps_volume", volume_mps);
                         monthly_production_gr.setValue("u_360_accounting_volume", accounting_volume);
                         monthly_production_gr.setValue("u_360_releaser", releaser_devices);
 
                         monthly_production_gr.setValue("u_reference_date", date.getDisplayValue());
-
 
                         var sys_id_new_record = monthly_production_gr.insert();
 
@@ -258,9 +253,11 @@ CustomerBillingUtils.prototype = {
                 return this.RESPONSE;
 
             } else {
+
                 this.RESPONSE.status = "error";
                 this.RESPONSE.message = "Formato inválido";
                 return this.RESPONSE;
+
             }
 
 
@@ -268,14 +265,14 @@ CustomerBillingUtils.prototype = {
 
         return this.RESPONSE;
 
-
     },
+
 
     checkSheetFormat(sheet_headers) {
 
         var not_found_headers = [];
 
-        this.USED_COLUMNS.forEach(function(column) {
+        this.USED_COLUMNS.forEach(function (column) {
 
             if (sheet_headers.indexOf(column) == -1) {
                 not_found_headers.push(header);
@@ -293,7 +290,8 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getBankID: function(bank_name) {
+
+    _getBankID: function (bank_name) {
 
         var id = "";
         var bank_gr = new GlideRecord("x_562912_billing_databases");
@@ -309,7 +307,8 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _createBank: function(bank_name, razao_social, cnpj, contrato, parceiro) {
+
+    _createBank: function (bank_name, razao_social, cnpj, contrato, parceiro) {
 
         var bank_id = "";
         var partner_id = this._getPartnerId(parceiro, contrato);
@@ -330,7 +329,8 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getPartnerId: function(name, contrato) {
+
+    _getPartnerId: function (name, contrato) {
 
         var id = "";
         var partner_gr = new GlideRecord("x_562912_billing_partners");
@@ -343,13 +343,12 @@ CustomerBillingUtils.prototype = {
             return id;
         }
 
-        //id = this._createPartner(name, contrato);
-
         return id;
 
     },
 
-    _createPartner: function(name, contrato) {
+
+    _createPartner: function (name, contrato) {
 
         var id = "";
 
@@ -367,7 +366,8 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _createContract: function(name, partner_id, contrato) {
+
+    _createContract: function (name, partner_id, contrato) {
 
         var id = "";
 
@@ -384,7 +384,8 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    processBilling: function(current, partner_sys_id) {
+
+    processBilling: function (current, partner_sys_id) {
 
         var partners_gr = new GlideRecord("x_562912_billing_partners");
 
@@ -393,13 +394,12 @@ CustomerBillingUtils.prototype = {
             partners_gr.setLimit(1);
         }
 
+        partners_gr.addQuery("active", true);
         partners_gr.query();
 
         var created_billings = [];
 
         while (partners_gr.next()) {
-
-            // gs.info("Parceiro validado " + partners_gr.getValue("u_name"));
 
             var mes_competencia = current.getValue("mes_competencia");
             var ano_competencia = current.getValue("ano_competencia");
@@ -409,8 +409,7 @@ CustomerBillingUtils.prototype = {
             contracts.addQuery("active", true);
             contracts.query();
 
-            var products_by_contract = [];
-
+            //var products_by_contract = [];
 
             while (contracts.next()) {
 
@@ -422,7 +421,7 @@ CustomerBillingUtils.prototype = {
 
                 while (producs_contract_gr.next()) {
 
-                    products_by_contract.push(producs_contract_gr.getUniqueValue());
+                    //products_by_contract.push(producs_contract_gr.getUniqueValue());
 
                     var agg_values_by_product = this._getAggregateOfProductByContract(producs_contract_gr, ano_competencia, mes_competencia);
 
@@ -442,26 +441,38 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getAggregateOfProductByContract: function(products_by_contract, ano_competencia, mes_competencia) {
+    /**SNDOC
+        @name _getAggregateOfProductByContract
+        @private
+        @description Agrega por produto os totais de volume e equipamentos.
+        @param {GlideRecord} [products_by_contract] - a single comment as a string to parse over
+        @param {string} [ano_competencia] - String Ano
+        @param {string} [mes_competencia] - String Mês
+        @returns {object} Objeto.
+    */
+
+    _getAggregateOfProductByContract: function (products_by_contract, ano_competencia, mes_competencia) {
 
         var response = {
             volume: 0,
             equipamentos: 0,
             total_bancos: 0,
-        }
+        };
 
+        //var column_volume = products_by_contract.u_produto.coluna_origem_cobranca_volume.element.toString();
+        //var column_equipamentos = products_by_contract.u_produto.coluna_origem_cobranca_equipamentos.element.toString();
 
-        var column_volume = products_by_contract.u_produto.coluna_origem_cobranca_volume.element.toString();
-        var column_equipamentos = products_by_contract.u_produto.coluna_origem_cobranca_equipamentos.element.toString();
+        var column_volume = products_by_contract.u_produto.column_source_charge_volume.toString();
+        var column_equipamentos = products_by_contract.u_produto.column_source_charge_equipment.toString();
 
-        var conditions = products_by_contract.u_conditions.toString()
+        var conditions = products_by_contract.u_conditions.toString();
 
         var agg = new GlideAggregate("x_562912_billing_monthly_production");
         agg.addQuery("ano_competencia", ano_competencia);
         agg.addQuery("mes_competencia", mes_competencia);
         agg.addQuery("banco.parceiro", products_by_contract.u_contrato.parceiro.toString());
         agg.addEncodedQuery(conditions);
-        agg.groupBy("banco.parceiro")
+        agg.groupBy("banco.parceiro");
         agg.addAggregate('COUNT', "sys_mod_count");
         agg.addAggregate("SUM", column_volume);
         agg.addAggregate("SUM", column_equipamentos);
@@ -471,7 +482,7 @@ CustomerBillingUtils.prototype = {
 
             response.volume = agg.getAggregate("SUM", column_volume);
             response.equipamentos = agg.getAggregate("SUM", column_equipamentos);
-            response.total_bancos = agg.getAggregate("COUNT", "sys_mod_count")
+            response.total_bancos = agg.getAggregate("COUNT", "sys_mod_count");
         }
 
         return response;
@@ -479,37 +490,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    // Método Será depreciado
-    _createConsolidatedBilling: function(partner_id, ano_competencia, mes_competencia, contract) {
-
-        var billings = new GlideAggregate("x_562912_billing_billing");
-        billings.addQuery("ano_competencia", ano_competencia);
-        billings.addQuery("mes_competencia", mes_competencia);
-        billings.addEncodedQuery("u_produto_no_contrato.u_contrato.parceiro.sys_id=" + partner_id);
-        billings.addAggregate('SUM', 'valor_total');
-        billings.groupBy('u_produto_no_contrato.u_contrato.parceiro');
-        billings.query();
-
-        if (billings.next()) {
-
-            var total = billings.getAggregate('SUM', 'valor_total');
-
-            var consolidated_gr = new GlideRecord("x_562912_billing_consolidated_billing");
-            consolidated_gr.initialize();
-
-            consolidated_gr.setValue("ano_competencia", ano_competencia);
-            consolidated_gr.setValue("mes_competencia", mes_competencia);
-            consolidated_gr.setValue("u_contract", contract);
-            consolidated_gr.valor_total.setValue("BRL" + ";" + total);
-
-            var id = consolidated_gr.insert();
-
-        }
-
-
-    },
-
-    _createConsolidatedBillingNew: function(partner_id, ano_competencia, mes_competencia, contract, created_billings) {
+    _createConsolidatedBillingNew: function (partner_id, ano_competencia, mes_competencia, contract, created_billings) {
 
         var billings = new GlideAggregate("x_562912_billing_billing");
         billings.addQuery("ano_competencia", ano_competencia);
@@ -528,14 +509,20 @@ CustomerBillingUtils.prototype = {
 
             var total = billings.getAggregate('SUM', 'valor_total');
 
+            var conv = new sn_currency.GlideCurrencyConverter('USD', 'BRL');
+
+            conv.setAmount(total);
+
+            var converted_value = conv.convert(); // From USD to BRL
+
             var consolidated_gr = new GlideRecord("x_562912_billing_consolidated_billing");
             consolidated_gr.initialize();
 
             consolidated_gr.setValue("ano_competencia", ano_competencia);
             consolidated_gr.setValue("mes_competencia", mes_competencia);
             consolidated_gr.setValue("u_contract", contract.getUniqueValue());
-            consolidated_gr.valor_total.setValue("BRL" + ";" + total);
-			
+            consolidated_gr.valor_total.setValue("USD" + ";" + total);
+
             consolidated_gr.setValue("u_reference_date", date.getDisplayValue());
 
             var id = consolidated_gr.insert();
@@ -560,144 +547,19 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    // Método Será depreciado
-    _updateBillingDetailWithConsolidateGR: function(query, consolidated_id) {
 
-        var billings = new GlideRecord("x_562912_billing_billing");
-        billings.addEncodedQuery(query);
-        billings.query();
-
-        if (billing.hasNext()) {
-            //billings.updateMultiple();
-        }
-
-    },
-
-
-    // Método Será depreciado
-    _mountValuesByProductObj(contract_gr, products_by_contract, ano_competencia, mes_competencia) {
-
-        var columns_to_aggregate = [];
-
-        for (var i = 0; i < products_by_contract.length; i++) {
-
-            var products_by_contract_gr = new GlideRecord("x_562912_billing_product_in_the_contract");
-            products_by_contract_gr.get(products_by_contract[i])
-
-            columns_to_aggregate.push({
-                contract_product: products_by_contract_gr.getUniqueValue(),
-                product: products_by_contract_gr.u_produto.sys_id,
-                coluna_volume: products_by_contract_gr.u_produto.coluna_origem_cobranca_volume.getDisplayValue(),
-                coluna_equipamento: products_by_contract_gr.u_produto.coluna_origem_cobranca_equipamentos.getDisplayValue(),
-                conditions: products_by_contract_gr.u_conditions.toString(),
-            });
-
-
-        }
-
-        var monthly_production_gr = new GlideRecord("x_562912_billing_monthly_production");
-        monthly_production_gr.addQuery("mes_competencia", mes_competencia);
-        monthly_production_gr.addQuery("ano_competencia", ano_competencia);
-        monthly_production_gr.addEncodedQuery("banco.parceiro=" + contract_gr.parceiro);
-        monthly_production_gr.query();
-
-        var values_by_product = {
-            contrato: contract_gr.getDisplayValue(),
-            contrato_sys_id: contract_gr.getUniqueValue(),
-            ano_competencia: ano_competencia,
-            mes_competencia: mes_competencia,
-            produtos: {},
-
-        }
-
-
-        while (monthly_production_gr.next()) {
-
-
-            for (var i = 0; i < columns_to_aggregate.length; i++) {
-
-
-                var column_name_volume = this._getColumnName(monthly_production_gr.getTableName(), columns_to_aggregate[i]["coluna_volume"]);
-                var column_name_equipamentos = this._getColumnName(monthly_production_gr.getTableName(), columns_to_aggregate[i]["coluna_equipamento"]);
-
-                var conditions = columns_to_aggregate[i]["conditions"];
-
-                if (!this._checkConditions(monthly_production_gr.getUniqueValue(), conditions)) {
-                    continue;
-                }
-
-
-                if (values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]]) {
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].volume += parseInt(monthly_production_gr.getValue(column_name_volume));
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].equipamentos += parseInt(monthly_production_gr.getValue(column_name_equipamentos));
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].bancos_contabilizados += 1;
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]]["bancos_sys_ids"].push(monthly_production_gr.getValue("banco"));
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].bancos_sys_ids.push(monthly_production_gr.getUniqueValue());
-
-                } else {
-                    //values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]]["bancos_sys_ids"].push(monthly_production_gr.getValue("banco"));
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]] = {};
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].volume = parseInt(monthly_production_gr.getValue(column_name_volume));
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].equipamentos = parseInt(monthly_production_gr.getValue(column_name_equipamentos));
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].bancos_contabilizados = 1;
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].bancos_sys_ids = [];
-                    values_by_product["produtos"][columns_to_aggregate[i]["contract_product"]].bancos_sys_ids.push(monthly_production_gr.getUniqueValue());
-
-                }
-
-            }
-
-        }
-
-        return values_by_product;
-
-
-    },
-
-    _checkConditions(record_gr_sys_id, conditions) {
-
-        var faturamento_gr = new GlideRecord("x_562912_billing_monthly_production");
-        faturamento_gr.addQuery("sys_id", record_gr_sys_id);
-        faturamento_gr.addEncodedQuery(conditions);
-        faturamento_gr.setLimit(1);
-        faturamento_gr.query();
-
-        return faturamento_gr.hasNext();
-
-    },
-
-    _getColumnName: function(table, label) {
-
-        var table_gr = new GlideRecord("sys_dictionary");
-
-        table_gr.addEncodedQuery("name=" + table + "^column_label=" + label);
-
-        table_gr.query();
-
-        if (table_gr.next()) {
-            return table_gr.element.getDisplayValue();
-        }
-
-
-
-    },
-
-    _createBillingNew: function(producs_contract_gr, agg_values_by_product, ano_competencia, mes_competencia) {
-
+    _createBillingNew: function (producs_contract_gr, agg_values_by_product, ano_competencia, mes_competencia) {
 
         var value = this._calculateProductValueNew(producs_contract_gr, agg_values_by_product);
-
-
         var equipamentos = agg_values_by_product["equipamentos"];
         var volume = agg_values_by_product["volume"];
         var total_bancos = agg_values_by_product["total_bancos"];
 
-
         var billing_gr = new GlideRecord("x_562912_billing_billing");
         billing_gr.initialize();
 
-        billing_gr.setValue("ano_competencia", ano_competencia)
-        billing_gr.setValue("mes_competencia", mes_competencia)
+        billing_gr.setValue("ano_competencia", ano_competencia);
+        billing_gr.setValue("mes_competencia", mes_competencia);
         billing_gr.setValue("u_produto_no_contrato", producs_contract_gr.getUniqueValue());
         billing_gr.setValue("volume_aferido", volume);
         billing_gr.setValue("equipamentos_contabilizados", equipamentos);
@@ -714,7 +576,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _calculateProductValueNew: function(producs_contract_gr, agg_values_by_product) {
+    _calculateProductValueNew: function (producs_contract_gr, agg_values_by_product) {
 
         var value = 0; // Valor total da cobrança deste produto
 
@@ -724,28 +586,25 @@ CustomerBillingUtils.prototype = {
 
         var valor_franquia = parseFloat(producs_contract_gr.valor_franquia.toString());
 
+        var total_excedente = 0;
+        var valor_excedente = 0;
+
         if (tipo_cobranca == "volume") {
 
             var volume = parseInt(agg_values_by_product["volume"]);
 
-            //gs.info("Valor aferido " + volume + "  " + producs_contract_gr.getDisplayValue())
-
             var franquia_volume = producs_contract_gr.franquia_volume.toString();
-
-            //gs.info("Franquia de Volume " + franquia_volume + " volume " + volume + " teste " + (parseInt(volume) > franquia_volume));
 
             if (!gs.nil(franquia_volume) && franquia_volume > 0) {
 
                 if (volume > franquia_volume) {
-                    var total_excedente = volume - franquia_volume;
-                    var valor_excedente = total_excedente * valor_produto;
+                    total_excedente = volume - franquia_volume;
+                    valor_excedente = total_excedente * valor_produto;
                     value = valor_excedente + valor_franquia;
 
                 } else {
                     value = valor_franquia;
                 }
-
-
 
             } else {
 
@@ -765,8 +624,8 @@ CustomerBillingUtils.prototype = {
             if (!gs.nil(franquia_equipamentos) && franquia_equipamentos > 0) {
 
                 if (equipamentos > franquia_equipamentos) {
-                    var total_excedente = equipamentos - franquia_equipamentos;
-                    var valor_excedente = total_excedente * valor_produto;
+                    total_excedente = equipamentos - franquia_equipamentos;
+                    valor_excedente = total_excedente * valor_produto;
                     value = valor_excedente + valor_franquia;
                 } else {
                     value = valor_franquia;
@@ -780,158 +639,18 @@ CustomerBillingUtils.prototype = {
 
         }
 
-        //gs.info("Valor final " + value)
-
         return value;
 
     },
 
-    _createBilling: function(values, ) {
-
-        var products_billing_created = [];
-
-        var mes_competencia = values["mes_competencia"];
-        var ano_competencia = values["ano_competencia"];
-
-        var produtos = values["produtos"];
-
-        //return;
-        for (var i in produtos) {
-            var value = this._calculateProductValue(i, produtos[i]);
-
-            var billing_gr = new GlideRecord("x_562912_billing_billing");
-            billing_gr.initialize();
-
-            var currencyCode = billing_gr.valor_total.getCurrencyCode();
-            billing_gr.setValue("ano_competencia", ano_competencia)
-            billing_gr.setValue("mes_competencia", mes_competencia)
-            billing_gr.setValue("u_produto_no_contrato", i);
-            billing_gr.setValue("volume_aferido", produtos[i]["volume"]);
-            billing_gr.setValue("equipamentos_contabilizados", produtos[i]["equipamentos"]);
-            billing_gr.setValue("total_de_bancos_cobrados", produtos[i]["bancos_contabilizados"]);
-            //billing_gr.setValue("valor_total", parseFloat(value));
-            billing_gr.setValue("valor_total_v2", parseFloat(value));
-            //valor_total_v2
-            billing_gr.valor_total.setValue("BRL" + ";" + value);
-
-            var billing_id = billing_gr.insert();
-
-            products_billing_created.push(billing_id);
-
-        }
-
-        return products_billing_created;
-
-    },
-
-    _getBillingProductInfo: function(product_contract_sys_id) {
-
-        var product_contract_gr = new GlideRecord("x_562912_billing_product_in_the_contract");
-
-        var response = {};
-
-        if (product_contract_gr.get(product_contract_sys_id)) {
-            response.tipo_de_franquia = product_contract_gr.tipo_de_franquia.getDisplayValue();
-            response.valor = product_contract_gr.valor.toString();
-            response.franquia_volume = product_contract_gr.franquia_volume.toString();
-            response.franquia_equipamentos = product_contract_gr.franquia_equipamentos.toString();
-            response.valor_franquia = product_contract_gr.valor_franquia.toString();
-        }
-
-        return response;
-
-    },
-
-    _calculateProductValue: function(product_contract, billing_info_values) {
-
-        //        gs.info("Contrato no Produto " + product_contract +  " valores " + JSON.stringify(billing_info_values)) ;
-
-        var billing_info = this._getBillingProductInfo(product_contract);
-
-        var value = 0;
-
-        var franquia_volume = billing_info["franquia_volume"];
-
-        franquia_volume = franquia_volume.replace(",", "");
-
-        franquia_volume = parseInt(franquia_volume);
-
-        var valor_franquia = billing_info["valor_franquia"];
-
-        valor_franquia = parseInt(valor_franquia.replace(",", "."));
-
-        var valor_cobrado = billing_info["valor"];
-
-
-        if (billing_info.tipo_de_franquia.toString().toLowerCase() == "volume") {
-
-            var volume = billing_info_values["volume"];
-
-
-
-            if (!gs.nil(franquia_volume) && franquia_volume > 0) {
-
-                if (volume > franquia_volume) {
-                    var total_excedente = volume - franquia_volume;
-                    var valor_excedente = total_excedente * valor_cobrado;
-                    value = valor_excedente + valor_franquia;
-
-                } else {
-                    value = valor_franquia;
-                }
-
-            } else {
-
-                value = billing_info_values["volume"] * valor_cobrado;
-
-            }
-
-
-        } else {
-
-            var equipamentos = billing_info_values["equipamentos"];
-
-            var franquia_equipamentos = billing_info["franquia_equipamentos"].toString().replace(",", "");
-
-            franquia_equipamentos = parseInt(franquia_equipamentos);
-
-            if (!gs.nil(franquia_equipamentos) && franquia_equipamentos > 0) {
-
-                if (equipamentos > franquia_equipamentos) {
-                    var total_excedente = billing_info_values["equipamentos"] - franquia_equipamentos;
-                    var valor_excedente = total_excedente * valor_cobrado;
-                    value = valor_excedente + valor_franquia;
-                } else {
-                    value = valor_franquia;
-                }
-
-            } else {
-
-                var valor_cobrado = billing_info["valor"];
-
-                valor_cobrado = valor_cobrado.replace(",", "");
-
-                value = equipamentos * valor_cobrado;
-
-            }
-
-        }
-
-        var number = Number(value.toString().replace(/[^0-9.-]+/g, ""));
-
-
-        return number;
-
-    },
-
-    validateBillingSpreadSheet: function(current /* GlideRecord Contrato */ ) {
+    validateBillingSpreadSheet: function (current /* GlideRecord Contrato */) {
 
         var mes_competencia = current.getValue("mes_competencia");
         var ano_competencia = current.getValue("ano_competencia");
 
         var descritivo_obj = this._getDescritivoObj(current);
 
-        var validation_obj = {};
+        var validation_obj = {}; // Este Objeto será montado com os bancos registrado na tabela de produção mensal
 
         var validations_gr = new GlideRecord("x_562912_billing_database_registration_validation");
         //validations_gr.setLimit(1);
@@ -939,20 +658,23 @@ CustomerBillingUtils.prototype = {
         validations_gr.query();
 
         while (validations_gr.next()) {
-            // gs.info("Display validation " + validations_gr.u_product_in_contract.u_produto.getDisplayValue() + "-" + validations_gr.u_product_in_contract.u_description.getDisplayValue());
+
             var producs_contract_gr = validations_gr.u_product_in_contract.getRefRecord();
+
             var product_billing_arr = this._getBanksOfValidation(producs_contract_gr, ano_competencia, mes_competencia);
-            validation_obj[validations_gr.u_product_in_contract.u_produto.getDisplayValue() + "-" + validations_gr.u_product_in_contract.u_description.getDisplayValue()] = {
+
+            validation_obj[validations_gr.u_product_name_on_billing.getDisplayValue()] = {
                 u_product_name_on_billing: validations_gr.getValue("u_product_name_on_billing"),
                 banks_arr: product_billing_arr,
             };
+
         }
+
+        gs.info("Comparação " + JSON.stringify(descritivo_obj) + " - " + JSON.stringify(validation_obj));
 
         var response = this._compareObjectsOfBilling(descritivo_obj, validation_obj, ano_competencia, mes_competencia);
 
         return response;
-
-
 
     },
 
@@ -966,37 +688,38 @@ CustomerBillingUtils.prototype = {
             status: "success",
             message: "",
             csv_format: ""
-        }
+        };
 
         var validation_log_creation = "Validação do período " + mes_competencia + "/" + ano_competencia + " realizada em: " + now.getDisplayValue() + "\n\n";
 
         response.csv_format += "Banco;Erro Identificado;Diferença Identificada;Produto;Volumetria Identificada;Volumetria no Descritivo\n";
 
-
         response.message += validation_log_creation;
 
         for (var i in validation_obj) {
 
+            var banks_arr = validation_obj[i]["banks_arr"]; // Bancos cadastrados de acordo com a planilha de produção mensal.
 
-            var banks_arr = validation_obj[i]["banks_arr"];
+            var descritivo_banks_arr = descritivo_obj[validation_obj[i]["u_product_name_on_billing"]]; // Banco que estão presentes na planilha de descritivos.
 
-            var descritivo_banks_arr = descritivo_obj[validation_obj[i]["u_product_name_on_billing"]];
+            if (descritivo_banks_arr.length > banks_arr.length) {
+                             
+                // Implementar lógica
+                
+            }
 
             var produto = validation_obj[i]["u_product_name_on_billing"];
 
-            // gs.info("Banks Arr " + JSON.stringify(banks_arr));
-
-            // gs.info("Descritivo Arr " + JSON.stringify(descritivo_banks_arr));
-
-
             for (var j = 0; j < banks_arr.length; j++) {
 
-                var bank_to_check = banks_arr[j];
+                var bank_to_check = banks_arr[j]; // Banco da planilha de produção mensal que será analisado.
 
-                var descritivo_bank = descritivo_banks_arr.filter(function(element) {
+                // Retorna Objeto do banco que será analisado da planilha de descritivos.
+                var descritivo_bank = descritivo_banks_arr.filter(function (element) {
                     return bank_to_check["banco"] == element["banco"];
                 });
 
+                // Recupera a volumetria da planilha de produção mensal.
                 var bank_to_check_volumetria = parseInt(bank_to_check["volumetria"]) || 0;
 
                 if (descritivo_bank.length == 0) {
@@ -1007,10 +730,8 @@ CustomerBillingUtils.prototype = {
                     continue;
                 }
 
+                // Recupera Volumetria da planilha de Descritivos.
                 var descritivo_bank_volumetria = parseInt(descritivo_bank[0]["volumetria"]) || 0;
-
-                gs.info("Checando diferença " + bank_to_check["banco"] + "volumetria descritivo " + descritivo_bank_volumetria + " voluetria " + bank_to_check_volumetria);
-
 
                 if (descritivo_bank_volumetria != bank_to_check_volumetria) {
 
@@ -1018,11 +739,8 @@ CustomerBillingUtils.prototype = {
 
                     var diferenca_toal = descritivo_bank_volumetria - bank_to_check_volumetria;
 
-                    //gs.info("Checando diferença " + bank_to_check["banco"] + "volumetria descritivo " + descritivo_bank_volumetria +  " volumetria " + bank_to_check_volumetria + " diferenca " + diferenca);
-
                     response.status = "error";
                     response.message += "Banco: " + bank_to_check["banco"] + " com volumetria " + diferenca + " no total de: " + diferenca_toal + " no produto: " + produto + "\n";
-                    //response.csv_format += "Banco;Erro Identificado;Diferença Identificada;Produto;Volumetria Identificada;Volumetria no Descritivo\n";
 
                     response.csv_format += bank_to_check["banco"] + ";" + "Diferença de Volume" + ";" + diferenca + ";" + produto + ";" + bank_to_check_volumetria + ";" + descritivo_bank_volumetria + "\n";
 
@@ -1037,7 +755,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getBanksOfValidation: function(producs_contract_gr, ano_competencia, mes_competencia) {
+    _getBanksOfValidation: function (producs_contract_gr, ano_competencia, mes_competencia) {
 
         var product_billing_arr = [];
 
@@ -1048,11 +766,10 @@ CustomerBillingUtils.prototype = {
         var tipo_cobranca = producs_contract_gr.tipo_de_franquia.toString();
 
         if (tipo_cobranca == "equipamentos") {
-            column_volume = producs_contract_gr.u_produto.coluna_origem_cobranca_equipamentos.element.toString();
+            column_volume = producs_contract_gr.u_produto.column_source_charge_equipment.toString();
         } else {
-            column_volume = producs_contract_gr.u_produto.coluna_origem_cobranca_volume.element.toString();
+            column_volume = producs_contract_gr.u_produto.column_source_charge_volume.toString();
         }
-
 
         var monthly_production_gr = new GlideRecord("x_562912_billing_monthly_production");
         monthly_production_gr.addEncodedQuery(conditions);
@@ -1076,9 +793,7 @@ CustomerBillingUtils.prototype = {
 
     },
 
-    _getDescritivoObj: function() {
-
-        //gs.info("Executando busca do descritivo ");
+    _getDescritivoObj: function () {
 
         var attachment_record = this._getAttachmentInRecord(current, "u_billing_spreadsheet");
 
@@ -1121,15 +836,6 @@ CustomerBillingUtils.prototype = {
 
                 var headers = parser.getColumnHeaders();
 
-                //gs.info("Headers encontrados " + headers.join());
-
-                //var valid_format = this.checkSheetFormat(headers); // implementar validação de formato para este
-
-                // if (!valid_format) {
-
-                //     return this.RESPONSE;
-                // }
-
                 while (parser.next()) {
 
                     var row = parser.getRow();
@@ -1144,11 +850,6 @@ CustomerBillingUtils.prototype = {
                     if (!gs.nil(volumetria) && volumetria != null && volumetria != "") {
                         volumetria = volumetria.replace(/[.,]/g, '');
                     }
-
-                    //gs.info("volumetria original " + row["VOLUMETRIA"]);
-                    //gs.info("volumetria convertida " + volumetria);
-
-
 
                     if (banco == null || gs.nil(banco) || banco == "" || volumetria == null || gs.nil(volumetria) || volumetria == "") {
                         continue;
@@ -1177,7 +878,6 @@ CustomerBillingUtils.prototype = {
             }
         }
 
-        gs.info("Descritivo Obj " + JSON.stringify(descritivo_obj));
         return descritivo_obj;
 
     },
@@ -1189,13 +889,24 @@ CustomerBillingUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 14:29:35</sys_created_on>
         <sys_id>e2ab1edb83d20210260cee30ceaad392</sys_id>
-        <sys_mod_count>519</sys_mod_count>
+        <sys_mod_count>536</sys_mod_count>
         <sys_name>CustomerBillingUtils</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_script_include_e2ab1edb83d20210260cee30ceaad392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-10 01:34:53</sys_updated_on>
+        <sys_updated_on>2024-12-16 00:33:22</sys_updated_on>
     </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e2ab1edb83d20210260cee30ceaad392</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-15 14:35:54</sys_created_on>
+        <sys_id>9ee73f6cc32292103a273eec05013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-15 14:35:54</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

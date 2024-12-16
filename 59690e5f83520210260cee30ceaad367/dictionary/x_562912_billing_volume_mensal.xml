@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="4703d2df83920210260cee30ceaad360" extends="sys_import_set_row" label="Importar Volumes" max_length="40" name="x_562912_billing_volume_mensal" type="collection">
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cotas de impressão" label="Cotas de impressão" max_length="40" name="u_cotas_de_impressão" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=42156" label="42156" max_length="40" name="u_42156" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Total a faturar" label="Total a faturar" max_length="40" name="u_total_a_faturar" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=2" label="2" max_length="40" name="u_2" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Total contabilização sem contadores" label="Total contabilização sem contadores" max_length="40" name="u_total_contab_sem_contadores" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Revenda" label="Revenda" max_length="40" name="u_revenda" type="string"/>
-        <element attributes="import_attribute_name=360 ACCOUNTING - EQUIPAMENTO" label="360 ACCOUNTING - EQUIPAMENTO" max_length="40" name="u_360_accounting___equipamento" type="integer"/>
-        <element attributes="import_attribute_name=Usuários do Portal de serviços" label="Usuários do Portal de serviços" max_length="40" name="u_usuários_do__al_de_serviços" type="integer"/>
-        <element attributes="import_attribute_name=MPS - VOLUME" label="MPS - VOLUME" max_length="40" name="u_mps___volume" type="integer"/>
-        <element attributes="import_attribute_name=Total geral" label="Total geral" max_length="40" name="u_total_geral" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Data de Criação" label="Data de Criação" max_length="40" name="u_data_de_criação" type="string"/>
-        <element attributes="import_attribute_name=Total geral (AR)" label="Total geral (AR)" max_length="40" name="u_total_geral__ar_" type="integer"/>
-        <element attributes="import_attribute_name=Digital Shift - MOBILE" label="Digital Shift - MOBILE" max_length="40" name="u_digital_shift___mobile" type="integer"/>
-        <element attributes="import_attribute_name=Impressoras que utilizaram EcoToner" label="Impressoras que utilizaram EcoToner" max_length="40" name="u_impressoras__zaram_ecotoner" type="integer"/>
-        <element attributes="import_attribute_name=360 RELEASER" label="360 RELEASER" max_length="40" name="u_360_releaser" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=NOME DO BANCO" label="NOME DO BANCO" max_length="40" name="u_nome_do_banco" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=3" label="3" max_length="40" name="u_3" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=42217 (AN)" label="42217 (AN)" max_length="40" name="u_42217__an_" type="string"/>
-        <element attributes="import_attribute_name=Pedidos" label="Pedidos" max_length="40" name="u_pedidos" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contadores" label="Contadores" max_length="40" name="u_contadores" type="string"/>
-        <element attributes="import_attribute_name=Meta" label="Meta" max_length="40" name="u_meta" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=N° CONTRATO" label="N° CONTRATO" max_length="40" name="u_n__contrato" type="string"/>
-        <element attributes="import_attribute_name=Valor Contratado" label="Valor Contratado" max_length="40" name="u_valor_contratado" type="integer"/>
-        <element attributes="import_attribute_name=Fixo" label="Fixo" max_length="40" name="u_fixo" type="integer"/>
-        <element attributes="import_attribute_name=MPS - EQUIPAMENTO" label="MPS - EQUIPAMENTO" max_length="40" name="u_mps___equipamento" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendedor" label="Vendedor" max_length="40" name="u_vendedor" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Somente USB" label="Somente USB" max_length="40" name="u_somente_usb" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=EcoToner licenciamento habilitado" label="EcoToner licenciamento habilitado" max_length="40" name="u_ecotoner_lic_nto_habilitado" type="string"/>
-        <element attributes="import_attribute_name=360 ACCOUNTING - VOLUME" label="360 ACCOUNTING - VOLUME" max_length="40" name="u_360_accounting___volume" type="integer"/>
-        <element attributes="import_attribute_name=Total contabilização" label="Total contabilização" max_length="40" name="u_total_contabilização" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Tipo de Licença" label="Tipo de Licença" max_length="40" name="u_tipo_de_licença" type="string"/>
-        <element attributes="import_attribute_name=Total monitoração (AS)" label="Total monitoração (AS)" max_length="40" name="u_total_monitoração__as_" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=360 POLICY" label="360 POLICY" max_length="40" name="u_360_policy" type="string"/>
-        <element attributes="import_attribute_name=Total de eventos" label="Total de eventos" max_length="40" name="u_total_de_eventos" type="integer"/>
-        <element attributes="import_attribute_name=Impressoras com contabilização" label="Impressoras com contabilização" max_length="40" name="u_impressoras__contabilização" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Parceiro" label="Parceiro" max_length="40" name="u_parceiro" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=360 TRACKING" label="360 TRACKING" max_length="40" name="u_360_tracking" type="string"/>
-        <element attributes="import_attribute_name=Digital Shift" label="Digital Shift" max_length="40" name="u_digital_shift" type="integer"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=1" label="1" max_length="40" name="u_1" type="string"/>
-        <element attributes="import_attribute_name=Total monitoração (AP)" label="Total monitoração (AP)" max_length="40" name="u_total_monitoração__ap_" type="integer"/>
-        <element attributes="import_attribute_name=Total contabilização (AQ)" label="Total contabilização (AQ)" max_length="40" name="u_total_contabilização__aq_" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contabilização" label="Contabilização" max_length="40" name="u_contabilização" type="string"/>
-        <element attributes="import_attribute_name=Total contabilização (AT)" label="Total contabilização (AT)" max_length="40" name="u_total_contabilização__at_" type="integer"/>
-        <element attributes="import_attribute_name=Impressoras de contrato" label="Impressoras de contrato" max_length="40" name="u_impressoras_de_contrato" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=42217" label="42217" max_length="40" name="u_42217" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=EcoToner habilitado" label="EcoToner habilitado" max_length="40" name="u_ecotoner_habilitado" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=MPS/GP" label="MPS/GP" max_length="40" name="u_mps_gp" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=42186" label="42186" max_length="40" name="u_42186" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=2" label="2" max_length="40" name="u_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=360 TRACKING" label="360 TRACKING" max_length="40" name="u_360_tracking" type="string"/>
         <element attributes="import_attribute_name=VPP" label="VPP" max_length="40" name="u_vpp" type="integer"/>
-        <element attributes="import_attribute_name=Total de eventos interagidos" label="Total de eventos interagidos" max_length="40" name="u_total_de_eventos_interagidos" type="integer"/>
+        <element attributes="import_attribute_name=Total de eventos" label="Total de eventos" max_length="40" name="u_total_de_eventos" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=MPS/GP" label="MPS/GP" max_length="40" name="u_mps_gp" type="string"/>
+        <element attributes="import_attribute_name=MPS - VOLUME" label="MPS - VOLUME" max_length="40" name="u_mps___volume" type="integer"/>
+        <element attributes="import_attribute_name=360 ACCOUNTING - VOLUME" label="360 ACCOUNTING - VOLUME" max_length="40" name="u_360_accounting___volume" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=42217" label="42217" max_length="40" name="u_42217" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Valor real" label="Valor real" max_length="40" name="u_valor_real" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=CNPJ" label="CNPJ" max_length="40" name="u_cnpj" type="string"/>
-        <element attributes="import_attribute_name=Impressoras com monitoração" label="Impressoras com monitoração" max_length="40" name="u_impressoras_com_monitoração" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=360 CHARGEBACK" label="360 CHARGEBACK" max_length="40" name="u_360_chargeback" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Porcentagem" label="Porcentagem" max_length="40" name="u_porcentagem" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=42186 (AQ)" label="42186 (AQ)" max_length="40" name="u_42186__aq_" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=42156 (AT)" label="42156 (AT)" max_length="40" name="u_42156__at_" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Estado" label="Estado" max_length="40" name="u_estado" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Sem USB" label="Sem USB" max_length="40" name="u_sem_usb" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Tipo do estoque" label="Tipo do estoque" max_length="40" name="u_tipo_do_estoque" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Valor no relatório" label="Valor no relatório" max_length="40" name="u_valor_no_relatório" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Estado" label="Estado" max_length="40" name="u_estado" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=42186 (AQ)" label="42186 (AQ)" max_length="40" name="u_42186__aq_" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=360 CHARGEBACK" label="360 CHARGEBACK" max_length="40" name="u_360_chargeback" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contabilização" label="Contabilização" max_length="40" name="u_contabilização" type="string"/>
+        <element attributes="import_attribute_name=Impressoras com monitoração" label="Impressoras com monitoração" max_length="40" name="u_impressoras_com_monitoração" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=42156" label="42156" max_length="40" name="u_42156" type="string"/>
+        <element attributes="import_attribute_name=360 RELEASER" label="360 RELEASER" max_length="40" name="u_360_releaser" type="integer"/>
+        <element attributes="import_attribute_name=Valor Contratado" label="Valor Contratado" max_length="40" name="u_valor_contratado" type="integer"/>
+        <element attributes="import_attribute_name=Digital Shift - MOBILE" label="Digital Shift - MOBILE" max_length="40" name="u_digital_shift___mobile" type="integer"/>
+        <element attributes="import_attribute_name=Meta" label="Meta" max_length="40" name="u_meta" type="integer"/>
+        <element attributes="import_attribute_name=Total geral" label="Total geral" max_length="40" name="u_total_geral" type="integer"/>
+        <element attributes="import_attribute_name=Pedidos" label="Pedidos" max_length="40" name="u_pedidos" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Somente USB" label="Somente USB" max_length="40" name="u_somente_usb" type="string"/>
+        <element attributes="import_attribute_name=Total contabilização (AT)" label="Total contabilização (AT)" max_length="40" name="u_total_contabilização__at_" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=3" label="3" max_length="40" name="u_3" type="string"/>
+        <element attributes="import_attribute_name=MPS - EQUIPAMENTO" label="MPS - EQUIPAMENTO" max_length="40" name="u_mps___equipamento" type="integer"/>
+        <element attributes="import_attribute_name=Total monitoração (AS)" label="Total monitoração (AS)" max_length="40" name="u_total_monitoração__as_" type="integer"/>
         <element attributes="import_attribute_name=Total monitoração" label="Total monitoração" max_length="40" name="u_total_monitoração" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Razão Social" label="Razão Social" max_length="40" name="u_razão_social" type="string"/>
+        <element attributes="import_attribute_name=Usuários do Portal de serviços" label="Usuários do Portal de serviços" max_length="40" name="u_usuários_do__al_de_serviços" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Valor no relatório" label="Valor no relatório" max_length="40" name="u_valor_no_relatório" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Data de Criação" label="Data de Criação" max_length="40" name="u_data_de_criação" type="string"/>
+        <element attributes="import_attribute_name=Impressoras com contabilização" label="Impressoras com contabilização" max_length="40" name="u_impressoras__contabilização" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=360 POLICY" label="360 POLICY" max_length="40" name="u_360_policy" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=EcoToner habilitado" label="EcoToner habilitado" max_length="40" name="u_ecotoner_habilitado" type="string"/>
+        <element attributes="import_attribute_name=360 ACCOUNTING - EQUIPAMENTO" label="360 ACCOUNTING - EQUIPAMENTO" max_length="40" name="u_360_accounting___equipamento" type="integer"/>
+        <element attributes="import_attribute_name=Impressoras de contrato" label="Impressoras de contrato" max_length="40" name="u_impressoras_de_contrato" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Tipo de Licença" label="Tipo de Licença" max_length="40" name="u_tipo_de_licença" type="string"/>
+        <element attributes="import_attribute_name=Total contabilização" label="Total contabilização" max_length="40" name="u_total_contabilização" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Total contabilização sem contadores" label="Total contabilização sem contadores" max_length="40" name="u_total_contab_sem_contadores" type="string"/>
+        <element attributes="import_attribute_name=Digital Shift" label="Digital Shift" max_length="40" name="u_digital_shift" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Total a faturar" label="Total a faturar" max_length="40" name="u_total_a_faturar" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Parceiro" label="Parceiro" max_length="40" name="u_parceiro" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=42186" label="42186" max_length="40" name="u_42186" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Porcentagem" label="Porcentagem" max_length="40" name="u_porcentagem" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CNPJ" label="CNPJ" max_length="40" name="u_cnpj" type="string"/>
+        <element attributes="import_attribute_name=Total de eventos interagidos" label="Total de eventos interagidos" max_length="40" name="u_total_de_eventos_interagidos" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Sem USB" label="Sem USB" max_length="40" name="u_sem_usb" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=42156 (AT)" label="42156 (AT)" max_length="40" name="u_42156__at_" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=País" label="País" max_length="40" name="u_país" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Razão Social" label="Razão Social" max_length="40" name="u_razão_social" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=42217 (AN)" label="42217 (AN)" max_length="40" name="u_42217__an_" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendedor" label="Vendedor" max_length="40" name="u_vendedor" type="string"/>
+        <element attributes="import_attribute_name=Total contabilização (AQ)" label="Total contabilização (AQ)" max_length="40" name="u_total_contabilização__aq_" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=NOME DO BANCO" label="NOME DO BANCO" max_length="40" name="u_nome_do_banco" type="string"/>
+        <element attributes="import_attribute_name=Fixo" label="Fixo" max_length="40" name="u_fixo" type="integer"/>
+        <element attributes="import_attribute_name=Impressoras que utilizaram EcoToner" label="Impressoras que utilizaram EcoToner" max_length="40" name="u_impressoras__zaram_ecotoner" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=N° CONTRATO" label="N° CONTRATO" max_length="40" name="u_n__contrato" type="string"/>
+        <element attributes="import_attribute_name=Total geral (AR)" label="Total geral (AR)" max_length="40" name="u_total_geral__ar_" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contadores" label="Contadores" max_length="40" name="u_contadores" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=EcoToner licenciamento habilitado" label="EcoToner licenciamento habilitado" max_length="40" name="u_ecotoner_lic_nto_habilitado" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cotas de impressão" label="Cotas de impressão" max_length="40" name="u_cotas_de_impressão" type="string"/>
+        <element attributes="import_attribute_name=Total monitoração (AP)" label="Total monitoração (AP)" max_length="40" name="u_total_monitoração__ap_" type="integer"/>
     </element>
 </database>

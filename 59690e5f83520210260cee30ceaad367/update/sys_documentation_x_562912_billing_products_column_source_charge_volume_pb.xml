@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="column_source_charge_volume" label="Column Source Charge Volume" language="pb" table="x_562912_billing_products">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>column_source_charge_volume</element>
+            <help/>
+            <hint/>
+            <label>Column Source Charge Volume</label>
+            <language>pb</language>
+            <name>x_562912_billing_products</name>
+            <plural>Column Source Charge Volumes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-15 14:57:28</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Column Source Charge Volume</sys_name>
+            <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+            <sys_update_name>sys_documentation_x_562912_billing_products_column_source_charge_volume_pb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-15 14:57:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

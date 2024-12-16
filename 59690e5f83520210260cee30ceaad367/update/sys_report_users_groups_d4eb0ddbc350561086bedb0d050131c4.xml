@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
     <sys_report_users_groups action="INSERT_OR_UPDATE">
-        <group_id display_value="Oportunidades - Admins" name="Oportunidades - Admins">021b819bc350561086bedb0d0501314a</group_id>
+        <group_id display_value="">021b819bc350561086bedb0d0501314a</group_id>
         <report_id display_value="Contatos">363e445bc31c161086bedb0d05013170</report_id>
         <sys_class_name>sys_report_users_groups</sys_class_name>
         <sys_created_by>admin</sys_created_by>

@@ -4,14 +4,16 @@
         <documentkey>cc975b1b831a0210260cee30ceaad34a</documentkey>
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_products">
     <x_562912_billing_products action="INSERT_OR_UPDATE">
-        <coluna_origem_cobranca_equipamentos display_value="360 ACCOUNTING - EQUIPAMENTO" element="u_360_accounting_equipamento" name="x_562912_billing_monthly_production">eeafd21383160210260cee30ceaad386</coluna_origem_cobranca_equipamentos>
-        <coluna_origem_cobranca_volume display_value="360 ACCOUNTING - VOLUME" element="u_360_accounting_volume" name="x_562912_billing_monthly_production">22c79f1b831a0210260cee30ceaad3c0</coluna_origem_cobranca_volume>
+        <column_source_charge_equipment>u_360_accounting_equipamento</column_source_charge_equipment>
+        <column_source_charge_volume>u_360_accounting_volume</column_source_charge_volume>
+        <coluna_origem_cobranca_equipamentos display_value="360 ACCOUNTING - EQUIPAMENTO" element="u_360_accounting_equipamento" name="x_562912_billing_monthly_production">fbc5b764c32292103a273eec050131af</coluna_origem_cobranca_equipamentos>
+        <coluna_origem_cobranca_volume display_value="360 ACCOUNTING - VOLUME" element="u_360_accounting_volume" name="x_562912_billing_monthly_production">3fc5b764c32292103a273eec05013198</coluna_origem_cobranca_volume>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 18:52:32</sys_created_on>
         <sys_id>cc975b1b831a0210260cee30ceaad34a</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-17 13:01:47</sys_updated_on>
+        <sys_updated_on>2024-12-15 15:06:55</sys_updated_on>
         <table_name>x_562912_billing_monthly_production</table_name>
         <u_coluna_habilitar/>
         <u_conditions table="x_562912_billing_monthly_production">u_360_accounting_volumeISNOTEMPTY^ORu_360_accounting_equipamentoISNOTEMPTY^EQ<item endquery="false" field="u_360_accounting_volume" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
@@ -28,14 +30,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-10 12:28:42</sys_created_on>
         <sys_id>b9ef8b4c83320210260cee30ceaad3b9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>360 Accounting - 360 ACCOUNTING - VOLUME</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_metadata_link_b9ef8b4c83320210260cee30ceaad3b9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-01 23:38:58</sys_updated_on>
+        <sys_updated_on>2024-12-16 01:51:55</sys_updated_on>
         <tablename>x_562912_billing_products</tablename>
     </sys_metadata_link>
 </record_update>

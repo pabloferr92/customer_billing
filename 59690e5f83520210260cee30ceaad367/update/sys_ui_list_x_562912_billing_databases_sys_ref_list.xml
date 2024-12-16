@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>nome_do_banco</element>
-            <list_id display_value="x_562912_billing_databases" element="NULL" name="x_562912_billing_databases" parent="NULL" relationship="NULL" sys_domain="global" view="632ca1528d30021087de63ac7f1f0028">72e190ba836e0210260cee30ceaad30f</list_id>
+            <list_id display_value="x_562912_billing_databases" element="NULL" name="x_562912_billing_databases" parent="NULL" relationship="NULL" sys_domain="global" view="e12990533530121087de279753545829">72e190ba836e0210260cee30ceaad30f</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -40,7 +40,7 @@
             <sys_updated_by>mariana</sys_updated_by>
             <sys_updated_on>2024-06-06 01:26:14</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">632ca1528d30021087de63ac7f1f0028</view>
+            <view display_value="Reference List" name="sys_ref_list">e12990533530121087de279753545829</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection/>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>triggered</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>Ol&aacute;!</p>
+<p>Este &eacute; um lembrete para voc&ecirc; se logar na sua inst&acirc;ncia PDI (Personal Developer Instance) do ServiceNow.</p>
+<p>N&atilde;o deixe para depois! O acesso &agrave; sua PDI pode ser suspenso por inatividade, e recuper&aacute;-lo pode levar algum tempo.</p>
+<h3>]]>🕒<![CDATA[ O que voc&ecirc; precisa fazer?</h3>
+<ol style="list-style-position: inside;">
+<li>Acesse o <a target="_new" rel="noopener">ServiceNow Developer</a>.</li>
+<li>Fa&ccedil;a login com suas credenciais.</li>
+<li>Acesse sua inst&acirc;ncia PDI para garantir que ela permane&ccedil;a ativa.</li>
+</ol>
+<h3>]]>📅<![CDATA[ Frequ&ecirc;ncia recomendada:</h3>
+<p>Realize login pelo menos uma vez a cada 10 dias para evitar a desativa&ccedil;&atilde;o autom&aacute;tica.</p>
+<p>Manter o acesso &agrave; sua PDI &eacute; essencial para continuar praticando e testando suas solu&ccedil;&otilde;es no ServiceNow. N&atilde;o perca essa oportunidade de aprender e evoluir suas habilidades!</p>
+<p>&nbsp;</p>
+<p>Atenciosamente,</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>PDI Login Remember</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups/>
+        <recipient_users>pabloferr92@gmail.com,mariih_rv@hotmail.com</recipient_users>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject/>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-15 15:19:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5518c7cc36292103a273eec05013143</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>PDI Login Remember</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>sysevent_email_action_e5518c7cc36292103a273eec05013143</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-15 15:21:32</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

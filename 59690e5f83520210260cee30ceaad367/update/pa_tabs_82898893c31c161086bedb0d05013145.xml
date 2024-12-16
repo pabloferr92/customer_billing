@@ -2,7 +2,7 @@
     <pa_tabs action="INSERT_OR_UPDATE">
         <canvas_page display_value="New Tab 1">46898853c31c161086bedb0d05013146</canvas_page>
         <name>82898893c31c161086bedb0d05013145New Tab 1</name>
-        <page display_value="New Tab 1">c2898853c31c161086bedb0d05013144</page>
+        <page display_value="">c2898853c31c161086bedb0d05013144</page>
         <sys_class_name>pa_tabs</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-02 13:56:25</sys_created_on>

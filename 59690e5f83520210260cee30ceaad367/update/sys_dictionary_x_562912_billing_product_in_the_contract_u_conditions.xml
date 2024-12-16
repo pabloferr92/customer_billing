@@ -16,7 +16,7 @@
         <column_label>Condições</column_label>
         <comments/>
         <create_roles/>
-        <default_value>javascript: current.u_produto.u_conditions; </default_value>
+        <default_value>javascript: current.u_produto.u_conditions;</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent>table_name</dependent>
