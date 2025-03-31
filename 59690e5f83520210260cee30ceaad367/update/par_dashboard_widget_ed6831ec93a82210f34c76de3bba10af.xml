@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">6e0818d19ba108551cd61c84c93c2450</canvas>
+        <component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component>
+        <component_props>{"filterId":"1in4c1hcvaiikq92lbeg","filterName":"Ano","filterComponentType":"singleselect","datasource":{"type":"table","payload":{"field":"ano_competencia","table":"x_562912_billing_load_data","primaryKey":"sys_id"}},"targets":[{"type":"table","payload":{"field":"ano_competencia","table":"x_562912_billing_load_data","primaryKey":"sys_id"}},{"type":"table","payload":{"field":"ano_competencia","table":"x_562912_billing_monthly_production","primaryKey":"sys_id"}}],"allowedDateRanges":null,"defaultSelectedItems":[],"cascadingConfig":null,"defaultSelectedDateRange":{"range":""},"defaultDateStart":null,"defaultDateEnd":null,"allowTimeSelection":null,"dateFilterView":"calendar-reldates","defaultBoolean":null,"sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","booleanLabelTrue":null,"booleanLabelFalse":null,"enableResetToDefault":null,"enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterProperties":null,"isDashboard":true,"isGroup":false,"id":"targets","value":[{"type":"table","payload":{"field":"ano_competencia","table":"x_562912_billing_load_data","primaryKey":"sys_id"}},{"type":"table","payload":{"field":"ano_competencia","table":"x_562912_billing_monthly_production","primaryKey":"sys_id"}}],"noDebounce":true,"propLabel":"Data to filter"}</component_props>
+        <h>4</h>
+        <name>Ano</name>
+        <stored_component display_value="Ano">2c7886e093e82210f34c76de3bba10c3</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 15:24:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ed6831ec93a82210f34c76de3bba10af</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Ano</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>par_dashboard_widget_ed6831ec93a82210f34c76de3bba10af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 16:36:55</sys_updated_on>
+        <visualization/>
+        <w>7</w>
+        <widget_props/>
+        <x>3</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

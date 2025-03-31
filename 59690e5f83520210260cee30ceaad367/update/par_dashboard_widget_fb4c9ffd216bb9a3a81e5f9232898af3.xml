@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">226b760c1cab7597111ef7b77b325800</canvas>
+        <component display_value="Vertical bar">23051643b7e03010097cb81cde11a910</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","yAxisHidden":false,"yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"xAxisTruncationType":"end","yAxisStyle":"clean","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":true,"dataLabelPosition":"top","showStackedValues":"none","showOverlappingLabels":false,"newReporting":false,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"sourceType":"table","tableOrViewName":"x_562912_billing_monthly_production","filterQuery":"u_360_policy=Sim^banco.parceiro.active=true","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzU2MjkxMl9iaWxsaW5nX21vbnRobHlfcHJvZHVjdGlvbjE3NDI4Mjg4NDc2MzY4MjE0MjIyLjYyMzAxNDY2Ng==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"360 Policy - Por Provedor","showBorder":true,"bareBorder":false,"telemetry":"null","showDataPassthrough":false,"metrics":[{"dataSource":"dGFibGV4XzU2MjkxMl9iaWxsaW5nX21vbnRobHlfcHJvZHVjdGlvbjE3NDI4Mjg4NDc2MzY4MjE0MjIyLjYyMzAxNDY2Ng==","id":"ZEdGaWJHVjRYelUyTWpreE1sOWlhV3hzYVc1blgyMXZiblJvYkhsZmNISnZaSFZqZEdsdmJqRTNOREk0TWpnNE5EYzJNelk0TWpFME1qSXlMall5TXpBeE5EWTJOZz09MTc0MjgyODg0NzYzNjc5ODE2ODEyLjI2Mzk4MTk0","aggregateFunction":"SUM","aggregateField":"mps_volume","axisId":"primary","numberFormat":{"customFormat":true,"rounding":"HALF_UP","decimalPrecision":4,"abbreviationEnabled":false,"numberInTooltipsEnabled":true,"thousandSeparatorEnabled":false}}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzU2MjkxMl9iaWxsaW5nX21vbnRobHlfcHJvZHVjdGlvbjE3NDI4Mjg4NDc2MzY4MjE0MjIyLjYyMzAxNDY2Ng==","groupByField":"banco.parceiro","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":"15","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false}],"sortBy":"value","sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"showChangeFrom":"previous","period":"M","dateFormat":"default","showDataTable":false,"chartVariation":"grouped","colorConfig":{"type":"singleColor","values":[{"metric":"ZEdGaWJHVjRYelUyTWpreE1sOWlhV3hzYVc1blgyMXZiblJvYkhsZmNISnZaSFZqZEdsdmJqRTNOREk0TWpnNE5EYzJNelk0TWpFME1qSXlMall5TXpBeE5EWTJOZz09MTc0MjgyODg0NzYzNjc5ODE2ODEyLjI2Mzk4MTk0","color":"de699435d7033100b4964ebfae610331"}]}}</component_props>
+        <h>17</h>
+        <name>untitled</name>
+        <stored_component display_value="360 Policy - Por Provedor">2ffa6fb9cf471f2b0260e767a168e708</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 15:07:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fb4c9ffd216bb9a3a81e5f9232898af3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>untitled</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>par_dashboard_widget_fb4c9ffd216bb9a3a81e5f9232898af3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 17:33:46</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>55</y>
+    </par_dashboard_widget>
+</record_update>

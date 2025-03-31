@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_visualization">
+    <par_visualization action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <certified>false</certified>
+        <description/>
+        <macroponent display_value="Vertical bar">23051643b7e03010097cb81cde11a910</macroponent>
+        <name>Evolução Produção</name>
+        <properties>{"configVersion":"23.0.0-ci-SNAPSHOT","yAxisHidden":false,"yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"xAxisTruncationType":"end","yAxisStyle":"clean","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"top","showStackedValues":"none","showOverlappingLabels":false,"newReporting":false,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"sourceType":"table","tableOrViewName":"x_562912_billing_monthly_production","filterQuery":"banco.parceiro.active=true","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzU2MjkxMl9iaWxsaW5nX21vbnRobHlfcHJvZHVjdGlvbjE3NDI4Mjg4NDc2MTg4NTM3NjI3MS42MDI3NDA3Mg==","dataCategories":["trend","group","simple"],"label":"Produção Mensal"}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"Evolução Produção","showBorder":true,"bareBorder":false,"telemetry":"null","showDataPassthrough":false,"metrics":[{"dataSource":"dGFibGV4XzU2MjkxMl9iaWxsaW5nX21vbnRobHlfcHJvZHVjdGlvbjE3NDI4Mjg4NDc2MTg4NTM3NjI3MS42MDI3NDA3Mg==","id":"ZEdGaWJHVjRYelUyTWpreE1sOWlhV3hzYVc1blgyMXZiblJvYkhsZmNISnZaSFZqZEdsdmJqRTNOREk0TWpnNE5EYzJNVGc0TlRNM05qSTNNUzQyTURJM05EQTNNZz09MTc0MjgyODg0NzYxODUwOTU3NTA5LjkzNTM3NjUyNQ==","aggregateFunction":"SUM","aggregateField":"mps_volume","axisId":"primary","numberFormat":{"customFormat":true,"rounding":"HALF_UP","decimalPrecision":2,"abbreviationEnabled":false,"numberInTooltipsEnabled":true,"thousandSeparatorEnabled":false}}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzU2MjkxMl9iaWxsaW5nX21vbnRobHlfcHJvZHVjdGlvbjE3NDI4Mjg4NDc2MTg4NTM3NjI3MS42MDI3NDA3Mg==","groupByField":"mes_competencia","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":12,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":true,"disableRanges":false}],"sortBy":"value","sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"showChangeFrom":"previous","period":"M","dateFormat":"default","showDataTable":false,"chartVariation":"grouped","colorConfig":{"type":"default"},"showLoadingIndicator":false,"componentId":"f8w1w5fk","id":"groupBy","value":[{"groupBy":[{"dataSource":"dGFibGV4XzU2MjkxMl9iaWxsaW5nX21vbnRobHlfcHJvZHVjdGlvbjE3NDI4Mjg4NDc2MTg4NTM3NjI3MS42MDI3NDA3Mg==","groupByField":"mes_competencia","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":12,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":true,"disableRanges":false}],"noDebounce":true,"propLabel":"Group by","filterPerMetric":[],"showDateRangeByDefault":false,"allowChangeDateRange":false,"scoreType":null,"allowAdditionalGroupByPerMetric":false,"dataPassthrough":null}</properties>
+        <requested_by/>
+        <scheduled_count>0</scheduled_count>
+        <sys_class_name>par_visualization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-17 11:25:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f101be5e94cd856e019e4678115f359f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Evolução Produção</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
+        <sys_update_name>par_visualization_f101be5e94cd856e019e4678115f359f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 19:28:38</sys_updated_on>
+        <type>Vertical bar</type>
+    </par_visualization>
+</record_update>

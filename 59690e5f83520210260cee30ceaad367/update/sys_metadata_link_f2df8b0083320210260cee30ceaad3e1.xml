@@ -4,6 +4,7 @@
         <documentkey>75ab45f783da0210260cee30ceaad399</documentkey>
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_562912_billing_partners">
     <x_562912_billing_partners action="INSERT_OR_UPDATE">
+        <active>true</active>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-27 21:57:16</sys_created_on>
         <sys_id>75ab45f783da0210260cee30ceaad399</sys_id>
@@ -20,14 +21,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-10 12:28:30</sys_created_on>
         <sys_id>f2df8b0083320210260cee30ceaad3e1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>KM DO BRASIL</sys_name>
         <sys_package display_value="Customer Billing" source="x_562912_billing">59690e5f83520210260cee30ceaad367</sys_package>
         <sys_policy/>
         <sys_scope display_value="Customer Billing">59690e5f83520210260cee30ceaad367</sys_scope>
         <sys_update_name>sys_metadata_link_f2df8b0083320210260cee30ceaad3e1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-10 12:28:30</sys_updated_on>
+        <sys_updated_on>2025-03-31 17:36:58</sys_updated_on>
         <tablename>x_562912_billing_partners</tablename>
     </sys_metadata_link>
 </record_update>
